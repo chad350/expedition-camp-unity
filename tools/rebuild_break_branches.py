@@ -137,7 +137,7 @@ def main():
     parser.add_argument("--base", default="main", help="break 브랜치를 만들 기준 브랜치")
     options = parser.parse_args()
 
-    if git("status", "--porcelain") != "":
+    if git("status", "--porcelain", "--untracked-files=no") != "":
         raise SystemExit("커밋하지 않은 변경이 있습니다. 먼저 커밋하거나 되돌려 주세요.")
 
     selected = []
