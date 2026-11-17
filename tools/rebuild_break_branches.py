@@ -77,7 +77,6 @@ def apply_file_break(break_id):
     if break_id == "02":
         folder = os.path.join(ROOT, "UnityProject", "Assets", "Scripts", "Field")
         os.rename(os.path.join(folder, "Monster.cs"), os.path.join(folder, "MonsterUnit.cs"))
-        os.rename(os.path.join(folder, "Monster.cs.meta"), os.path.join(folder, "MonsterUnit.cs.meta"))
         return
     if break_id == "14":
         path = os.path.join(ROOT, STRING_CSV)
