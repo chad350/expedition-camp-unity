@@ -85,6 +85,7 @@ namespace ExpeditionCamp.EditorTools
             controller.height = 1.8f;
             controller.radius = 0.45f;
             controller.skinWidth = 0.05f;
+            controller.minMoveDistance = 0f;
             return root;
         }
 

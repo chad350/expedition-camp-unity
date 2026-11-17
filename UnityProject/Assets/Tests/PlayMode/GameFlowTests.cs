@@ -127,6 +127,27 @@ namespace ExpeditionCamp.Tests
         }
 
         [UnityTest]
+        public IEnumerator AutoBattleClearsFirstStageWithoutCheats()
+        {
+            GameSession.Invincible = true;
+            GameSession.SetSpeedMultiplier(5f);
+            GameSession.CurrentStageId = 401001;
+            SceneManager.LoadScene("Field_01");
+            yield return WaitForScene("Field_01");
+
+            float elapsed = 0f;
+            while ((FieldManager.Current == null || !FieldManager.Current.IsFinished) && elapsed < 90f)
+            {
+                elapsed += Time.unscaledDeltaTime;
+                yield return null;
+            }
+            Assert.IsNotNull(FieldManager.Current);
+            Debug.Log("[Test] 자동 전투 1스테이지 " + elapsed.ToString("0.0") + "초 · 웨이브 " + FieldManager.Current.CurrentWave);
+            Assert.IsTrue(FieldManager.Current.IsFinished, "자동 전투로 스테이지가 끝나지 않았습니다 · 웨이브 " + FieldManager.Current.CurrentWave);
+            Assert.IsTrue(FieldManager.Current.IsCleared);
+        }
+
+        [UnityTest]
         public IEnumerator SameSeedGivesSameDrops()
         {
             List<string> first = new List<string>();

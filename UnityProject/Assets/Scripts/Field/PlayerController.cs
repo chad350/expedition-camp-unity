@@ -25,6 +25,7 @@ namespace ExpeditionCamp
         private CharacterController _controller;
         private FieldManager _field;
         private float _attackTimer;
+        private readonly Steering _steering = new Steering();
 
         private void Awake()
         {
@@ -63,16 +64,19 @@ namespace ExpeditionCamp
             Vector3 input = ReadMoveInput();
             if (input.sqrMagnitude > 0.01f)
             {
+                _steering.Stop();
                 _controller.SimpleMove(input.normalized * moveSpeed);
             }
             else if (AutoBattle && target != null && targetDistance > attackRange * 0.9f)
             {
                 Vector3 direction = target.transform.position - transform.position;
                 direction.y = 0f;
-                _controller.SimpleMove(direction.normalized * moveSpeed);
+                direction = _steering.Adjust(direction.normalized, transform.position, moveSpeed);
+                _controller.SimpleMove(direction * moveSpeed);
             }
             else
             {
+                _steering.Stop();
                 _controller.SimpleMove(Vector3.zero);
             }
 

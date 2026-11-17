@@ -34,6 +34,7 @@ namespace ExpeditionCamp
         private CharacterController _controller;
         private FieldManager _field;
         private float _attackTimer;
+        private readonly Steering _steering = new Steering();
 
         private void Awake()
         {
@@ -77,10 +78,12 @@ namespace ExpeditionCamp
             float distance = toPlayer.magnitude;
             if (distance > attackRange)
             {
-                _controller.SimpleMove(toPlayer / distance * moveSpeed);
+                Vector3 direction = _steering.Adjust(toPlayer / distance, transform.position, moveSpeed);
+                _controller.SimpleMove(direction * moveSpeed);
                 return;
             }
 
+            _steering.Stop();
             _controller.SimpleMove(Vector3.zero);
             _attackTimer -= Time.deltaTime;
             if (_attackTimer <= 0f)
