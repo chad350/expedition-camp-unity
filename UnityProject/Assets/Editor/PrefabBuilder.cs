@@ -16,6 +16,7 @@ namespace ExpeditionCamp.EditorTools
         public const string PlayerSprite = "Assets/Resources/Icons/Monster/mon_100001.png";
         public const string ShadowSprite = "Assets/Art/shadow.png";
         public const string CircleSprite = "Assets/Art/circle.png";
+        public const float GolemHpBarHeight = 2.8f;
         public const string SolidBarSprite = "Assets/Art/solid_bar.png";
 
         public struct VariantSpec
@@ -91,9 +92,19 @@ namespace ExpeditionCamp.EditorTools
             return root;
         }
 
-        private static HitFeedback AddVisual(GameObject root, string spritePath, float scale)
+        private static HitFeedback AddVisual(GameObject root, CharacterShape shape)
         {
-            return CombatArt.Build(root, spritePath);
+            return CombatArt.Build(root, shape);
+        }
+
+        private static CharacterShape ShapeOf(string variantName)
+        {
+            if (variantName.Contains("Rabbit")) return CharacterShape.Rabbit;
+            if (variantName.Contains("Bat")) return CharacterShape.Bat;
+            if (variantName.Contains("Golem")) return CharacterShape.Golem;
+            if (variantName.Contains("Wolf")) return CharacterShape.Wolf;
+            if (variantName.Contains("Crab")) return CharacterShape.Crab;
+            return CharacterShape.Fox;
         }
 
         private static void AddShadow(GameObject root, float scale)
@@ -112,7 +123,7 @@ namespace ExpeditionCamp.EditorTools
             player.attackInterval = 0.6f;
             player.attackRange = 2.2f;
 
-            HitFeedback feedback = AddVisual(root, PlayerSprite, 0.75f);
+            HitFeedback feedback = AddVisual(root, CharacterShape.Fox);
             AddShadow(root, 1.6f);
             SpriteRenderer range = EditorUtil.SpriteObject("AttackRange", root.transform, EditorUtil.LoadSprite(CircleSprite),
                 new Vector3(0f, 0.03f, 0f), 1f, -2, 0);
@@ -136,7 +147,7 @@ namespace ExpeditionCamp.EditorTools
             monster.attackInterval = 1.5f;
             monster.hpBarHeight = 2.4f;
 
-            HitFeedback feedback = AddVisual(root, "Assets/Resources/Icons/Monster/mon_100002.png", 0.75f);
+            HitFeedback feedback = AddVisual(root, CharacterShape.Crab);
             AddShadow(root, 1.5f);
 
             GameObject barObject = new GameObject("HPBar", typeof(RectTransform));
@@ -177,11 +188,23 @@ namespace ExpeditionCamp.EditorTools
                 monster.moveSpeed = spec.MoveSpeed;
                 EditorUtil.SetString(monster, "prefabKey", spec.Name);
 
-                PrefabUtility.UnpackPrefabInstance(instance, PrefabUnpackMode.Completely, InteractionMode.AutomatedAction);
-                Object.DestroyImmediate(instance.transform.Find("Visual").gameObject);
-                var feedback = AddVisual(instance, "mon_" + spec.MonsterId, 1f);
-                EditorUtil.SetField(monster, "visual", feedback);
-                monster.hpBarHeight = spec.Name.Contains("Golem") ? 2.65f : 2.15f;
+                CharacterModel model = instance.transform.Find("Visual").GetComponent<CharacterModel>();
+                CharacterShape shape = ShapeOf(spec.Name);
+                if (model.shape != shape)
+                {
+                    model.shape = shape;
+                }
+                Material body = CombatArt.BodyMaterial(shape);
+                if (model.bodyMaterial != body)
+                {
+                    model.bodyMaterial = body;
+                }
+                model.ClearParts();
+                PrefabUtility.RecordPrefabInstancePropertyModifications(model);
+                if (shape == CharacterShape.Golem)
+                {
+                    monster.hpBarHeight = GolemHpBarHeight;
+                }
 
                 EditorUtil.SavePrefab(instance, MonsterFolder + "/" + spec.Name + ".prefab");
             }

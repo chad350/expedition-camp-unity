@@ -21,41 +21,8 @@ namespace ExpeditionCamp.EditorTools
         {
             ProjectSetup.Run();
             PrefabBuilder.BuildAll();
-            StylePrefabs();
             GameSceneBuilder.BuildAll();
             ApplyScenes();
-        }
-
-        public static void StylePrefabs()
-        {
-            foreach (string guid in AssetDatabase.FindAssets("t:Prefab", new[]{PrefabBuilder.PrefabFolder,PrefabBuilder.MonsterFolder}))
-            {
-                string path = AssetDatabase.GUIDToAssetPath(guid);
-                GameObject root = PrefabUtility.LoadPrefabContents(path);
-                Style(root);
-                PrefabUtility.SaveAsPrefabAsset(root,path);
-                PrefabUtility.UnloadPrefabContents(root);
-            }
-        }
-
-        static void Style(GameObject root)
-        {
-            foreach (TMP_Text text in root.GetComponentsInChildren<TMP_Text>(true)) text.color = Cream;
-            foreach (Image img in root.GetComponentsInChildren<Image>(true))
-            {
-                string n = img.name;
-                if(img.type == Image.Type.Filled)
-                    img.sprite = SolidBar();
-                if (n.StartsWith("Panel_") || n.EndsWith("Frame") || n == "UI_ItemSlot")
-                { img.sprite = null; img.color = Panel; }
-                if (n.StartsWith("Popup_")) img.color = new Color(.015f,.035f,.035f,.88f);
-            }
-            foreach (Button button in root.GetComponentsInChildren<Button>(true)) SkinButton(button);
-        }
-
-        static Sprite SolidBar()
-        {
-            return EditorUtil.LoadSprite(PrefabBuilder.SolidBarSprite);
         }
 
         static void SkinButton(Button button)
@@ -100,7 +67,6 @@ namespace ExpeditionCamp.EditorTools
             {
                 var scene=EditorSceneManager.OpenScene(GameSceneBuilder.ScenePath(sceneName));
                 Canvas canvas=GameObject.Find("Canvas").GetComponent<Canvas>();
-                Style(canvas.gameObject);
                 canvas.GetComponent<CanvasScaler>().matchWidthOrHeight=.5f;
                 if(sceneName=="Lobby") Lobby(canvas.transform);
                 if(sceneName.StartsWith("Field")) Field(canvas.transform,sceneName=="Field_02");
@@ -116,14 +82,18 @@ namespace ExpeditionCamp.EditorTools
 
         static void Lobby(Transform canvas)
         {
-            Object.DestroyImmediate(GameObject.Find("Background"));
-            GameObject npcs=GameObject.Find("NPCs");
-            if(npcs!=null)npcs.SetActive(false);
-            Image bg=Box("CampBackdrop",canvas,Vector2.zero,new Vector2(1920,1080),new Color(.46f,.53f,.47f));
-            bg.sprite=EditorUtil.LoadSprite("Assets/Resources/UI/ui_bg_dex.png");
-            EditorUtil.Stretch(bg.rectTransform,Vector2.zero,Vector2.zero); bg.transform.SetAsFirstSibling();
+            GameObject.Find("Background").GetComponent<SpriteRenderer>().color=new Color(.66f,.72f,.66f);
+            Transform npcs=GameObject.Find("NPCs").transform;
+            string[] npcNames={"NPC_Shop","NPC_Dex","NPC_Board"};
+            float[] npcX={-2.3f,0.7f,3.4f};
+            for(int i=0;i<npcNames.Length;i++)
+            {
+                Transform npc=npcs.Find(npcNames[i]);
+                npc.position=new Vector3(npcX[i],i==1?-1.8f:-1.5f,0f);
+                npc.localScale=Vector3.one;
+            }
             Image left=Box("JournalSidebar",canvas,Vector2.zero,new Vector2(620,1080),Ink);
-            left.transform.SetSiblingIndex(1);
+            left.transform.SetAsFirstSibling();
             Box("GoldRule",left.transform,new Vector2(48,-62),new Vector2(52,4),Gold);
             Label("Edition",left.transform,"E X P E D I T I O N   /   0 1",20,new Vector2(48,-87),new Vector2(520,35),Gold);
             Label("CampTitle",left.transform,"원정대\n캠프",82,new Vector2(44,-150),new Vector2(540,220),Cream).fontStyle=FontStyles.Bold;
@@ -140,10 +110,6 @@ namespace ExpeditionCamp.EditorTools
             Place(top,"Txt_Level",new Vector2(24,-16),new Vector2(150,48));
             Place(top,"Txt_Gold",new Vector2(196,-16),new Vector2(290,48));
             foreach(TMP_Text t in top.GetComponentsInChildren<TMP_Text>())t.fontSize=28;
-            Image hero=Box("CompanionPortrait",canvas,new Vector2(640,-218),new Vector2(680,660),Color.white);
-            hero.sprite=EditorUtil.LoadSprite(PrefabBuilder.PlayerSprite); hero.preserveAspect=true;
-            Image plaque=Box("CompanionPlaque",canvas,new Vector2(757,-855),new Vector2(420,65),Ink);
-            Label("CompanionTag",plaque.transform,"01  /  불꽃여우 · 원정대원",23,new Vector2(25,-16),new Vector2(380,45),Cream);
 
             Button departure=EditorUtil.Button("Btn_Departure","Txt_Departure",canvas,"",new Vector2(510,270));
             EditorUtil.Place((RectTransform)departure.transform,new Vector2(1,.5f),new Vector2(1,.5f),new Vector2(-48,70),new Vector2(510,270));
@@ -222,7 +188,8 @@ namespace ExpeditionCamp.EditorTools
             Material leaf=Material("TreeLeaves",new Color(.16f,.34f,.26f));
             Material leafLight=Material("CanopyLight",new Color(.30f,.47f,.29f));
             Material stone=Material("Rock",new Color(.51f,.55f,.46f));
-            Material path=Material("Trail",cave?new Color(.44f,.43f,.36f):new Color(.58f,.55f,.37f));
+            Material path=cave?Material("Trail_Cave",new Color(.44f,.43f,.36f)):Material("Trail_Forest",new Color(.58f,.55f,.37f));
+            Material pebble=Material("Pebble",new Color(.51f,.55f,.46f));
             Material wood=Material("Bridge",new Color(.42f,.29f,.17f));
             Material water=Material("River",new Color(.20f,.47f,.49f));
             Transform env=GameObject.Find("Environment").transform;
@@ -240,7 +207,7 @@ namespace ExpeditionCamp.EditorTools
                     t.GetComponent<MeshFilter>().sharedMesh=CrownMesh();
                     t.localScale=new Vector3(1.8f,1.5f,1.8f);
                     t.localPosition-=Vector3.up*1.6f;
-                    var tier=new GameObject("Canopy_Upper");tier.transform.SetParent(t.parent,false);
+                    var tier=new GameObject(t.parent.name+"_CanopyUpper");tier.transform.SetParent(t.parent,false);
                     tier.transform.localPosition=t.localPosition+Vector3.up*1.4f;
                     tier.transform.localScale=new Vector3(1.25f,1.3f,1.25f);
                     tier.AddComponent<MeshFilter>().sharedMesh=CrownMesh();tier.AddComponent<MeshRenderer>().sharedMaterial=leafLight;
@@ -249,8 +216,10 @@ namespace ExpeditionCamp.EditorTools
                     Decor("Bridge_Plank_"+i,detail,PrimitiveType.Cube,new Vector3(0,.26f,3+i*.33f),new Vector3(3.55f,.12f,.28f),wood);
                 foreach(float x in new[]{-1.65f,1.65f})
                 {
-                    foreach(float z in new[]{3f,5f,7f})Decor("Bridge_Post",detail,PrimitiveType.Cube,new Vector3(x,.7f,z),new Vector3(.15f,1.3f,.15f),wood);
-                    Decor("Bridge_Rail",detail,PrimitiveType.Cube,new Vector3(x,1.15f,5f),new Vector3(.12f,.14f,4.2f),wood);
+                    string side=x<0?"L":"R";
+                    int post=1;
+                    foreach(float z in new[]{3f,5f,7f})Decor("Bridge_Post_"+side+(post++),detail,PrimitiveType.Cube,new Vector3(x,.7f,z),new Vector3(.15f,1.3f,.15f),wood);
+                    Decor("Bridge_Rail_"+side,detail,PrimitiveType.Cube,new Vector3(x,1.15f,5f),new Vector3(.12f,.14f,4.2f),wood);
                 }
             }
             var rng=new System.Random(cave?92:42);
@@ -260,7 +229,7 @@ namespace ExpeditionCamp.EditorTools
                 if(!cave && Mathf.Abs(z-5)<2)continue;
                 if(Mathf.Abs(x)<2.5f)continue;
                 float s=.12f+(float)rng.NextDouble()*.23f;
-                Decor("Ground_Pebble_"+i,detail,PrimitiveType.Sphere,new Vector3(x,.04f,z),new Vector3(s*2,.10f,s),stone);
+                Decor("Ground_Pebble_"+i,detail,PrimitiveType.Sphere,new Vector3(x,.04f,z),new Vector3(s*2,.10f,s),pebble);
                 if(!cave && i%3==0)
                     Decor("Fern_"+i,detail,PrimitiveType.Capsule,new Vector3(x+.3f,.16f,z),new Vector3(.10f,.22f,.12f),leafLight);
             }

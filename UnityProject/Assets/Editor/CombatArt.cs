@@ -35,47 +35,37 @@ namespace ExpeditionCamp.EditorTools
             var t=new GameObject(name).transform;t.SetParent(root,false);t.localPosition=pos;t.localScale=scale;t.localEulerAngles=rot;
             t.gameObject.AddComponent<MeshFilter>().sharedMesh=Gem();t.gameObject.AddComponent<MeshRenderer>().sharedMaterial=mat;return t;
         }
-        public static HitFeedback Build(GameObject root,string key)
+        public static Material BodyMaterial(CharacterShape shape)
+        {
+            switch(shape)
+            {
+                case CharacterShape.Crab: return Mat("Coral",new Color(.69f,.22f,.14f));
+                case CharacterShape.Rabbit: return Mat("Ivory",new Color(.94f,.85f,.65f));
+                case CharacterShape.Bat: return Mat("Bat",new Color(.30f,.22f,.42f));
+                case CharacterShape.Golem: return Mat("Stone",new Color(.39f,.47f,.43f));
+                case CharacterShape.Wolf: return Mat("Wolf",new Color(.32f,.43f,.49f));
+                default: return Mat("Fox",new Color(.86f,.38f,.12f));
+            }
+        }
+        public static Material MouseMaterial()
+        {
+            return Mat("Mouse",new Color(.45f,.42f,.50f));
+        }
+        public static HitFeedback Build(GameObject root, CharacterShape shape)
         {
             var v=new GameObject("Visual").transform;v.SetParent(root.transform,false);
-            var motion=v.gameObject.AddComponent<ModelMotion>();
-            var cream=Mat("Ivory",new Color(.94f,.85f,.65f));var dark=Mat("Ink",new Color(.055f,.095f,.10f));
-            var orange=Mat("Fox",new Color(.86f,.38f,.12f));var teal=Mat("Cloth",new Color(.08f,.37f,.34f));
-            bool crab=key.Contains("100002"),rabbit=key.Contains("100003"),bat=key.Contains("100010"),golem=key.Contains("100014"),wolf=key.Contains("100016");
-            Material body=crab?Mat("Coral",new Color(.69f,.22f,.14f)):rabbit?cream:bat?Mat("Bat",new Color(.30f,.22f,.42f)):golem?Mat("Stone",new Color(.39f,.47f,.43f)):wolf?Mat("Wolf",new Color(.32f,.43f,.49f)):orange;
-            if(crab)
-            {
-                Part(v,"Shell",new Vector3(0,.65f,0),new Vector3(1.5f,.7f,1.15f),body);
-                for(int side=-1;side<=1;side+=2){for(int i=0;i<3;i++)Part(v,"Leg",new Vector3(side*.72f,.27f,-.4f+i*.38f),new Vector3(.85f,.17f,.18f),body,new Vector3(0,side*(i-1)*22,side*23));Part(v,"Claw",new Vector3(side*.85f,.8f,.65f),new Vector3(.6f,.5f,.65f),body);Part(v,"Eye",new Vector3(side*.32f,1.08f,.4f),new Vector3(.16f,.25f,.16f),dark);}
-            }
-            else if(golem)
-            {
-                Part(v,"Torso",new Vector3(0,1.1f,0),new Vector3(1.4f,1.4f,.9f),body);Part(v,"Head",new Vector3(0,2,0),new Vector3(.85f,.75f,.75f),body);
-                for(int side=-1;side<=1;side+=2){Part(v,"Arm",new Vector3(side*.9f,1.05f,.1f),new Vector3(.65f,1.25f,.7f),body);Part(v,"Foot",new Vector3(side*.4f,.28f,.1f),new Vector3(.65f,.55f,.8f),body);Part(v,"Eye",new Vector3(side*.19f,2.07f,.34f),new Vector3(.15f,.12f,.12f),teal);}Part(v,"Heart",new Vector3(0,1.25f,.47f),new Vector3(.35f,.5f,.15f),teal);
-            }
-            else if(bat)
-            {
-                motion.flying=true;Part(v,"Body",new Vector3(0,1.2f,0),new Vector3(.6f,.8f,.55f),body);
-                for(int side=-1;side<=1;side+=2){Part(v,"Wing",new Vector3(side*.72f,1.25f,0),new Vector3(1.25f,.12f,.8f),body,new Vector3(0,0,side*18));Part(v,"Ear",new Vector3(side*.2f,1.72f,0),new Vector3(.22f,.5f,.2f),body);Part(v,"Eye",new Vector3(side*.15f,1.4f,.26f),new Vector3(.12f,.13f,.10f),cream);}
-            }
-            else
-            {
-                Part(v,"Body",new Vector3(0,.72f,0),new Vector3(.82f,.95f,1.05f),body);
-                Part(v,"Head",new Vector3(0,1.35f,.35f),new Vector3(.95f,.85f,.85f),body);
-                Part(v,"Muzzle",new Vector3(0,1.15f,.74f),new Vector3(.62f,.42f,.45f),cream);
-                Part(v,"Nose",new Vector3(0,1.27f,.94f),new Vector3(.19f,.14f,.14f),dark);
-                for(int side=-1;side<=1;side+=2)
-                {
-                    Part(v,"Ear",new Vector3(side*.3f,rabbit?2.0f:1.83f,.25f),new Vector3(.32f,rabbit?1.05f:.62f,.28f),body,new Vector3(0,0,side* -14));
-                    Part(v,"InnerEar",new Vector3(side*.3f,rabbit?2.0f:1.83f,.38f),new Vector3(.15f,rabbit?.72f:.34f,.06f),crab?body:cream,new Vector3(0,0,side* -14));
-                    Part(v,"Eye",new Vector3(side*.28f,1.44f,.69f),new Vector3(.14f,.17f,.11f),dark);
-                    foreach(float z in new[]{-.33f,.35f})Part(v,"Paw",new Vector3(side*.29f,.22f,z),new Vector3(.32f,.4f,.48f),wolf?dark:cream);
-                }
-                Part(v,"Tail",new Vector3(0,.85f,-.78f),new Vector3(.55f,.55f,rabbit?.45f:1.15f),body,new Vector3(-32,0,0));
-                if(!rabbit&&!wolf){Part(v,"Scarf",new Vector3(0,1.01f,.18f),new Vector3(.94f,.24f,.8f),teal);Part(v,"Backpack",new Vector3(0,1.04f,-.42f),new Vector3(.65f,.65f,.4f),teal);}
-            }
-            foreach(var t in v.GetComponentsInChildren<Transform>())t.gameObject.layer=root.layer;
+            v.gameObject.layer=root.layer;
+            v.gameObject.AddComponent<ModelMotion>();
+            var model=v.gameObject.AddComponent<CharacterModel>();
+            model.shape=shape;
+            model.bodyMaterial=BodyMaterial(shape);
+            EditorUtil.SetField(model,"partMesh",Gem());
+            EditorUtil.SetField(model,"darkMaterial",Mat("Ink",new Color(.055f,.095f,.10f)));
+            EditorUtil.SetField(model,"lightMaterial",Mat("Ivory",new Color(.94f,.85f,.65f)));
+            EditorUtil.SetField(model,"clothMaterial",Mat("Cloth",new Color(.08f,.37f,.34f)));
+            MouseMaterial();
             Effects(v);
+            model.ClearParts();
             return v.gameObject.AddComponent<HitFeedback>();
         }
         static void Effects(Transform parent)

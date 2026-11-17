@@ -17,7 +17,6 @@ namespace ExpeditionCamp
         private void Awake()
         {
             _baseScale = transform.localScale;
-            _meshes = GetComponentsInChildren<MeshRenderer>();
             _block = new MaterialPropertyBlock();
         }
 
@@ -50,6 +49,10 @@ namespace ExpeditionCamp
         private void Tint(bool flash)
         {
             if(target != null) target.color = flash ? flashColor : Color.white;
+            if (_meshes == null || _meshes.Length == 0)
+            {
+                _meshes = GetComponentsInChildren<MeshRenderer>();
+            }
             foreach(var r in _meshes)
             {
                 _block.Clear();
