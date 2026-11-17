@@ -1,0 +1,29 @@
+# 씬 규칙입니다.
+
+event_system_scenes: [Lobby, Field_01, Field_02]
+
+sorting:
+  scene: Lobby
+  background: Background
+  max_background_order: 0
+
+anchors:
+  scene: Lobby
+  buttons:
+    Btn_Bag: [0, 0]
+    Btn_Dex: [0, 0]
+    Btn_Shop: [0, 0]
+    Btn_Settings: [1, 0]
+
+# 몬스터 프리팹을 씬에 배치한 인스턴스가 바꿀 수 있는 값입니다. 능력치 오버라이드는 허용하지 않습니다.
+monster_instances:
+  scenes: [Field_01, Field_02]
+  prefab_folder: Assets/Resources/Monsters
+  allowed_overrides: [m_Name, m_IsActive, m_LocalPosition, m_LocalRotation, m_LocalEulerAnglesHint, m_LocalScale]
+
+# 인스펙터에서 비어 있으면(None) 안 되는 참조 칸입니다.
+required_references:
+  - {scene: Field_01, object: FieldManager, component: FieldManager, fields: [config, player, playerStart, cameraFollow, hud, resultPopup, dropItemPrefab]}
+  - {scene: Field_02, object: FieldManager, component: FieldManager, fields: [config, player, playerStart, cameraFollow, hud, resultPopup, dropItemPrefab]}
+  - {scene: Lobby, object: Systems, component: LobbyController, fields: [goldText, levelText, bagButton, dexButton, shopButton, settingsButton, bagPopup, dexPopup, shopPopup, settingsPopup, loadingPopup, loadingText]}
+  - {scene: Boot, object: Systems, component: BootLoader, fields: [loadingText, dataErrorPopup, dataErrorDetail]}

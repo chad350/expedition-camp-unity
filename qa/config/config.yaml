@@ -1,0 +1,30 @@
+# qa 폴더 기준 상대 경로입니다.
+project_root: ..
+
+unity:
+  windows: C:\Program Files\Unity\Hub\Editor\6000.3.20f1\Editor\Unity.exe
+  mac: /Applications/Unity/Hub/Editor/6000.3.20f1/Unity.app/Contents/MacOS/Unity
+
+paths:
+  unity_project: UnityProject
+  assets: UnityProject/Assets
+  data: UnityProject/Assets/StreamingAssets/data
+  build_settings: UnityProject/ProjectSettings/EditorBuildSettings.asset
+  tag_manager: UnityProject/ProjectSettings/TagManager.asset
+  builds_test: Builds/Test
+  builds_release: Builds/Release
+  reports: reports
+
+game:
+  product_name: ExpeditionCamp
+  port: 7700
+  seed: 1234
+  startup_timeout: 60
+
+player_log:
+  windows: ~\AppData\LocalLow\302lab\ExpeditionCamp\Player.log
+  mac: ~/Library/Logs/302lab/ExpeditionCamp/Player.log
+
+save_file:
+  windows: ~\AppData\LocalLow\302lab\ExpeditionCamp\save.json
+  mac: ~/Library/Application Support/302lab/ExpeditionCamp/save.json

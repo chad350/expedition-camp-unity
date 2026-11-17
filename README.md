@@ -141,3 +141,16 @@ macOS
 | Noto Sans KR | `Assets/Fonts/` | Google Fonts · SIL Open Font License 1.1 · `Assets/ThirdParty/NotoSansKR/OFL.txt` 포함 |
 | TextMesh Pro 기본 리소스 | `Assets/TextMesh Pro/` | Unity uGUI 패키지 |
 | 바닥 · 바위 · 나무 · 다리 | 씬 안 | Unity 기본 도형 + URP Lit 재질 |
+
+## 10. QA 자동화
+
+| 경로 | 내용 |
+|---|---|
+| `qa/tests/test_tables.py` | 데이터 검사 (CSV 읽기 · 타입 · 중복 · 범위 · 참조 · 원본 엑셀 비교) |
+| `qa/tests/test_project_files.py` | 프로젝트 파일 검사 (meta 짝 · GUID 참조 · 빌드 씬 목록 · SpawnPoint 이름 · 프리팹 · 씬 · 설정 · 재질 규칙) |
+| `qa/tests/test_artifact.py` · `qa/tests/test_smoke.py` | 빌드 산출물 검사 · 스모크 테스트 |
+| `qa/rules/*.yaml` | 검사 기준 값 |
+| `Jenkinsfile` | 0 준비 · 1 데이터 검사 · 2 프로젝트 파일 검사 |
+
+실행 방법은 `docs/검증기록_3단계자동화.md` 6절에 있습니다.
+

@@ -1,0 +1,15 @@
+# 스모크 테스트 기준입니다.
+
+first_stage: 401001
+first_scene: Field_01
+
+# 필드 진입 후 이 시간 동안 몬스터마다 이 거리 이상 움직여야 합니다.
+approach_seconds: 2
+min_move: 0.5
+
+# -qaSeed 1234 로 1스테이지를 치트로 끝냈을 때의 결과입니다. 테이블을 바꾸면 다시 측정합니다.
+expected_gold: 517
+expected_items:
+  201010: 4
+  201002: 2
+  201003: 3
