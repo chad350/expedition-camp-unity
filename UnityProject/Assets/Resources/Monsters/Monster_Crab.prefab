@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2231658103234271995, guid: 74cfa413ab5ba486a8e6202e18b285d0, type: 3}
       propertyPath: m_Name
-      value: Monster_Slime
+      value: Monster_Crab
       objectReference: {fileID: 0}
     - target: {fileID: 3049570510790521626, guid: 74cfa413ab5ba486a8e6202e18b285d0, type: 3}
       propertyPath: moveSpeed
@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3049570510790521626, guid: 74cfa413ab5ba486a8e6202e18b285d0, type: 3}
       propertyPath: prefabKey
-      value: Monster_Slime
+      value: Monster_Crab
       objectReference: {fileID: 0}
     - target: {fileID: 4684075568814784367, guid: 74cfa413ab5ba486a8e6202e18b285d0, type: 3}
       propertyPath: m_LocalPosition.x

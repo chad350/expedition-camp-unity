@@ -138,6 +138,6 @@ macOS
 | 플레이어 이미지 | `Assets/Resources/Icons/Monster/mon_100001.png` | 몬스터 일러스트 100001 (불꽃여우) |
 | 그림자 · 원 · 연습 소품 이미지 | `Assets/Art/` · `Assets/Sprites/Props/` | 자체 제작 (파이썬으로 생성) |
 | Kenney UI Pack 2.0 | `Assets/ThirdParty/Kenney/` | Kenney (www.kenney.nl) · CC0 · `License.txt` 포함 |
-| Noto Sans KR | `Assets/Fonts/` | Google Fonts · SIL Open Font License 1.1 |
+| Noto Sans KR | `Assets/Fonts/` | Google Fonts · SIL Open Font License 1.1 · `Assets/ThirdParty/NotoSansKR/OFL.txt` 포함 |
 | TextMesh Pro 기본 리소스 | `Assets/TextMesh Pro/` | Unity uGUI 패키지 |
 | 바닥 · 바위 · 나무 · 다리 | 씬 안 | Unity 기본 도형 + URP Lit 재질 |

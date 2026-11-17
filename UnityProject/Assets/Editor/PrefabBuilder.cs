@@ -35,8 +35,8 @@ namespace ExpeditionCamp.EditorTools
 
         public static readonly VariantSpec[] Variants =
         {
-            new VariantSpec("Monster_Slime", 100002, 1.8f, 0.75f),
-            new VariantSpec("Monster_Mushroom", 100003, 1.5f, 0.75f),
+            new VariantSpec("Monster_Crab", 100002, 1.8f, 0.75f),
+            new VariantSpec("Monster_Rabbit", 100003, 1.5f, 0.75f),
             new VariantSpec("Monster_Bat", 100010, 3.2f, 0.75f),
             new VariantSpec("Monster_Golem", 100014, 1.2f, 1.05f),
             new VariantSpec("Monster_Wolf", 100016, 3.0f, 0.8f),

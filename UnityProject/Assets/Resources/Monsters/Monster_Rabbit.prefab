@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 832292c2b65a1420b8d5d65ff2372c6c, type: 3}
     - target: {fileID: 2231658103234271995, guid: 74cfa413ab5ba486a8e6202e18b285d0, type: 3}
       propertyPath: m_Name
-      value: Monster_Mushroom
+      value: Monster_Rabbit
       objectReference: {fileID: 0}
     - target: {fileID: 3049570510790521626, guid: 74cfa413ab5ba486a8e6202e18b285d0, type: 3}
       propertyPath: moveSpeed
@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3049570510790521626, guid: 74cfa413ab5ba486a8e6202e18b285d0, type: 3}
       propertyPath: prefabKey
-      value: Monster_Mushroom
+      value: Monster_Rabbit
       objectReference: {fileID: 0}
     - target: {fileID: 4684075568814784367, guid: 74cfa413ab5ba486a8e6202e18b285d0, type: 3}
       propertyPath: m_LocalPosition.x

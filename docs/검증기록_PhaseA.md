@@ -53,7 +53,16 @@
 | 로비 NPC 가 배경과 구분되지 않음 | 키아트에 몬스터가 많이 그려져 있습니다. | 배경 Sprite Renderer 색을 어둡게(0.36) 하고 NPC 크기를 1.3배로 키웠습니다. |
 | P6 NullReference 버튼에서 다른 에러 이름이 나옴 | 인스펙터 칸 None 은 에디터에서 UnassignedReferenceException 으로 표시됩니다. | 이름으로 찾은 결과가 없는 경우로 바꿔서 NullReferenceException 이 나오게 했습니다. |
 
-## 4. 이 맥에서 확인하지 못한 항목
+## 4. Phase A 보고 뒤 반영한 결정 (2026-11-17)
+
+| 결정 | 반영 내용 | 다시 확인한 결과 |
+|---|---|---|
+| 몬스터 프리팹 이름을 일러스트에 맞춤 | Monster_Slime 을 Monster_Crab 으로, Monster_Mushroom 을 Monster_Rabbit 으로 바꿨습니다.<br>git mv 로 옮겨서 프리팹 GUID 는 그대로입니다.<br>Field_01 배치 몬스터 이름은 Monster_Crab_Bridge 입니다.<br>monster 시트 `prefab_key` 도 같은 이름으로 바꿨습니다. | EditMode 38건 · PlayMode 4건 · 스모크 7단계 · 빌드 확인 3가지가 모두 통과했습니다.<br>Seed 1234 드롭 결과는 바뀌지 않았습니다. |
+| 추가 데이터 행 유지 | const 3행 · 해독제 1행 · 문자열 2행을 그대로 둡니다. | |
+| 가방 버튼 앵커 왼쪽 아래 유지 | Phase B 의 break/10 은 왼쪽 아래에서 가운데로 바꾸는 실수로 만듭니다. | |
+| Noto Sans KR 라이선스 | Google Fonts 배포 파일의 `OFL.txt` 를 `Assets/ThirdParty/NotoSansKR/` 에 넣었습니다.<br>폰트 파일은 기존 OTF 를 그대로 사용합니다. | 압축 파일의 Regular TTF 와 저장소 OTF 의 글꼴 이름이 모두 Noto Sans KR · Regular 입니다. |
+
+## 5. 이 맥에서 확인하지 못한 항목
 
 | 항목 | 이유 | 확인 방법 |
 |---|---|---|

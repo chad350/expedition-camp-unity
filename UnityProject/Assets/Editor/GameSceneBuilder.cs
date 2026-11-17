@@ -440,9 +440,9 @@ namespace ExpeditionCamp.EditorTools
             Spawn("Spawn_03", parts.SpawnRoot, new Vector3(8.5f, 0f, 2.5f), 1.5f);
             Spawn("Spawn_04", parts.SpawnRoot, new Vector3(-3f, 0f, 13f), 1.8f);
 
-            GameObject slimePrefab = AssetDatabase.LoadAssetAtPath<GameObject>(PrefabBuilder.MonsterFolder + "/Monster_Slime.prefab");
+            GameObject crabPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(PrefabBuilder.MonsterFolder + "/Monster_Crab.prefab");
             Transform spawn02 = parts.SpawnRoot.Find("Spawn_02");
-            GameObject placed = EditorUtil.Instance(slimePrefab, "Monster_Slime_Bridge", spawn02);
+            GameObject placed = EditorUtil.Instance(crabPrefab, "Monster_Crab_Bridge", spawn02);
             placed.transform.localPosition = Vector3.zero;
             placed.SetActive(false);
 
