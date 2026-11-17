@@ -2,12 +2,14 @@
 
 사용 방법
     python3 tools/export_tables.py
+    python3 tools/export_tables.py --out-dir 다른폴더   (게임 폴더 대신 다른 폴더에 내보내기)
 
 내보내기 대상이 C 또는 CS인 열만 CSV에 들어갑니다.
 첫 칸이 # 으로 시작하는 행은 내보내지 않습니다.
 2행의 타입과 맞지 않는 값이 있으면 위치를 출력하고 종료 코드 1로 중단합니다.
 """
 
+import argparse
 import csv
 import os
 import re
@@ -143,9 +145,15 @@ def export_sheet(file_name, worksheet, out_dir):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--out-dir", default="")
+    options = parser.parse_args()
+
     root = project_root()
     design_dir = os.path.join(root, "design_data")
     out_dir = os.path.join(root, "UnityProject", "Assets", "StreamingAssets", "data")
+    if options.out_dir != "":
+        out_dir = os.path.abspath(options.out_dir)
     os.makedirs(out_dir, exist_ok=True)
 
     all_errors = []
