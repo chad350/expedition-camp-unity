@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,6 +15,9 @@ namespace ExpeditionCamp
         [SerializeField] private Transform listRoot;
         [SerializeField] private ItemSlotView slotPrefab;
         [SerializeField] private Button confirmButton;
+        [SerializeField] private TMP_Text confirmText;
+        [SerializeField] private RectTransform panel;
+        [SerializeField] private float revealSecond = 0.22f;
 
         private Action _onConfirm;
 
@@ -29,6 +33,15 @@ namespace ExpeditionCamp
             transform.SetAsLastSibling();
 
             titleText.text = cleared ? "스테이지 클리어" : "스테이지 실패";
+            titleText.color = cleared ? new Color(0.96f, 0.92f, 0.80f, 1f) : new Color(0.88f, 0.55f, 0.40f, 1f);
+            if (confirmText != null)
+            {
+                confirmText.text = cleared ? "보상 받고 캠프로" : "캠프로 돌아가기";
+            }
+            if (panel != null)
+            {
+                StartCoroutine(Reveal());
+            }
             for (int index = listRoot.childCount - 1; index >= 0; index--)
             {
                 Destroy(listRoot.GetChild(index).gameObject);
@@ -52,6 +65,20 @@ namespace ExpeditionCamp
             }
             emptyText.text = "획득한 아이템이 없습니다";
             emptyText.gameObject.SetActive(loot.ItemOrder.Count == 0);
+        }
+
+        private IEnumerator Reveal()
+        {
+            float elapsed = 0f;
+            while (elapsed < revealSecond)
+            {
+                elapsed += Time.unscaledDeltaTime;
+                float progress = Mathf.Clamp01(elapsed / revealSecond);
+                float eased = 1f - Mathf.Pow(1f - progress, 3f);
+                panel.localScale = Vector3.one * Mathf.Lerp(0.94f, 1f, eased);
+                yield return null;
+            }
+            panel.localScale = Vector3.one;
         }
 
         private void OnConfirm()
