@@ -148,5 +148,32 @@ namespace ExpeditionCamp.QA
         public int exp;
         public InventoryItem[] items;
     }
+    [Serializable]
+    public class FieldMonster
+    {
+        public string name;
+        public string tag;
+        public float x;
+        public float z;
+        public float move_speed;
+        public float attack_range;
+        public int hp;
+    }
+
+    [Serializable]
+    public class FieldResponse
+    {
+        public string scene;
+        public int stage_id;
+        public int wave;
+        public int total_waves;
+        public bool finished;
+        public bool cleared;
+        public int player_hp;
+        public int player_max_hp;
+        public float player_x;
+        public float player_z;
+        public FieldMonster[] monsters;
+    }
 }
 #endif

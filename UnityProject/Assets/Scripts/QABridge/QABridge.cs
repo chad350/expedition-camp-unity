@@ -277,6 +277,10 @@ namespace ExpeditionCamp.QA
             {
                 return HandleLastDrop(request);
             }
+            if (request.Path == "/field")
+            {
+                return HandleField(request);
+            }
 
             SetError(request, 404, "unknown path", request.Path);
             return true;
@@ -409,6 +413,12 @@ namespace ExpeditionCamp.QA
             if (selectable != null && !selectable.IsInteractable())
             {
                 SetError(request, 409, "object is not interactable", body.name);
+                return true;
+            }
+
+            if (EventSystem.current == null)
+            {
+                SetError(request, 409, "event system not found", SceneManager.GetActiveScene().name);
                 return true;
             }
 
@@ -617,6 +627,50 @@ namespace ExpeditionCamp.QA
             response.level = SaveSystem.Data.level;
             response.exp = SaveSystem.Data.exp;
             response.items = items;
+            SetJson(request, 200, JsonUtility.ToJson(response));
+            return true;
+        }
+
+        private bool HandleField(BridgeRequest request)
+        {
+            FieldManager field = FieldManager.Current;
+            if (field == null)
+            {
+                SetError(request, 404, "field not loaded", SceneManager.GetActiveScene().name);
+                return true;
+            }
+
+            List<FieldMonster> monsters = new List<FieldMonster>();
+            Monster[] found = FindObjectsByType<Monster>(FindObjectsInactive.Exclude, FindObjectsSortMode.InstanceID);
+            foreach (Monster monster in found)
+            {
+                if (!monster.IsSpawned || monster.IsDead)
+                {
+                    continue;
+                }
+                FieldMonster item = new FieldMonster();
+                item.name = monster.gameObject.name;
+                item.tag = monster.gameObject.tag;
+                item.x = monster.transform.position.x;
+                item.z = monster.transform.position.z;
+                item.move_speed = monster.moveSpeed;
+                item.attack_range = monster.attackRange;
+                item.hp = monster.Hp;
+                monsters.Add(item);
+            }
+
+            FieldResponse response = new FieldResponse();
+            response.scene = SceneManager.GetActiveScene().name;
+            response.stage_id = field.StageId;
+            response.wave = field.CurrentWave;
+            response.total_waves = field.TotalWaves;
+            response.finished = field.IsFinished;
+            response.cleared = field.IsCleared;
+            response.player_hp = field.Player.Hp;
+            response.player_max_hp = field.Player.MaxHp;
+            response.player_x = field.Player.transform.position.x;
+            response.player_z = field.Player.transform.position.z;
+            response.monsters = monsters.ToArray();
             SetJson(request, 200, JsonUtility.ToJson(response));
             return true;
         }
