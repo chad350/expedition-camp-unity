@@ -84,6 +84,7 @@ namespace ExpeditionCamp
             if (_attackTimer <= 0f && target != null && targetDistance <= attackRange)
             {
                 _attackTimer = attackInterval;
+                visual.GetComponent<ModelMotion>()?.Strike(target.transform.position);
                 target.TakeDamage(Attack);
             }
         }

@@ -89,6 +89,7 @@ namespace ExpeditionCamp
             if (_attackTimer <= 0f)
             {
                 _attackTimer = attackInterval;
+                visual.GetComponent<ModelMotion>()?.Strike(player.transform.position);
                 player.TakeDamage(Attack);
             }
         }

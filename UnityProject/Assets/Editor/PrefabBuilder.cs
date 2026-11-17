@@ -93,13 +93,7 @@ namespace ExpeditionCamp.EditorTools
 
         private static HitFeedback AddVisual(GameObject root, string spritePath, float scale)
         {
-            Sprite sprite = EditorUtil.LoadSprite(spritePath);
-            SpriteRenderer renderer = EditorUtil.SpriteObject("Visual", root.transform, sprite,
-                new Vector3(0f, 1.28f * scale, 0f), scale, 0, 0);
-            renderer.gameObject.AddComponent<Billboard>();
-            HitFeedback feedback = renderer.gameObject.AddComponent<HitFeedback>();
-            EditorUtil.SetField(feedback, "target", renderer);
-            return feedback;
+            return CombatArt.Build(root, spritePath);
         }
 
         private static void AddShadow(GameObject root, float scale)
@@ -183,11 +177,11 @@ namespace ExpeditionCamp.EditorTools
                 monster.moveSpeed = spec.MoveSpeed;
                 EditorUtil.SetString(monster, "prefabKey", spec.Name);
 
-                Transform visual = instance.transform.Find("Visual");
-                SpriteRenderer renderer = visual.GetComponent<SpriteRenderer>();
-                renderer.sprite = EditorUtil.LoadSprite("Assets/Resources/Icons/Monster/mon_" + spec.MonsterId + ".png");
-                visual.localScale = Vector3.one * spec.VisualScale;
-                visual.localPosition = new Vector3(0f, 1.28f * spec.VisualScale, 0f);
+                PrefabUtility.UnpackPrefabInstance(instance, PrefabUnpackMode.Completely, InteractionMode.AutomatedAction);
+                Object.DestroyImmediate(instance.transform.Find("Visual").gameObject);
+                var feedback = AddVisual(instance, "mon_" + spec.MonsterId, 1f);
+                EditorUtil.SetField(monster, "visual", feedback);
+                monster.hpBarHeight = spec.Name.Contains("Golem") ? 2.65f : 2.15f;
 
                 EditorUtil.SavePrefab(instance, MonsterFolder + "/" + spec.Name + ".prefab");
             }
@@ -209,7 +203,8 @@ namespace ExpeditionCamp.EditorTools
             GameObject bob = EditorUtil.Empty("Bob", root.transform, new Vector3(0f, 0.6f, 0f));
             SpriteRenderer icon = EditorUtil.SpriteObject("Icon", bob.transform,
                 EditorUtil.LoadSprite("Assets/Resources/Icons/Item/item_201001.png"), Vector3.zero, 0.55f, 1, 0);
-            icon.gameObject.AddComponent<Billboard>();
+            icon.enabled = false;
+            CombatArt.Drop(bob.transform);
             AddShadow(root, 0.7f);
 
             EditorUtil.SetField(drop, "icon", icon);

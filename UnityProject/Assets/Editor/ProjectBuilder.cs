@@ -11,7 +11,9 @@ namespace ExpeditionCamp.EditorTools
             AssetDatabase.Refresh();
             ProjectSetup.Run();
             PrefabBuilder.BuildAll();
+            VisualRedesign.StylePrefabs();
             GameSceneBuilder.BuildAll();
+            VisualRedesign.ApplyScenes();
             PracticeSceneBuilder.BuildAll();
             AssetDatabase.SaveAssets();
             AssetDatabase.Refresh();
