@@ -341,6 +341,7 @@ namespace ExpeditionCamp.EditorTools
             EditorUtil.Place(hpBack.rectTransform, new Vector2(0f, 1f), new Vector2(0f, 1f), new Vector2(24f, -150f), new Vector2(592f, 46f));
             Image hpFill = EditorUtil.Panel("Img_PlayerHpFill", hpBack.transform, new Color(0.28f, 0.80f, 0.40f, 1f), null);
             EditorUtil.Stretch(hpFill.rectTransform, new Vector2(3f, 3f), new Vector2(-3f, -3f));
+            hpFill.sprite = EditorUtil.LoadSprite(PrefabBuilder.SolidBarSprite);
             hpFill.type = Image.Type.Filled;
             hpFill.fillMethod = Image.FillMethod.Horizontal;
             TMP_Text hpText = EditorUtil.Text("Txt_PlayerHp", hpBack.transform, "HP 1000 / 1000", 30f, TextAlignmentOptions.Center);

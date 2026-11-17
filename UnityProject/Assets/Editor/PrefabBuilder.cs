@@ -16,6 +16,7 @@ namespace ExpeditionCamp.EditorTools
         public const string PlayerSprite = "Assets/Resources/Icons/Monster/mon_100001.png";
         public const string ShadowSprite = "Assets/Art/shadow.png";
         public const string CircleSprite = "Assets/Art/circle.png";
+        public const string SolidBarSprite = "Assets/Art/solid_bar.png";
 
         public struct VariantSpec
         {
@@ -157,6 +158,7 @@ namespace ExpeditionCamp.EditorTools
             EditorUtil.Stretch(back.rectTransform, Vector2.zero, Vector2.zero);
             Image fill = EditorUtil.Panel("HPFill", barObject.transform, new Color(0.90f, 0.22f, 0.22f, 1f), null);
             EditorUtil.Stretch(fill.rectTransform, new Vector2(2f, 2f), new Vector2(-2f, -2f));
+            fill.sprite = EditorUtil.LoadSprite(SolidBarSprite);
             fill.type = Image.Type.Filled;
             fill.fillMethod = Image.FillMethod.Horizontal;
             fill.fillAmount = 1f;
