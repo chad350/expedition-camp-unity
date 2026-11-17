@@ -54,6 +54,7 @@ namespace ExpeditionCamp.EditorTools
             BuildSpawnPoint();
             BuildUiParts();
             BuildPopups();
+            UiTheme.ApplyToUiPrefabs();
             BuildNpcs();
             AssetDatabase.SaveAssets();
             Debug.Log("[PrefabBuilder] 프리팹을 만들었습니다");
@@ -463,11 +464,6 @@ namespace ExpeditionCamp.EditorTools
             EditorUtil.SavePrefab(result.Root.gameObject, UiFolder + "/UI_Popup_Result.prefab");
         }
 
-        public static readonly Color ResultInk = new Color(0.065f, 0.14f, 0.14f, 1f);
-        public static readonly Color ResultCard = new Color(0.105f, 0.205f, 0.20f, 1f);
-        public static readonly Color ResultCream = new Color(0.96f, 0.92f, 0.80f, 1f);
-        public static readonly Color ResultGold = new Color(0.79f, 0.62f, 0.32f, 1f);
-        public static readonly Color ResultMuted = new Color(0.64f, 0.75f, 0.69f, 1f);
 
         public static void ResultLayout(Transform root)
         {
@@ -476,32 +472,32 @@ namespace ExpeditionCamp.EditorTools
             Image panelImage = panel.GetComponent<Image>();
             panelImage.sprite = null;
             panelImage.type = Image.Type.Simple;
-            panelImage.color = ResultInk;
+            panelImage.color = UiTheme.Ink;
             float width = panel.sizeDelta.x;
             float cardWidth = (width - 136f) / 2f;
 
-            ResultBox("ResultReward", panel, Vector2.zero, Vector2.zero, ResultCard);
+            ResultBox("ResultReward", panel, Vector2.zero, Vector2.zero, UiTheme.Panel);
             EditorUtil.Stretch((RectTransform)panel.Find("ResultReward"), new Vector2(50f, 166f), new Vector2(-50f, -370f));
-            ResultBox("ResultExpCard", panel, new Vector2(76f + cardWidth, -180f), new Vector2(cardWidth, 100f), ResultCard);
-            ResultBox("ResultGoldCard", panel, new Vector2(60f, -180f), new Vector2(cardWidth, 100f), ResultCard);
-            ResultBox("ResultTopRule", panel, Vector2.zero, new Vector2(width, 6f), ResultGold);
-            TMP_Text eyebrow = ResultLabel("Txt_ResultEyebrow", panel, "EXPEDITION REPORT", 19f, ResultGold);
+            ResultBox("ResultExpCard", panel, new Vector2(76f + cardWidth, -180f), new Vector2(cardWidth, 100f), UiTheme.Panel);
+            ResultBox("ResultGoldCard", panel, new Vector2(60f, -180f), new Vector2(cardWidth, 100f), UiTheme.Panel);
+            ResultBox("ResultTopRule", panel, Vector2.zero, new Vector2(width, 6f), UiTheme.Gold);
+            TMP_Text eyebrow = ResultLabel("Txt_ResultEyebrow", panel, "EXPEDITION REPORT", 19f, UiTheme.Gold);
             eyebrow.characterSpacing = 30f;
             ResultPlace(eyebrow.transform, new Vector2(60f, -32f), new Vector2(width - 120f, 30f));
-            TMP_Text heading = ResultLabel("Txt_ResultHeading", panel, "획득 아이템", 24f, ResultMuted);
+            TMP_Text heading = ResultLabel("Txt_ResultHeading", panel, "획득 아이템", 24f, UiTheme.Muted);
             ResultPlace(heading.transform, new Vector2(60f, -315f), new Vector2(width - 120f, 40f));
 
             TMP_Text title = panel.Find("Txt_ResultTitle").GetComponent<TMP_Text>();
             ResultPlace(title.transform, new Vector2(60f, -80f), new Vector2(width - 120f, 76f));
             title.alignment = TextAlignmentOptions.Left;
             title.fontSize = 52f;
-            title.color = ResultCream;
+            title.color = UiTheme.Cream;
             TMP_Text gold = panel.Find("Txt_ResultGold").GetComponent<TMP_Text>();
             ResultPlace(gold.transform, new Vector2(84f, -206f), new Vector2(cardWidth - 48f, 48f));
-            gold.color = ResultGold;
+            gold.color = UiTheme.Gold;
             TMP_Text exp = panel.Find("Txt_ResultExp").GetComponent<TMP_Text>();
             ResultPlace(exp.transform, new Vector2(100f + cardWidth, -206f), new Vector2(cardWidth - 48f, 48f));
-            exp.color = ResultCream;
+            exp.color = UiTheme.Cream;
 
             EditorUtil.Stretch((RectTransform)panel.Find("Scroll_Result"), new Vector2(50f, 166f), new Vector2(-50f, -370f));
             GridLayoutGroup grid = panel.Find("Scroll_Result/Viewport_Result/List_Result").GetComponent<GridLayoutGroup>();
@@ -510,7 +506,7 @@ namespace ExpeditionCamp.EditorTools
             TMP_Text empty = panel.Find("Txt_ResultEmpty").GetComponent<TMP_Text>();
             ResultPlace(empty.transform, new Vector2(60f, -430f), new Vector2(width - 120f, 80f));
             empty.fontSize = 27f;
-            empty.color = ResultCream;
+            empty.color = UiTheme.Cream;
 
             Button confirm = panel.Find("Btn_ResultConfirm").GetComponent<Button>();
             EditorUtil.Place((RectTransform)confirm.transform, new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(0f, 36f), new Vector2(460f, 84f));
@@ -519,15 +515,15 @@ namespace ExpeditionCamp.EditorTools
             confirmImage.type = Image.Type.Simple;
             confirmImage.color = Color.white;
             ColorBlock colors = confirm.colors;
-            colors.normalColor = ResultGold;
+            colors.normalColor = UiTheme.Gold;
             colors.highlightedColor = new Color(0.89f, 0.75f, 0.47f, 1f);
             colors.selectedColor = colors.highlightedColor;
-            colors.pressedColor = ResultCream;
+            colors.pressedColor = UiTheme.Cream;
             colors.fadeDuration = 0.12f;
             confirm.colors = colors;
             TMP_Text confirmText = confirm.transform.Find("Txt_ResultConfirm").GetComponent<TMP_Text>();
             confirmText.text = "보상 받고 캠프로";
-            confirmText.color = ResultInk;
+            confirmText.color = UiTheme.Ink;
 
             ResultPopup popup = root.GetComponent<ResultPopup>();
             EditorUtil.SetField(popup, "panel", panel);

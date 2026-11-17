@@ -69,6 +69,7 @@ namespace ExpeditionCamp.EditorTools
 
         private static void Save(Scene scene, string sceneName)
         {
+            UiTheme.ApplyToScene(scene);
             EditorSceneManager.SaveScene(scene, ScenePath(sceneName));
         }
 
