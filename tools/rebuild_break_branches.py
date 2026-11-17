@@ -12,10 +12,8 @@ main 을 고친 뒤 실행하면 break 브랜치를 main 의 최신 커밋에서
 """
 
 import argparse
-import glob
 import os
 import platform
-import re
 import shutil
 import subprocess
 import sys
@@ -37,7 +35,7 @@ LOBBY = "UnityProject/Assets/Scenes/Lobby.unity"
 # (번호, 브랜치 이름, 적용 방식, 커밋할 경로, 커밋 메시지)
 BREAKS = [
     ("01", "break/01-meta", "file", [NPC_DIR], "chore: rename npc image files"),
-    ("02", "break/02-script", "file", ["UnityProject/Assets/Scripts/Field", "UnityProject/Assets/Editor/PrefabBuilder.cs"], "refactor: rename Monster class to MonsterUnit"),
+    ("02", "break/02-script", "file", ["UnityProject/Assets/Scripts/Field"], "refactor: rename monster script file"),
     ("03", "break/03-null", "unity", [FIELD_01], "chore: update Field_01 scene"),
     ("04", "break/04-override", "unity", [FIELD_01], "chore: tune monster placement in Field_01"),
     ("05", "break/05-apply", "unity", ["UnityProject/Assets/Prefabs/Monster_Base.prefab"], "chore: apply monster prefab overrides"),
@@ -70,16 +68,6 @@ def default_unity():
     return MAC_UNITY
 
 
-def rename_class(path, old_name, new_name):
-    with open(path, encoding="utf-8") as source_file:
-        text = source_file.read()
-    pattern = re.compile(r'(?<!["/])\b%s\b(?![/"])' % old_name)
-    changed = pattern.sub(new_name, text)
-    if changed != text:
-        with open(path, "w", encoding="utf-8", newline="") as source_file:
-            source_file.write(changed)
-
-
 def apply_file_break(break_id):
     if break_id == "01":
         old_path = os.path.join(ROOT, NPC_DIR, "npc_shop.png")
@@ -89,10 +77,6 @@ def apply_file_break(break_id):
     if break_id == "02":
         folder = os.path.join(ROOT, "UnityProject", "Assets", "Scripts", "Field")
         os.rename(os.path.join(folder, "Monster.cs"), os.path.join(folder, "MonsterUnit.cs"))
-        targets = glob.glob(os.path.join(folder, "*.cs"))
-        targets.append(os.path.join(ROOT, "UnityProject", "Assets", "Editor", "PrefabBuilder.cs"))
-        for path in targets:
-            rename_class(path, "Monster", "MonsterUnit")
         return
     if break_id == "14":
         path = os.path.join(ROOT, STRING_CSV)
