@@ -28,6 +28,7 @@ namespace ExpeditionCamp
         public int TotalWaves { get; private set; }
         public bool IsFinished { get; private set; }
         public bool IsCleared { get; private set; }
+        public bool IsResultConfirmed { get; private set; }
         public FieldLoot Loot { get; private set; }
 
         private readonly List<DropItem> _drops = new List<DropItem>();
@@ -245,6 +246,11 @@ namespace ExpeditionCamp
 
         public void ConfirmResult()
         {
+            if (IsResultConfirmed)
+            {
+                return;
+            }
+            IsResultConfirmed = true;
             if (IsCleared)
             {
                 SaveSystem.EnsureLoaded();

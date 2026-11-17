@@ -5,6 +5,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.TestTools;
+using UnityEngine.UI;
 
 namespace ExpeditionCamp.Tests
 {
@@ -124,6 +125,34 @@ namespace ExpeditionCamp.Tests
             Assert.AreEqual(expectedGold, SaveSystem.Data.gold);
             Assert.IsTrue(SaveSystem.Data.cleared_stages.Contains(401001));
             Assert.IsTrue(SaveSystem.Data.unlocked_stages.Contains(401002));
+        }
+
+        [UnityTest]
+        public IEnumerator DoubleConfirmGivesRewardOnce()
+        {
+            List<int> wavesSeen = new List<int>();
+            yield return PlayStageWithKillAll(401001, wavesSeen);
+
+            FieldLoot loot = FieldManager.Current.Loot;
+            Dictionary<int, int> expected = new Dictionary<int, int>();
+            foreach (int itemId in loot.ItemOrder)
+            {
+                expected[itemId] = loot.GetCount(itemId);
+            }
+            int expectedGold = loot.Gold;
+            int expectedExp = loot.Exp;
+
+            Button confirm = GameObject.Find("Btn_ResultConfirm").GetComponent<Button>();
+            confirm.onClick.Invoke();
+            confirm.onClick.Invoke();
+            yield return WaitForScene("Lobby");
+
+            Assert.AreEqual(expectedGold, SaveSystem.Data.gold, "골드가 두 번 들어왔습니다");
+            foreach (KeyValuePair<int, int> pair in expected)
+            {
+                Assert.AreEqual(pair.Value, Inventory.GetCount(pair.Key), "아이템 " + pair.Key + " 개수가 결과 창과 다릅니다");
+            }
+            Assert.AreEqual(expectedExp, SaveSystem.Data.exp, "경험치가 두 번 들어왔습니다");
         }
 
         [UnityTest]
