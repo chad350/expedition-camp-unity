@@ -34,22 +34,22 @@ LOBBY = "UnityProject/Assets/Scenes/Lobby.unity"
 
 # (번호, 브랜치 이름, 적용 방식, 커밋할 경로, 커밋 메시지)
 BREAKS = [
-    ("01", "break/01-meta", "file", [NPC_DIR], "chore: rename npc image files"),
-    ("02", "break/02-script", "file", ["UnityProject/Assets/Scripts/Field"], "refactor: rename monster script file"),
-    ("03", "break/03-null", "unity", [FIELD_01], "chore: update Field_01 scene"),
-    ("04", "break/04-override", "unity", [FIELD_01], "chore: tune monster placement in Field_01"),
-    ("05", "break/05-apply", "unity", ["UnityProject/Assets/Prefabs/Monster_Base.prefab"], "chore: apply monster prefab overrides"),
-    ("06", "break/06-tag", "unity", ["UnityProject/Assets/Resources/Monsters/Monster_Rabbit.prefab"], "chore: update rabbit monster prefab"),
-    ("07", "break/07-layer", "unity", ["UnityProject/Assets/Prefabs/DropItem.prefab"], "chore: update drop item prefab layer"),
-    ("08", "break/08-trigger", "unity", ["UnityProject/Assets/Prefabs/DropItem.prefab"], "chore: update drop item collider"),
-    ("09", "break/09-sorting", "unity", [LOBBY], "chore: adjust lobby background"),
-    ("10", "break/10-anchor", "unity", [LOBBY], "chore: adjust lobby button layout"),
-    ("11", "break/11-eventsystem", "unity", [LOBBY], "chore: clean up lobby hierarchy"),
-    ("12", "break/12-buildlist", "unity", ["UnityProject/ProjectSettings/EditorBuildSettings.asset"], "chore: update build scene list"),
-    ("13", "break/13-spawnkey", "unity", [FIELD_01], "chore: rename spawn points in Field_01"),
-    ("14", "break/14-csv-excel", "file", [STRING_CSV], "chore: update string table"),
-    ("15", "break/15-config", "unity", ["UnityProject/Assets/Settings/GameConfig.asset"], "chore: update game config"),
-    ("16", "break/16-material", "unity", ["UnityProject/Assets/Materials/Rock.mat"], "chore: update rock material"),
+    ("01", "trybreak/01-meta", "file", [NPC_DIR], "chore: rename npc image files"),
+    ("02", "trybreak/02-script", "file", ["UnityProject/Assets/Scripts/Field"], "refactor: rename monster script file"),
+    ("03", "trybreak/03-null", "unity", [FIELD_01], "chore: update Field_01 scene"),
+    ("04", "trybreak/04-override", "unity", [FIELD_01], "chore: tune monster placement in Field_01"),
+    ("05", "trybreak/05-apply", "unity", ["UnityProject/Assets/Prefabs/Monster_Base.prefab"], "chore: apply monster prefab overrides"),
+    ("06", "trybreak/06-tag", "unity", ["UnityProject/Assets/Resources/Monsters/Monster_Rabbit.prefab"], "chore: update rabbit monster prefab"),
+    ("07", "trybreak/07-layer", "unity", ["UnityProject/Assets/Prefabs/DropItem.prefab"], "chore: update drop item prefab layer"),
+    ("08", "trybreak/08-trigger", "unity", ["UnityProject/Assets/Prefabs/DropItem.prefab"], "chore: update drop item collider"),
+    ("09", "trybreak/09-sorting", "unity", [LOBBY], "chore: adjust lobby background"),
+    ("10", "trybreak/10-anchor", "unity", [LOBBY], "chore: adjust lobby button layout"),
+    ("11", "trybreak/11-eventsystem", "unity", [LOBBY], "chore: clean up lobby hierarchy"),
+    ("12", "trybreak/12-buildlist", "unity", ["UnityProject/ProjectSettings/EditorBuildSettings.asset"], "chore: update build scene list"),
+    ("13", "trybreak/13-spawnkey", "unity", [FIELD_01], "chore: rename spawn points in Field_01"),
+    ("14", "trybreak/14-csv-excel", "file", [STRING_CSV], "chore: update string table"),
+    ("15", "trybreak/15-config", "unity", ["UnityProject/Assets/Settings/GameConfig.asset"], "chore: update game config"),
+    ("16", "trybreak/16-material", "unity", ["UnityProject/Assets/Materials/Rock.mat"], "chore: update rock material"),
 ]
 
 
