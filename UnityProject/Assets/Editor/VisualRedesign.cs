@@ -80,9 +80,19 @@ namespace ExpeditionCamp.EditorTools
             EditorSceneManager.OpenScene(GameSceneBuilder.ScenePath("Lobby"));
         }
 
+        public const string LobbyBackdropSprite="Assets/Art/lobby_backdrop.png";
+
+        public static void ApplyLobbyBackdrop(SpriteRenderer background)
+        {
+            background.sprite=EditorUtil.LoadSprite(LobbyBackdropSprite);
+            background.color=Color.white;
+            background.transform.position=Vector3.zero;
+            background.transform.localScale=Vector3.one;
+        }
+
         static void Lobby(Transform canvas)
         {
-            GameObject.Find("Background").GetComponent<SpriteRenderer>().color=new Color(.66f,.72f,.66f);
+            ApplyLobbyBackdrop(GameObject.Find("Background").GetComponent<SpriteRenderer>());
             Transform npcs=GameObject.Find("NPCs").transform;
             string[] npcNames={"NPC_Shop","NPC_Dex","NPC_Board"};
             float[] npcX={-2.3f,0.7f,3.4f};
