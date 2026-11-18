@@ -1,5 +1,9 @@
 # 검증기록 · Phase B
 
+2026-11-19 에 break 브랜치 번호를 다시 매기고 3개(01-meta · 02-script · 13-spawnkey)를 지웠습니다.
+이 기록의 브랜치 번호는 이전 번호이고, 새 번호는 `docs/실수재현_정답표.md` 7절에 있습니다.
+화면 파일 이름은 새 번호로 바꿨습니다.
+
 ## 1. 검증 환경과 방법
 
 | 항목 | 내용 |
@@ -27,14 +31,14 @@
 | break/06-tag | 자동 전투(무적 · 배속 5)로 1-1 스테이지 진행 | 재현 · 4.4초 만에 3웨이브 도달, 이후 15초 동안 끝나지 않음<br>토끼 몬스터 2마리 Tag Untagged · Tag Monster 개수 0 |
 | break/07-layer | 처치 직후 드롭 아이템 Layer 와 획득 | 재현 · 드롭 아이템 6개 모두 Hidden Layer · 카메라가 그리지 않음 · 획득은 정상 |
 | break/08-trigger | 드롭 아이템을 모은 뒤 위치와 획득 | 재현 · 아이템이 플레이어 앞 1.1 ~ 1.4 거리에서 멈춤 · 결과 골드 0 · 아이템 0종<br>`[Field] 획득하지 못한 드롭 아이템` 경고 3건 |
-| break/09-sorting | Lobby 정렬 순서 | 재현 · Background 10 · NPC 5 · NPC 이름 6<br>화면 `docs/screenshots/phaseB/09_break_09-sorting_Lobby_1920x1080.png` |
-| break/10-anchor | 1920 · 2340 너비에서 가방 · 도감 버튼 위치 | 재현 · 1920 에서 가방 40 ~ 220 · 도감 260 ~ 440<br>2340 에서 가방 250 ~ 430 으로 도감과 겹침<br>화면 `10_break_10-anchor_Lobby_2340x1080.png` |
+| break/09-sorting | Lobby 정렬 순서 | 재현 · Background 10 · NPC 5 · NPC 이름 6<br>화면 `docs/screenshots/phaseB/01_break_01-sorting_Lobby_1920x1080.png` |
+| break/10-anchor | 1920 · 2340 너비에서 가방 · 도감 버튼 위치 | 재현 · 1920 에서 가방 40 ~ 220 · 도감 260 ~ 440<br>2340 에서 가방 250 ~ 430 으로 도감과 겹침<br>화면 `03_break_03-anchor_Lobby_2340x1080.png` |
 | break/11-eventsystem | Lobby 의 EventSystem | 재현 · EventSystem 없음 |
 | break/12-buildlist | 로비에서 401006 출정 | 재현 · 3초 뒤에도 Lobby 에 머물고 로딩 화면 유지<br>`Scene 'Field_02' couldn't be loaded ...` 에러 1건 |
 | break/13-spawnkey | 1-1 스테이지를 치트로 15초 진행 | 재현 · 웨이브 2 에서 멈춤 · `[Field] spawn point not found: Spawn_03` 경고 1건 |
 | break/14-csv-excel | Boot 실행 | 재현 · Boot 에 머묾 · 데이터 오류 창 "string · 2행 · ko" |
 | break/15-config | Lobby 의 Time.timeScale | 재현 · 3 |
-| break/16-material | Field_01 Rock_01 재질 | 재현 · Shader Standard · URP 패스 없음 · 분홍색<br>화면 `16_break_16-material_Field_01_1920x1080.png` |
+| break/16-material | Field_01 Rock_01 재질 | 재현 · Shader Standard · URP 패스 없음 · 분홍색<br>화면 `04_break_04-material_Field_01_1920x1080.png` |
 
 main 대조 화면은 같은 폴더의 `*_main_*.png` 입니다.
 
