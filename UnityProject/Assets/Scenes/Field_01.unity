@@ -251,17 +251,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30a4a6c549044ec28776b3808960ddc, type: 3}
---- !u!114 &16992612 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1549164233689955911, guid: e30a4a6c549044ec28776b3808960ddc, type: 3}
-  m_PrefabInstance: {fileID: 16992611}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34ae653bee1804ac996147a7302ce61c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: ExpeditionCamp.Runtime::ExpeditionCamp.ResultPopup
 --- !u!224 &16992613 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1598344207546155657, guid: e30a4a6c549044ec28776b3808960ddc, type: 3}
@@ -2216,7 +2205,7 @@ MonoBehaviour:
   playerStart: {fileID: 6455464}
   cameraFollow: {fileID: 892866721}
   hud: {fileID: 569223202}
-  resultPopup: {fileID: 16992612}
+  resultPopup: {fileID: 0}
   dropItemPrefab: {fileID: 6999281032935438867, guid: ce7e2a2410df844e2b1722a5d936febc, type: 3}
 --- !u!4 &198868358
 Transform:
