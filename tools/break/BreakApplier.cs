@@ -28,6 +28,7 @@ namespace ExpeditionCamp.EditorTools
                 case "13": RenameSpawn03(); break;
                 case "15": SaveConfigTimeScale(); break;
                 case "16": ChangeRockShader(); break;
+                case "18": MiswireShopSlotIcon(); break;
                 default:
                     Debug.LogError("[Break] 알 수 없는 번호입니다: " + breakId);
                     EditorApplication.Exit(1);
@@ -199,6 +200,27 @@ namespace ExpeditionCamp.EditorTools
             Material rock = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/Rock.mat");
             rock.shader = Shader.Find("Standard");
             EditorUtility.SetDirty(rock);
+        }
+
+        private static void MiswireShopSlotIcon()
+        {
+            // 상점 칸 프리팹의 Icon 그림 칸에 자리 표시용 몬스터 그림이 남아 있고,
+            // 스크립트의 Icon 칸은 구매 버튼의 Image 에 잘못 연결된 경우입니다.
+            string path = "Assets/Prefabs/UI/UI_ShopSlot.prefab";
+            GameObject contents = PrefabUtility.LoadPrefabContents(path);
+            UnityEngine.UI.Image iconImage = contents.transform.Find("Icon").GetComponent<UnityEngine.UI.Image>();
+            UnityEngine.UI.Image buyImage = contents.transform.Find("Btn_Buy").GetComponent<UnityEngine.UI.Image>();
+            Sprite monsterSprite = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Resources/Icons/Monster/mon_100001.png");
+            if (monsterSprite == null)
+            {
+                throw new InvalidOperationException("몬스터 그림을 찾을 수 없습니다");
+            }
+            iconImage.sprite = monsterSprite;
+            SerializedObject view = new SerializedObject(contents.GetComponent<ShopSlotView>());
+            view.FindProperty("icon").objectReferenceValue = buyImage;
+            view.ApplyModifiedPropertiesWithoutUndo();
+            PrefabUtility.SaveAsPrefabAsset(contents, path);
+            PrefabUtility.UnloadPrefabContents(contents);
         }
     }
 }

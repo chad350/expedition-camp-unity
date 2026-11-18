@@ -8,6 +8,7 @@ main 을 고친 뒤 실행하면 break 브랜치를 main 의 최신 커밋에서
     Windows  py tools\\rebuild_break_branches.py
     macOS    python3 tools/rebuild_break_branches.py
     일부만   python3 tools/rebuild_break_branches.py --only 01,03
+    17 · 19 는 엑셀을 고치므로 openpyxl 이 있는 파이썬으로 실행합니다 (예: tools/.venv/bin/python)
     Unity 경로 지정  python3 tools/rebuild_break_branches.py --unity "C:\\Program Files\\Unity\\Hub\\Editor\\6000.3.20f1\\Editor\\Unity.exe"
 """
 
@@ -31,6 +32,8 @@ NPC_DIR = "UnityProject/Assets/Sprites/NPC"
 STRING_CSV = "UnityProject/Assets/StreamingAssets/data/string.csv"
 FIELD_01 = "UnityProject/Assets/Scenes/Field_01.unity"
 LOBBY = "UnityProject/Assets/Scenes/Lobby.unity"
+MONSTER_CSV = "UnityProject/Assets/StreamingAssets/data/monster.csv"
+ITEM_CSV = "UnityProject/Assets/StreamingAssets/data/item.csv"
 
 # (번호, 브랜치 이름, 적용 방식, 커밋할 경로, 커밋 메시지)
 BREAKS = [
@@ -50,6 +53,9 @@ BREAKS = [
     ("14", "break/14-csv-excel", "file", [STRING_CSV], "chore: update string table"),
     ("15", "break/15-config", "unity", ["UnityProject/Assets/Settings/GameConfig.asset"], "chore: update game config"),
     ("16", "break/16-material", "unity", ["UnityProject/Assets/Materials/Rock.mat"], "chore: update rock material"),
+    ("17", "break/17-dropref", "file", ["design_data/Monster.xlsx", MONSTER_CSV], "chore: update monster table"),
+    ("18", "break/18-shopicon", "unity", ["UnityProject/Assets/Prefabs/UI/UI_ShopSlot.prefab"], "chore: update shop slot layout"),
+    ("19", "break/19-iconpath", "file", ["design_data/Item.xlsx", ITEM_CSV], "chore: update item table"),
 ]
 
 
@@ -85,7 +91,43 @@ def apply_file_break(break_id):
         with open(path, "w", encoding="cp949", errors="replace", newline="") as csv_file:
             csv_file.write(text.replace("\n", "\r\n"))
         return
+    if break_id == "17":
+        # 물방울게의 드롭 그룹 ID 에서 0 하나가 빠진 오타입니다 (엑셀과 CSV 를 함께 바꿉니다).
+        edit_design_cell("Monster.xlsx", "monster", "monster_id", 100002, "drop_group_id", 30002)
+        return
+    if break_id == "19":
+        # 소형 회복 물약 아이콘 경로에 몬스터 그림 경로를 잘못 붙여 넣은 경우입니다.
+        edit_design_cell("Item.xlsx", "item", "item_id", 202001, "icon_path", "Icons/Monster/mon_100004")
+        return
     raise SystemExit("파일 방식으로 정의되지 않은 번호입니다: " + break_id)
+
+
+def edit_design_cell(file_name, sheet_name, key_column, key_value, column, new_value):
+    """기획 원본 엑셀의 칸 1개를 바꾸고 변환 도구로 CSV 를 다시 만듭니다."""
+    try:
+        from openpyxl import load_workbook
+    except ImportError:
+        raise SystemExit("openpyxl 이 필요합니다. tools/.venv 의 파이썬으로 실행해 주세요 (변환 도구 실행 파일을 한 번 실행하면 만들어집니다).")
+    path = os.path.join(ROOT, "design_data", file_name)
+    workbook = load_workbook(path)
+    sheet = workbook[sheet_name]
+    columns = {}
+    for cell in sheet[1]:
+        if cell.value is not None:
+            columns[str(cell.value).strip()] = cell.column
+    key_index = columns[key_column]
+    target_index = columns[column]
+    changed = 0
+    for row in range(2, sheet.max_row + 1):
+        if str(sheet.cell(row, key_index).value).strip() == str(key_value):
+            sheet.cell(row, target_index).value = new_value
+            changed += 1
+    if changed != 1:
+        raise SystemExit("%s %s 시트에서 %s %s 행을 1개 찾지 못했습니다 (%d개)" % (file_name, sheet_name, key_column, key_value, changed))
+    workbook.save(path)
+    result = subprocess.run([sys.executable, os.path.join(ROOT, "tools", "export_tables.py")], cwd=ROOT)
+    if result.returncode != 0:
+        raise SystemExit("변환 도구 실행에 실패했습니다")
 
 
 def apply_unity_break(break_id, unity_path):
