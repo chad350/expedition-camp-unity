@@ -3,7 +3,6 @@
     "rootNamespace": "ExpeditionCamp.EditorTools",
     "references": [
         "ExpeditionCamp.Runtime",
-        "ExpeditionCamp.Practice",
         "UnityEngine.UI",
         "Unity.TextMeshPro",
         "Unity.TextMeshPro.Editor",

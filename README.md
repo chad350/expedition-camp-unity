@@ -7,7 +7,7 @@
 | `UnityProject/` | Unity 프로젝트 (Unity 6000.3.20f1 · URP · Input System) |
 | `design_data/` | 기획 원본 엑셀 7개 (Monster · Item · Stage · Common · String · Shop · Field) |
 | `tools/export_tables.py` | 기획 원본 엑셀을 게임용 CSV 로 내보내는 변환 도구 |
-| `docs/` | 값의 출처표 · 연습 씬 정답표 · 검증 기록 · 스크린샷 |
+| `docs/` | 값의 출처표 · 실수 재현 정답표 · 검증 기록 · 스크린샷 |
 | `.gitignore` | Library · Temp · Logs · obj · Builds · UserSettings 를 제외합니다. |
 
 ## 2. 프로젝트 열기
@@ -17,8 +17,7 @@
 - 첫 실행 때 Library 폴더를 만드는 동안 창을 닫지 않습니다.
 - `Assets/Scenes/Boot.unity` 를 열고 Play 하면 Lobby 로 이동합니다.
 
-게임 씬은 Boot · Lobby · Field_01 · Field_02 이고, 1단계 연습 씬 6개는 `Assets/Scenes/Practice/` 에 있습니다.
-연습 씬은 빌드 씬 목록에 넣지 않았습니다.
+게임 씬은 Boot · Lobby · Field_01 · Field_02 입니다.
 
 ## 3. 게임 진행
 
@@ -136,7 +135,7 @@ macOS
 | 해독제 아이콘 `item_202016.png` | `Assets/Resources/Icons/Item/` | `item_202001.png` 의 색을 바꾼 파일 |
 | NPC 이미지 3장 | `Assets/Sprites/NPC/` | 몬스터 일러스트 mon_100009 · mon_100015 · mon_100030 복사본 |
 | 플레이어 이미지 | `Assets/Resources/Icons/Monster/mon_100001.png` | 몬스터 일러스트 100001 (불꽃여우) |
-| 그림자 · 원 · 연습 소품 이미지 | `Assets/Art/` · `Assets/Sprites/Props/` | 자체 제작 (파이썬으로 생성) |
+| 그림자 · 원 · 체력바 막대 이미지 | `Assets/Art/` | 자체 제작 (파이썬으로 생성) |
 | Kenney UI Pack 2.0 | `Assets/ThirdParty/Kenney/` | Kenney (www.kenney.nl) · CC0 · `License.txt` 포함 |
 | Noto Sans KR | `Assets/Fonts/` | Google Fonts · SIL Open Font License 1.1 · `Assets/ThirdParty/NotoSansKR/OFL.txt` 포함 |
 | TextMesh Pro 기본 리소스 | `Assets/TextMesh Pro/` | Unity uGUI 패키지 |
