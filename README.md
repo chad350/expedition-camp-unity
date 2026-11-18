@@ -7,6 +7,7 @@
 | `UnityProject/` | Unity 프로젝트 (Unity 6000.3.20f1 · URP · Input System) |
 | `design_data/` | 기획 원본 엑셀 7개 (Monster · Item · Stage · Common · String · Shop · Field) |
 | `tools/export_tables.py` | 기획 원본 엑셀을 게임용 CSV 로 내보내는 변환 도구 |
+| `tools/export_tables_windows.bat` · `tools/export_tables_mac.sh` | 변환 도구 실행 파일 (가상환경 생성 · openpyxl 설치 · 변환) |
 | `docs/` | 값의 출처표 · 실수 재현 정답표 · 검증 기록 · 스크린샷 |
 | `.gitignore` | Library · Temp · Logs · obj · Builds · UserSettings 를 제외합니다. |
 
@@ -36,7 +37,25 @@
 
 ## 5. 기획 원본을 CSV 로 내보내기
 
-처음 1번만 openpyxl 을 설치합니다.
+실행 파일 하나로 가상환경 생성 · openpyxl 설치 · 변환 · 결과 표시까지 진행합니다.
+처음 실행할 때만 `tools/.venv` 가상환경을 만들고 openpyxl 을 설치하므로 인터넷 연결이 필요합니다.
+
+| OS | 실행 방법 |
+|---|---|
+| Windows | 탐색기에서 `tools\export_tables_windows.bat` 를 더블클릭합니다. |
+| macOS | 터미널에서 `bash tools/export_tables_mac.sh` 를 실행합니다. |
+
+- 어느 폴더에서 실행해도 결과가 같습니다.
+- 마지막에 「변환 완료」 또는 「변환 실패」 안내가 표시됩니다.
+  실패하면 위에 출력된 시트 · 행 · 열 위치의 엑셀 값을 고친 뒤 다시 실행합니다.
+- 다른 폴더에 내보내려면 `--out-dir` 뒤에 전체 경로를 적습니다 (예: `bash tools/export_tables_mac.sh --out-dir /tmp/csv_check`).
+
+결과 CSV 는 `UnityProject/Assets/StreamingAssets/data/` 에 저장됩니다.
+CSV 를 엑셀이나 메모장에서 직접 저장하지 않고, 엑셀 원본을 고친 뒤 변환 도구를 실행합니다.
+
+### 직접 실행
+
+실행 파일을 쓰지 않을 때는 처음 1번만 openpyxl 을 설치합니다.
 
 Windows
 
@@ -63,9 +82,6 @@ macOS
 ```
 python3 tools/export_tables.py
 ```
-
-결과 CSV 는 `UnityProject/Assets/StreamingAssets/data/` 에 저장됩니다.
-CSV 를 엑셀이나 메모장에서 직접 저장하지 않고, 엑셀 원본을 고친 뒤 변환 도구를 실행합니다.
 
 ## 6. QA 기능
 
