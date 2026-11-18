@@ -1,348 +1,348 @@
 key,ko,en
-STR_MON_100001_NAME,ë¶ˆê½ƒì—¬ìš°,Flame Fox
-STR_MON_100001_DESC,ê¼¬ë¦¬ ëì—ì„œ ë¶ˆì”¨ê°€ ë–¨ì–´ì§€ëŠ” ì—¬ìš°ì…ë‹ˆë‹¤. í™”ê°€ ë‚˜ë©´ ê¼¬ë¦¬ê°€ 3ë°°ë¡œ ì»¤ì§‘ë‹ˆë‹¤.,
-STR_MON_100002_NAME,ë¬¼ë°©ìš¸ê²Œ,Droplet Crab
-STR_MON_100002_DESC,ë“±ê»ì§ˆì— ë¬¼ì„ ë‹´ì•„ ë‘ëŠ” ê²Œì…ë‹ˆë‹¤. ìœ„í—˜í•˜ë©´ ë¬¼ì„ ë¿œê³  ëª¨ë˜ ì†ìœ¼ë¡œ ë“¤ì–´ê°‘ë‹ˆë‹¤.,A Water-element monster of grade N. It fights in the tank role.
-STR_MON_100003_NAME,ë©êµ´í† ë¼,Vine Rabbit
-STR_MON_100003_DESC,ê·€ì— ë©êµ´ì´ ìë¼ëŠ” í† ë¼ì…ë‹ˆë‹¤. ë©êµ´ì—ì„œ ë‚˜ì˜¤ëŠ” ì¦™ìœ¼ë¡œ ë™ë£Œì˜ ìƒì²˜ë¥¼ ë®ìŠµë‹ˆë‹¤.,A Grass-element monster of grade N. It fights in the support role.
-STR_MON_100004_NAME,ë°˜ì§ë‚˜ë°©,Glimmer Moth
-STR_MON_100004_DESC,ë‚ ê°œì— ë¹›ê°€ë£¨ê°€ ë¶™ì–´ ìˆëŠ” ë‚˜ë°©ì…ë‹ˆë‹¤. ê°€ë£¨ë¥¼ ë§ìœ¼ë©´ ëª¸ì´ ê°€ë²¼ì›Œì§‘ë‹ˆë‹¤.,A Light-element monster of grade N. It fights in the healer role.
-STR_MON_100005_NAME,ê·¸ëŠ˜ì¥,Shade Mouse
-STR_MON_100005_DESC,ê·¸ëŠ˜ì—ì„œë§Œ ì›€ì§ì´ëŠ” ì¥ì…ë‹ˆë‹¤. ë¹›ì´ ë‹¿ìœ¼ë©´ ëˆˆì„ ê°ê³  ë©ˆì¶¥ë‹ˆë‹¤.,
-STR_MON_100006_NAME,ëª¨ë˜ë„ë§ˆë±€,Sand Lizard
-STR_MON_100006_DESC,ëª¨ë˜ì— ëª¸ì„ ë¬»ê³  ì—´ì„ ëª¨ìœ¼ëŠ” ë„ë§ˆë±€ì…ë‹ˆë‹¤. ë“± ë¹„ëŠ˜ì´ ëœ¨ê²ê²Œ ë‹¬ì•„ì˜¤ë¦…ë‹ˆë‹¤.,A Fire-element monster of grade N. It fights in the tank role.
-STR_MON_100007_NAME,ë¬¼ê±°í’ˆìƒˆ,Bubble Bird
-STR_MON_100007_DESC,ë¶€ë¦¬ë¡œ ë¬¼ê±°í’ˆì„ ë§Œë“œëŠ” ìƒˆì…ë‹ˆë‹¤. ê±°í’ˆì´ í„°ì§€ë©´ ë™ë£Œì˜ í”¼ë¡œê°€ ì¤„ì–´ë“­ë‹ˆë‹¤.,A Water-element monster of grade N. It fights in the support role.
-STR_MON_100008_NAME,ì´ë¼ê±°ë¶,Moss Turtle
-STR_MON_100008_DESC,ë“±ì— ì´ë¼ë¥¼ ê¸°ë¥´ëŠ” ê±°ë¶ì…ë‹ˆë‹¤. ì´ë¼ê°€ ë‘êº¼ì›Œì§ˆìˆ˜ë¡ ê»ì§ˆì´ ë‹¨ë‹¨í•´ì§‘ë‹ˆë‹¤.,A Grass-element monster of grade N. It fights in the tank role.
-STR_MON_100009_NAME,í–‡ì‚´ë‹¤ëŒì¥,Sunray Squirrel
-STR_MON_100009_DESC,í–‡ë¹›ì„ ëª¨ì•„ ë‘ëŠ” ë‹¤ëŒì¥ì…ë‹ˆë‹¤. ëª¨ì€ ë¹›ì„ ë™ë£Œì—ê²Œ ë‚˜ëˆ  ì¤ë‹ˆë‹¤.,A Light-element monster of grade N. It fights in the healer role.
-STR_MON_100010_NAME,ë°¤ì•ˆê°œë°•ì¥,Nightmist Bat
-STR_MON_100010_DESC,ì•ˆê°œê°€ ë‚€ ë°¤ì—ë§Œ ì‚¬ëƒ¥í•˜ëŠ” ë°•ì¥ì…ë‹ˆë‹¤. ë‚ ê°œ ì†Œë¦¬ê°€ ê±°ì˜ ë‚˜ì§€ ì•ŠìŠµë‹ˆë‹¤.,
-STR_MON_100011_NAME,ìˆ¯ë¶ˆê°•ì•„ì§€,Charcoal Pup
-STR_MON_100011_DESC,ìˆ¯ì²˜ëŸ¼ ê²€ì€ í„¸ ì•„ë˜ì— ë¶ˆì”¨ë¥¼ í’ˆì€ ê°•ì•„ì§€ì…ë‹ˆë‹¤. ë›°ë©´ ë°œìêµ­ì´ ê·¸ì„ë¦½ë‹ˆë‹¤.,A Fire-element monster of grade N. It fights in the dealer role.
-STR_MON_100012_NAME,ë¶ˆì”¨ë‘êº¼ë¹„,Ember Toad
-STR_MON_100012_DESC,ì…ì†ì— ë¶ˆì”¨ë¥¼ ë‹´ê³  ìˆëŠ” ë‘êº¼ë¹„ì…ë‹ˆë‹¤. ìš¸ìŒì†Œë¦¬ì™€ í•¨ê»˜ ì—°ê¸°ë¥¼ ë‚´ë¿œìŠµë‹ˆë‹¤.,A Fire-element monster of grade R. It fights in the tank role.
-STR_MON_100013_NAME,ì”ë¶ˆë„ë¡±ë‡½,Cinder Salamander
-STR_MON_100013_DESC,êº¼ì§€ì§€ ì•ŠëŠ” ì”ë¶ˆì„ ë”°ë¼ ì‚¬ëŠ” ë„ë¡±ë‡½ì…ë‹ˆë‹¤. ë°”ìœ„ í‹ˆì˜ ì—´ê¸°ë¥¼ ì°¾ì•„ ì´ë™í•©ë‹ˆë‹¤.,A Fire-element monster of grade N. It fights in the support role.
-STR_MON_100014_NAME,ìš©ì•”ê³¨ë ˜,Lava Golem
-STR_MON_100014_DESC,"ìš©ì•”ì´ êµ³ì–´ì„œ ìƒê¸´ ëª¸ì…ë‹ˆë‹¤. ê±¸ì„ ë•Œë§ˆë‹¤ ë°”ë‹¥ì— ì—´ê¸°ê°€ ë‚¨ê³ , ë¹„ê°€ ì˜¤ë©´ ì¦ê¸°ê°€ ì˜¬ë¼ì˜µë‹ˆë‹¤.",A Fire-element monster of grade SR. It fights in the tank role.
-STR_MON_100015_NAME,ë‹¬ë¹›ì˜¬ë¹¼ë¯¸,Moonlight Owl
-STR_MON_100015_DESC,ë‹¬ë¹›ì„ ë°›ì•„ ê¹ƒí„¸ì´ í•˜ì–—ê²Œ ë³´ì´ëŠ” ì˜¬ë¹¼ë¯¸ì…ë‹ˆë‹¤. ìš¸ìŒì†Œë¦¬ë¡œ ë™ë£Œë¥¼ ê¹¨ì›ë‹ˆë‹¤.,A Light-element monster of grade N. It fights in the healer role.
-STR_MON_100016_NAME,ì¿ë¹›ëŠ‘ëŒ€,Ashen Wolf
-STR_MON_100016_DESC,ì¿ë¹› í„¸ë¡œ ë°”ìœ„ì™€ êµ¬ë¶„ë˜ì§€ ì•ŠëŠ” ëŠ‘ëŒ€ì…ë‹ˆë‹¤. ë¬´ë¦¬ë¡œ ì‚¬ëƒ¥ê°ì„ ë‘˜ëŸ¬ìŒ‰ë‹ˆë‹¤.,A Dark-element monster of grade R. It fights in the dealer role.
-STR_MON_100017_NAME,í™”ì‚°ì „ê°ˆ,Volcano Scorpion
-STR_MON_100017_DESC,í™”ì‚° ì§€ëŒ€ì—ì„œë§Œ í™•ì¸ë˜ëŠ” ì „ê°ˆì…ë‹ˆë‹¤. ì§‘ê²Œê°€ ë‹¬ì•„ì˜¤ë¥´ë©´ ë°”ìœ„ë„ ëŠìŠµë‹ˆë‹¤.,A Fire-element monster of grade SR. It fights in the dealer role.
-STR_MON_100018_NAME,ë¬¼ê²°ë±€,Ripple Serpent
-STR_MON_100018_DESC,ë¬¼ì‚´ì„ ë”°ë¼ ì›€ì§ì´ëŠ” ë±€ì…ë‹ˆë‹¤. ë¹„ëŠ˜ì´ ë¬¼ê²° ëª¨ì–‘ìœ¼ë¡œ ë¹›ë‚©ë‹ˆë‹¤.,A Water-element monster of grade R. It fights in the dealer role.
-STR_MON_100019_NAME,ë„ì¿¨ê³°,Vine Bear
-STR_MON_100019_DESC,ë„ì¿¨ì„ ëª¸ì— ë‘ë¥´ê³  ë‹¤ë‹ˆëŠ” ê³°ì…ë‹ˆë‹¤. ë„ì¿¨ë¡œ ìƒì²˜ë¥¼ ìŠ¤ìŠ¤ë¡œ ê°ìŠµë‹ˆë‹¤.,A Grass-element monster of grade R. It fights in the tank role.
-STR_MON_100020_NAME,ë¹›ë¬´ë¦¬ì‚¬ìŠ´,Halo Deer
-STR_MON_100020_DESC,ë¿” ì£¼ë³€ì— ë¹›ë¬´ë¦¬ê°€ ìƒê¸°ëŠ” ì‚¬ìŠ´ì…ë‹ˆë‹¤. ë¹›ë¬´ë¦¬ ì•ˆì—ì„œëŠ” ìƒì²˜ê°€ ì²œì²œíˆ ì•„ë­…ë‹ˆë‹¤.,A Light-element monster of grade R. It fights in the healer role.
-STR_MON_100021_NAME,ê²€ì€ê¹ƒë§¤,Blackfeather Hawk
-STR_MON_100021_DESC,ê²€ì€ ê¹ƒìœ¼ë¡œ ë°¤í•˜ëŠ˜ì— ì„ì´ëŠ” ë§¤ì…ë‹ˆë‹¤. ê¸‰ê°•í•˜ ì†ë„ê°€ ë§¤ìš° ë¹ ë¦…ë‹ˆë‹¤.,A Dark-element monster of grade R. It fights in the dealer role.
-STR_MON_100022_NAME,ë¶ˆí‹°ì—¬ì¹˜,Spark Katydid
-STR_MON_100022_DESC,ë‚ ê°œë¥¼ ë¹„ë²¼ ë¶ˆí‹°ë¥¼ ë§Œë“œëŠ” ì—¬ì¹˜ì…ë‹ˆë‹¤. ë¶ˆí‹° ì†Œë¦¬ë¡œ ë™ë£Œì˜ ì›€ì§ì„ì„ ë§ì¶¥ë‹ˆë‹¤.,A Fire-element monster of grade R. It fights in the support role.
-STR_MON_100023_NAME,ì†Œê¸ˆê²Œ,Salt Crab
-STR_MON_100023_DESC,ì†Œê¸ˆ ë²ŒíŒì— ì‚¬ëŠ” ê²Œì…ë‹ˆë‹¤. ê»ì§ˆì— ì†Œê¸ˆ ê²°ì •ì´ ì¸µì¸µì´ ë¶™ì–´ ìˆìŠµë‹ˆë‹¤.,A Water-element monster of grade R. It fights in the tank role.
-STR_MON_100024_NAME,ê°€ì‹œë©§ë¼ì§€,Thorn Boar
-STR_MON_100024_DESC,ë“±ì— ë‚˜ë¬´ ê°€ì‹œê°€ ìë¼ëŠ” ë©§ë¼ì§€ì…ë‹ˆë‹¤. ë‹¬ë¦¬ë©´ì„œ ê°€ì‹œë¡œ ê¸¸ì„ ëƒ…ë‹ˆë‹¤.,A Grass-element monster of grade R. It fights in the dealer role.
-STR_MON_100025_NAME,ìƒˆë²½ë‚˜ë¹„,Dawn Butterfly
-STR_MON_100025_DESC,ìƒˆë²½ì—ë§Œ ë‚ ê°œë¥¼ í´ëŠ” ë‚˜ë¹„ì…ë‹ˆë‹¤. ë‚ ê°œ ê°€ë£¨ê°€ ë™ë£Œì˜ ë°©ì–´ë¥¼ ë•ìŠµë‹ˆë‹¤.,A Light-element monster of grade R. It fights in the support role.
-STR_MON_100026_NAME,ê·¸ëŠ˜í‘œë²”,Shade Leopard
-STR_MON_100026_DESC,ì†Œë¦¬ ì—†ì´ ì ‘ê·¼í•˜ëŠ” í‘œë²”ì…ë‹ˆë‹¤. ê·¸ëŠ˜ì—ì„œ ë‚˜ì˜¬ ë•Œê¹Œì§€ ëª¨ìŠµì„ í™•ì¸í•˜ê¸° ì–´ë µìŠµë‹ˆë‹¤.,A Dark-element monster of grade R. It fights in the dealer role.
-STR_MON_100027_NAME,ë¶ˆê½ƒìˆ˜ë¦¬,Flame Eagle
-STR_MON_100027_DESC,ë‚ ê°œ ëì´ ë¶ˆë¹›ì²˜ëŸ¼ ë³´ì´ëŠ” ìˆ˜ë¦¬ì…ë‹ˆë‹¤. ê¸‰ê°•í•˜í•  ë•Œ ì—´ê¸°ê°€ í•¨ê»˜ ë‚´ë ¤ì˜µë‹ˆë‹¤.,A Fire-element monster of grade R. It fights in the dealer role.
-STR_MON_100028_NAME,ì‹¬í•´í•´ë§ˆ,Deepsea Seahorse
-STR_MON_100028_DESC,ê¹Šì€ ë¬¼ì—ì„œ ì˜¬ë¼ì˜¤ëŠ” í•´ë§ˆì…ë‹ˆë‹¤. ë¬¼ì‚´ì„ ëª¨ì•„ ë™ë£Œì˜ ìƒì²˜ë¥¼ ì”»ì–´ ëƒ…ë‹ˆë‹¤.,A Water-element monster of grade N. It fights in the healer role.
-STR_MON_100029_NAME,ëŒ€ë‚˜ë¬´íŒŒìˆ˜ê¾¼,Bamboo Sentinel
-STR_MON_100029_DESC,ëŒ€ë‚˜ë¬´ë¥¼ ë¬¶ì–´ ë§Œë“  ëª¸ìœ¼ë¡œ ì›€ì§ì´ëŠ” íŒŒìˆ˜ê¾¼ì…ë‹ˆë‹¤. ì˜ë ¤ë„ ìƒˆ ëŒ€ë‚˜ë¬´ê°€ ìë¼ë‚©ë‹ˆë‹¤.,A Grass-element monster of grade SR. It fights in the tank role.
-STR_MON_100030_NAME,ì„±ì±„ê¸°ì‚¬,Citadel Knight
-STR_MON_100030_DESC,ì„±ì±„ë¥¼ ì§€í‚¤ë˜ ê¸°ì‚¬ì…ë‹ˆë‹¤. ë°©íŒ¨ë¥¼ ë‚´ë ¤ë†“ì§€ ì•Šê³  ê¸¸ëª©ì„ ë§‰ìŠµë‹ˆë‹¤.,A Light-element monster of grade SR. It fights in the tank role.
-STR_MON_100031_NAME,ìƒˆë²½ì˜ ê¸°ì‚¬,Knight of Dawn
-STR_MON_100031_DESC,ìƒˆë²½ ì²« ë¹›ê³¼ í•¨ê»˜ ë‚˜íƒ€ë‚˜ëŠ” ê¸°ì‚¬ì…ë‹ˆë‹¤. ê²€ì„ ë“¤ë©´ ì£¼ë³€ì´ í™˜í•´ì§‘ë‹ˆë‹¤.,A Light-element monster of grade SSR. It fights in the dealer role.
-STR_MON_100032_NAME,ì‹¬ì—°ê°€ì˜¤ë¦¬,Abyss Ray
-STR_MON_100032_DESC,ë¹›ì´ ë‹¿ì§€ ì•ŠëŠ” ë¬¼ì—ì„œ ì‚¬ëŠ” ê°€ì˜¤ë¦¬ì…ë‹ˆë‹¤. ì§€ë‚˜ê°„ ìêµ­ë§Œ ë‚¨ê¸°ê³  ì‚¬ë¼ì§‘ë‹ˆë‹¤.,A Dark-element monster of grade SR. It fights in the dealer role.
-STR_MON_100033_NAME,í™”ì—¼ìˆ˜í˜¸ë³‘,Flame Guardian
-STR_MON_100033_DESC,ë¶ˆì„ ë‹¤ë£¨ë„ë¡ í›ˆë ¨ë°›ì€ ìˆ˜í˜¸ë³‘ì…ë‹ˆë‹¤. ë°©íŒ¨ì— ë¶ˆì´ ë¶™ì€ ìƒíƒœë¡œ ì „ì§„í•©ë‹ˆë‹¤.,A Fire-element monster of grade SR. It fights in the tank role.
-STR_MON_100034_NAME,ë¹™ê²°ëŠ‘ëŒ€,Frostbound Wolf
-STR_MON_100034_DESC,ìˆ¨ì„ ë‚´ì‰¬ë©´ ê³µê¸°ê°€ ì–¼ì–´ë¶™ëŠ” ëŠ‘ëŒ€ì…ë‹ˆë‹¤. ë°œìêµ­ ì£¼ë³€ì— ì–¼ìŒì´ ë‚¨ìŠµë‹ˆë‹¤.,A Water-element monster of grade SR. It fights in the dealer role.
-STR_MON_100035_NAME,ìˆ²ì˜ ê°ì‹œì,Warden of the Forest
-STR_MON_100035_DESC,ìˆ²ì˜ ê¸¸ì„ ì™¸ìš°ê³  ìˆëŠ” ê°ì‹œìì…ë‹ˆë‹¤. ì¹¨ì…ìê°€ ë“¤ì–´ì˜¤ë©´ ë‚˜ë¬´ë¥¼ ìš¸ë ¤ ì•Œë¦½ë‹ˆë‹¤.,A Grass-element monster of grade SR. It fights in the support role.
-STR_MON_100036_NAME,íƒœì–‘ì˜ ì‚¬ì œ,Priest of the Sun
-STR_MON_100036_DESC,íƒœì–‘ ì‹ ì „ì—ì„œ ê¸°ë„ë¥¼ ì˜¬ë¦¬ëŠ” ì‚¬ì œì…ë‹ˆë‹¤. ê¸°ë„ê°€ ëë‚˜ë©´ ë™ë£Œì˜ ìƒì²˜ê°€ ì•„ë­…ë‹ˆë‹¤.,A Light-element monster of grade SSR. It fights in the healer role.
-STR_MON_100037_NAME,ì‹¬í•´ì˜ êµ°ì£¼,Lord of the Deep
-STR_MON_100037_DESC,ê¹Šì€ ë¬¼ì„ ë‹¤ìŠ¤ë¦¬ëŠ” êµ°ì£¼ì…ë‹ˆë‹¤. ë¬¼ì‚´ì„ ëŒì–´ëª¨ì•„ ë²½ì²˜ëŸ¼ ì„¸ì›ë‹ˆë‹¤.,A Water-element monster of grade SSR. It fights in the tank role.
-STR_MON_100038_NAME,ê·¸ë¦¼ì êµ°ì£¼,Shadow Sovereign
-STR_MON_100038_DESC,"ê·¸ë¦¼ì ì•ˆì—ì„œë§Œ ì›€ì§ì´ê³ , ë¹›ì„ ë°›ìœ¼ë©´ ëª¨ìŠµì´ íë ¤ì§‘ë‹ˆë‹¤.",A Dark-element monster of grade UR. It fights in the dealer role.
-STR_MON_100039_NAME,ëŒ€ì§€ì˜ í˜„ì,Sage of the Earth
-STR_MON_100039_DESC,ë•…ì˜ íë¦„ì„ ì½ëŠ” í˜„ìì…ë‹ˆë‹¤. ì§€íŒ¡ì´ë¡œ ë°”ë‹¥ì„ ë‘ë“œë ¤ ê¸¸ì„ ë°”ê¿‰ë‹ˆë‹¤.,A Grass-element monster of grade SSR. It fights in the support role.
-STR_MON_100040_NAME,ë³„ì„ ì‚¼í‚¨ ê³ ë˜,Star-Swallowing Whale
-STR_MON_100040_DESC,"ì–´ë¯¼ë“¤ì€ ì´ ê³ ë˜ë¥¼ ""ë³„ì„ ë¨¹ëŠ” ì""ë¼ê³  ë¶€ë¦…ë‹ˆë‹¤. ë°¤ë°”ë‹¤ì—ì„œë§Œ ëª¨ìŠµì„ í™•ì¸í•  ìˆ˜ ìˆìŠµë‹ˆë‹¤.",A Water-element monster of grade UR. It fights in the tank role.
-STR_SKILL_500001_NAME,í™”ì—¼ í• í€´ê¸°,Flame Claw
-STR_SKILL_500001_DESC,ì  1ì²´ì—ê²Œ ê³µê²©ë ¥ì˜ 150% í”¼í•´ë¥¼ ì¤ë‹ˆë‹¤. ë§ì€ ëŒ€ìƒì€ 2í„´ ë™ì•ˆ í™”ìƒì„ ì…ìŠµë‹ˆë‹¤.,Deals 150% of ATK as damage to enemy one. The target burns for 2 turns.
-STR_SKILL_500002_NAME,ë°˜ì§ ê°€ë£¨,Glimmer Dust
-STR_SKILL_500002_DESC,ì•„êµ° ì „ì²´ì˜ ì²´ë ¥ì„ ìµœëŒ€ ì²´ë ¥ì˜ 10% íšŒë³µí•©ë‹ˆë‹¤.,Restores 10% of max HP to ally all.
-STR_SKILL_500003_NAME,ê±°í’ˆ ë°©íŒ¨,Bubble Shield
-STR_SKILL_500003_DESC,ì•„êµ° 1ì²´ì˜ ë°©ì–´ë ¥ ì¦ê°€ íš¨ê³¼ë¥¼ 2í„´ ë™ì•ˆ ì ìš©í•©ë‹ˆë‹¤.,Applies def_up to ally one for 2 turns.
-STR_SKILL_500004_NAME,ê·¸ëŠ˜ ì†¡ê³³ë‹ˆ,Shade Fang
-STR_SKILL_500004_DESC,ì  1ì²´ì—ê²Œ ê³µê²©ë ¥ì˜ 140% í”¼í•´ë¥¼ ì¤ë‹ˆë‹¤.,Deals 140% of ATK as damage to enemy one.
-STR_SKILL_500005_NAME,ìƒˆì‹¹ ì¹˜ìœ ,Sprout Heal
-STR_SKILL_500005_DESC,ì•„êµ° ì „ì²´ì˜ ì²´ë ¥ì„ ìµœëŒ€ ì²´ë ¥ì˜ 12% íšŒë³µí•©ë‹ˆë‹¤.,Restores 12% of max HP to ally all.
-STR_SKILL_500006_NAME,ëª¨ë˜ ë°©ë²½,Sand Barrier
-STR_SKILL_500006_DESC,ì•„êµ° 1ì²´ì˜ ë°©ì–´ë ¥ ì¦ê°€ íš¨ê³¼ë¥¼ 2í„´ ë™ì•ˆ ì ìš©í•©ë‹ˆë‹¤.,Applies def_up to ally one for 2 turns.
-STR_SKILL_500007_NAME,ë¬¼ê±°í’ˆ ì‘ì›,Bubble Cheer
-STR_SKILL_500007_DESC,ì•„êµ° ì „ì²´ì˜ ê³µê²©ë ¥ ì¦ê°€ íš¨ê³¼ë¥¼ 2í„´ ë™ì•ˆ ì ìš©í•©ë‹ˆë‹¤.,Applies atk_up to ally all for 2 turns.
-STR_SKILL_500008_NAME,ì´ë¼ ê»ì§ˆ,Moss Shell
-STR_SKILL_500008_DESC,ì•„êµ° 1ì²´ì˜ ë°©ì–´ë ¥ ì¦ê°€ íš¨ê³¼ë¥¼ 2í„´ ë™ì•ˆ ì ìš©í•©ë‹ˆë‹¤.,Applies def_up to ally one for 2 turns.
-STR_SKILL_500009_NAME,í–‡ì‚´ ì¹˜ìœ ,Sunray Heal
-STR_SKILL_500009_DESC,ì•„êµ° 1ì²´ì˜ ì²´ë ¥ì„ ìµœëŒ€ ì²´ë ¥ì˜ 15% íšŒë³µí•©ë‹ˆë‹¤.,Restores 15% of max HP to ally one.
-STR_SKILL_500010_NAME,ë°¤ì•ˆê°œ ë² ê¸°,Nightmist Slash
-STR_SKILL_500010_DESC,ì  1ì²´ì—ê²Œ ê³µê²©ë ¥ì˜ 150% í”¼í•´ë¥¼ ì¤ë‹ˆë‹¤.,Deals 150% of ATK as damage to enemy one.
-STR_SKILL_500011_NAME,ìš©ì•” ë¶„ì¶œ,Lava Burst
-STR_SKILL_500011_DESC,ì  ì „ì²´ì—ê²Œ ê³µê²©ë ¥ì˜ 180% í”¼í•´ë¥¼ ì¤ë‹ˆë‹¤. ë§ì€ ëŒ€ìƒì€ 3í„´ ë™ì•ˆ í™”ìƒì„ ì…ìŠµë‹ˆë‹¤.,Deals 180% of ATK as damage to enemy all. The target burns for 3 turns.
-STR_SKILL_500012_NAME,ë…¹ì•„ë‚´ë¦° ê°‘ì˜·,Molten Armor
-STR_SKILL_500012_DESC,ì „íˆ¬ ë‚´ë‚´ ìì‹ ì˜ ë°©ì–´ë ¥ ì¦ê°€ ìˆ˜ì¹˜ë¥¼ 15% ì˜¬ë¦½ë‹ˆë‹¤.,Raises the user's def_up by 15% for the whole battle.
-STR_SKILL_500013_NAME,ìˆ¯ë¶ˆ ë¬¼ê¸°,Charcoal Bite
-STR_SKILL_500013_DESC,ì  1ì²´ì—ê²Œ ê³µê²©ë ¥ì˜ 130% í”¼í•´ë¥¼ ì¤ë‹ˆë‹¤. ë§ì€ ëŒ€ìƒì€ 2í„´ ë™ì•ˆ í™”ìƒì„ ì…ìŠµë‹ˆë‹¤.,Deals 130% of ATK as damage to enemy one. The target burns for 2 turns.
-STR_SKILL_500014_NAME,ë¶ˆì”¨ ë°©íŒ¨,Ember Shield
-STR_SKILL_500014_DESC,ì•„êµ° 1ì²´ì˜ ë°©ì–´ë ¥ ì¦ê°€ íš¨ê³¼ë¥¼ 2í„´ ë™ì•ˆ ì ìš©í•©ë‹ˆë‹¤.,Applies def_up to ally one for 2 turns.
-STR_SKILL_500015_NAME,ì”ë¶ˆ í©ë¿Œë¦¬ê¸°,Cinder Scatter
-STR_SKILL_500015_DESC,ì•„êµ° ì „ì²´ì˜ ê³µê²©ë ¥ ì¦ê°€ íš¨ê³¼ë¥¼ 2í„´ ë™ì•ˆ ì ìš©í•©ë‹ˆë‹¤.,
-STR_SKILL_500016_NAME,ë‹¬ë¹› ì¹˜ìœ ,Moonlight Heal
-STR_SKILL_500016_DESC,ì•„êµ° ì „ì²´ì˜ ì²´ë ¥ì„ ìµœëŒ€ ì²´ë ¥ì˜ 13% íšŒë³µí•©ë‹ˆë‹¤.,Restores 13% of max HP to ally all.
-STR_SKILL_500017_NAME,ì¿ë¹› ì†¡ê³³ë‹ˆ,Ashen Fang
-STR_SKILL_500017_DESC,ì  1ì²´ì—ê²Œ ê³µê²©ë ¥ì˜ 170% í”¼í•´ë¥¼ ì¤ë‹ˆë‹¤.,Deals 170% of ATK as damage to enemy one.
-STR_SKILL_500018_NAME,ë¬¼ê²° ì±„ì°,Ripple Whip
-STR_SKILL_500018_DESC,ì  1ì²´ì—ê²Œ ê³µê²©ë ¥ì˜ 155% í”¼í•´ë¥¼ ì¤ë‹ˆë‹¤.,Deals 155% of ATK as damage to enemy one.
-STR_SKILL_500019_NAME,ë„ì¿¨ í¬ë°•,Vine Bind
-STR_SKILL_500019_DESC,ì  1ì²´ì—ê²Œ ê³µê²©ë ¥ì˜ 110% í”¼í•´ë¥¼ ì¤ë‹ˆë‹¤. ë§ì€ ëŒ€ìƒì€ 1í„´ ë™ì•ˆ ì›€ì§ì´ì§€ ëª»í•©ë‹ˆë‹¤.,Deals 110% of ATK as damage to enemy one. The target cannot move for 1 turns.
-STR_SKILL_500020_NAME,ë¹›ë¬´ë¦¬ ì¹˜ìœ ,Halo Heal
-STR_SKILL_500020_DESC,ì•„êµ° ì „ì²´ì˜ ì²´ë ¥ì„ ìµœëŒ€ ì²´ë ¥ì˜ 14% íšŒë³µí•©ë‹ˆë‹¤.,Restores 14% of max HP to ally all.
-STR_SKILL_500021_NAME,ì„±ê´‘ ì¼ê²©,Holy Strike
-STR_SKILL_500021_DESC,"ë¹›ì„ ëª¨ì•„ í•œ ë²ˆì— ë‚´ë¦¬ì¹˜ê³ , ë§ì€ ëŒ€ìƒì€ 1í„´ ë™ì•ˆ ì›€ì§ì´ì§€ ëª»í•©ë‹ˆë‹¤.","Gathers light into one strike, and the target cannot move for 1 turn."
-STR_SKILL_500022_NAME,ê¸°ì‚¬ì˜ ë§¹ì„¸,Knight's Oath
-STR_SKILL_500022_DESC,ì „íˆ¬ ë‚´ë‚´ ìì‹ ì˜ ê³µê²©ë ¥ ì¦ê°€ ìˆ˜ì¹˜ë¥¼ 10% ì˜¬ë¦½ë‹ˆë‹¤.,Raises the user's atk_up by 10% for the whole battle.
-STR_SKILL_500023_NAME,ê²€ì€ ê¹ƒ ëŒì§„,Blackfeather Dive
-STR_SKILL_500023_DESC,ì  1ì²´ì—ê²Œ ê³µê²©ë ¥ì˜ 180% í”¼í•´ë¥¼ ì¤ë‹ˆë‹¤.,Deals 180% of ATK as damage to enemy one.
-STR_SKILL_500024_NAME,ë¶ˆí‹° ì‘ì›,Spark Cheer
-STR_SKILL_500024_DESC,ì•„êµ° ì „ì²´ì˜ ê³µê²©ë ¥ ì¦ê°€ íš¨ê³¼ë¥¼ 2í„´ ë™ì•ˆ ì ìš©í•©ë‹ˆë‹¤.,Applies atk_up to ally all for 2 turns.
-STR_SKILL_500025_NAME,ì†Œê¸ˆ ë°©ë²½,Salt Barrier
-STR_SKILL_500025_DESC,ì•„êµ° 1ì²´ì˜ ë°©ì–´ë ¥ ì¦ê°€ íš¨ê³¼ë¥¼ 2í„´ ë™ì•ˆ ì ìš©í•©ë‹ˆë‹¤.,Applies def_up to ally one for 2 turns.
-STR_SKILL_500026_NAME,ê°€ì‹œ ëŒì§„,Thorn Charge
-STR_SKILL_500026_DESC,ì  1ì²´ì—ê²Œ ê³µê²©ë ¥ì˜ 190% í”¼í•´ë¥¼ ì¤ë‹ˆë‹¤.,
-STR_SKILL_500027_NAME,ì‹¬ì—°ì˜ ì†ê¸¸,Touch of the Abyss
-STR_SKILL_500027_DESC,ì  ì „ì²´ì—ê²Œ ê³µê²©ë ¥ì˜ 220% í”¼í•´ë¥¼ ì¤ë‹ˆë‹¤. ë§ì€ ëŒ€ìƒì€ 3í„´ ë™ì•ˆ í™”ìƒì„ ì…ìŠµë‹ˆë‹¤.,Deals 220% of ATK as damage to enemy all. The target burns for 3 turns.
-STR_SKILL_500028_NAME,ì–´ë‘ ì˜ ì™•ê´€,Crown of Darkness
-STR_SKILL_500028_DESC,ì „íˆ¬ ë‚´ë‚´ ìì‹ ì˜ ê³µê²©ë ¥ ì¦ê°€ ìˆ˜ì¹˜ë¥¼ 18% ì˜¬ë¦½ë‹ˆë‹¤.,Raises the user's atk_up by 18% for the whole battle.
-STR_SKILL_500029_NAME,ìƒˆë²½ ë¹„ëŠ˜ê°€ë£¨,Dawn Scale Dust
-STR_SKILL_500029_DESC,ì•„êµ° ì „ì²´ì˜ ë°©ì–´ë ¥ ì¦ê°€ íš¨ê³¼ë¥¼ 2í„´ ë™ì•ˆ ì ìš©í•©ë‹ˆë‹¤.,Applies def_up to ally all for 2 turns.
-STR_SKILL_500030_NAME,ì‹¬í•´ ì¹˜ìœ ,Deepsea Heal
-STR_SKILL_500030_DESC,ì•„êµ° ì „ì²´ì˜ ì²´ë ¥ì„ ìµœëŒ€ ì²´ë ¥ì˜ 18% íšŒë³µí•©ë‹ˆë‹¤.,Restores 18% of max HP to ally all.
-STR_SKILL_500031_NAME,ë³„ë¹› ì‚¼í‚¤ê¸°,Star Swallow
-STR_SKILL_500031_DESC,ì  ì „ì²´ì—ê²Œ ê³µê²©ë ¥ì˜ 200% í”¼í•´ë¥¼ ì¤ë‹ˆë‹¤. ë§ì€ ëŒ€ìƒì€ 2í„´ ë™ì•ˆ ì›€ì§ì´ì§€ ëª»í•©ë‹ˆë‹¤.,Deals 200% of ATK as damage to enemy all. The target cannot move for 2 turns.
-STR_SKILL_500032_NAME,ë³„ë¹› ë¹„ëŠ˜,Starlight Scale
-STR_SKILL_500032_DESC,ì „íˆ¬ ë‚´ë‚´ ìì‹ ì˜ ë°©ì–´ë ¥ ì¦ê°€ ìˆ˜ì¹˜ë¥¼ 22% ì˜¬ë¦½ë‹ˆë‹¤.,Raises the user's def_up by 22% for the whole battle.
-STR_SKILL_500033_NAME,ë¶ˆê½ƒ ê¸‰ê°•í•˜,Flame Dive
-STR_SKILL_500033_DESC,ì  1ì²´ì—ê²Œ ê³µê²©ë ¥ì˜ 210% í”¼í•´ë¥¼ ì¤ë‹ˆë‹¤. ë§ì€ ëŒ€ìƒì€ 2í„´ ë™ì•ˆ í™”ìƒì„ ì…ìŠµë‹ˆë‹¤.,Deals 210% of ATK as damage to enemy one. The target burns for 2 turns.
-STR_SKILL_500034_NAME,í•´ë§ˆ ë¬¼ì‚´,Seahorse Current
-STR_SKILL_500034_DESC,ì•„êµ° ì „ì²´ì˜ ì²´ë ¥ì„ ìµœëŒ€ ì²´ë ¥ì˜ 17% íšŒë³µí•©ë‹ˆë‹¤.,Restores 17% of max HP to ally all.
-STR_SKILL_500035_NAME,í™”ì‚° ì§‘ê²Œ,Volcano Pincer
-STR_SKILL_500035_DESC,ì  1ì²´ì—ê²Œ ê³µê²©ë ¥ì˜ 185% í”¼í•´ë¥¼ ì¤ë‹ˆë‹¤. ë§ì€ ëŒ€ìƒì€ 2í„´ ë™ì•ˆ í™”ìƒì„ ì…ìŠµë‹ˆë‹¤.,Deals 185% of ATK as damage to enemy one. The target burns for 2 turns.
-STR_SKILL_500036_NAME,í™”ì‚° í”¼ë¶€,Volcanic Skin
-STR_SKILL_500036_DESC,ì „íˆ¬ ë‚´ë‚´ ìì‹ ì˜ ë°©ì–´ë ¥ ì¦ê°€ ìˆ˜ì¹˜ë¥¼ 12% ì˜¬ë¦½ë‹ˆë‹¤.,Raises the user's def_up by 12% for the whole battle.
-STR_SKILL_500037_NAME,ëŒ€ë‚˜ë¬´ ê²°ê³„,Bamboo Ward
-STR_SKILL_500037_DESC,ì•„êµ° ì „ì²´ì˜ ë°©ì–´ë ¥ ì¦ê°€ íš¨ê³¼ë¥¼ 3í„´ ë™ì•ˆ ì ìš©í•©ë‹ˆë‹¤.,Applies def_up to ally all for 3 turns.
-STR_SKILL_500038_NAME,ëŒ€ë‚˜ë¬´ ê»ì§ˆ,Bamboo Bark
-STR_SKILL_500038_DESC,ì „íˆ¬ ë‚´ë‚´ ìì‹ ì˜ ë°©ì–´ë ¥ ì¦ê°€ ìˆ˜ì¹˜ë¥¼ 13% ì˜¬ë¦½ë‹ˆë‹¤.,Raises the user's def_up by 13% for the whole battle.
-STR_SKILL_500039_NAME,ì„±ì±„ ë°©ì–´ì„ ,Citadel Line
-STR_SKILL_500039_DESC,ì•„êµ° ì „ì²´ì˜ ë°©ì–´ë ¥ ì¦ê°€ íš¨ê³¼ë¥¼ 3í„´ ë™ì•ˆ ì ìš©í•©ë‹ˆë‹¤.,Applies def_up to ally all for 3 turns.
-STR_SKILL_500040_NAME,ì„±ì±„ì˜ ê¸ì§€,Citadel Pride
-STR_SKILL_500040_DESC,ì „íˆ¬ ë‚´ë‚´ ìì‹ ì˜ ë°©ì–´ë ¥ ì¦ê°€ ìˆ˜ì¹˜ë¥¼ 16% ì˜¬ë¦½ë‹ˆë‹¤.,Raises the user's def_up by 16% for the whole battle.
-STR_SKILL_500041_NAME,ì‹¬ì—° ê°€ë¥´ê¸°,Abyss Cut
-STR_SKILL_500041_DESC,ì  1ì²´ì—ê²Œ ê³µê²©ë ¥ì˜ 230% í”¼í•´ë¥¼ ì¤ë‹ˆë‹¤.,
-STR_SKILL_500042_NAME,ì‹¬ì—°ì˜ ê¸°ìš´,Aura of the Abyss
-STR_SKILL_500042_DESC,ì „íˆ¬ ë‚´ë‚´ ìì‹ ì˜ ê³µê²©ë ¥ ì¦ê°€ ìˆ˜ì¹˜ë¥¼ 14% ì˜¬ë¦½ë‹ˆë‹¤.,Raises the user's atk_up by 14% for the whole battle.
-STR_SKILL_500043_NAME,í™”ì—¼ ìˆ˜í˜¸ íƒ€ê²©,Flame Guard Strike
-STR_SKILL_500043_DESC,ì  1ì²´ì—ê²Œ ê³µê²©ë ¥ì˜ 195% í”¼í•´ë¥¼ ì¤ë‹ˆë‹¤. ë§ì€ ëŒ€ìƒì€ 2í„´ ë™ì•ˆ í™”ìƒì„ ì…ìŠµë‹ˆë‹¤.,Deals 195% of ATK as damage to enemy one. The target burns for 2 turns.
-STR_SKILL_500044_NAME,ë¶ˆì˜ ê°€í˜¸,Blessing of Fire
-STR_SKILL_500044_DESC,ì „íˆ¬ ë‚´ë‚´ ìì‹ ì˜ ê³µê²©ë ¥ ì¦ê°€ ìˆ˜ì¹˜ë¥¼ 11% ì˜¬ë¦½ë‹ˆë‹¤.,Raises the user's atk_up by 11% for the whole battle.
-STR_SKILL_500045_NAME,ë¹™ê²° ì†¡ê³³ë‹ˆ,Frost Fang
-STR_SKILL_500045_DESC,ì  1ì²´ì—ê²Œ ê³µê²©ë ¥ì˜ 225% í”¼í•´ë¥¼ ì¤ë‹ˆë‹¤. ë§ì€ ëŒ€ìƒì€ 1í„´ ë™ì•ˆ ì›€ì§ì´ì§€ ëª»í•©ë‹ˆë‹¤.,Deals 225% of ATK as damage to enemy one. The target cannot move for 1 turns.
-STR_SKILL_500046_NAME,ì–¼ìŒ ê²°ì •,Ice Crystal
-STR_SKILL_500046_DESC,ì „íˆ¬ ë‚´ë‚´ ìì‹ ì˜ ë°©ì–´ë ¥ ì¦ê°€ ìˆ˜ì¹˜ë¥¼ 17% ì˜¬ë¦½ë‹ˆë‹¤.,Raises the user's def_up by 17% for the whole battle.
-STR_SKILL_500047_NAME,ìˆ²ì˜ ê°ì‹œ,Forest Watch
-STR_SKILL_500047_DESC,ì•„êµ° ì „ì²´ì˜ ê³µê²©ë ¥ ì¦ê°€ íš¨ê³¼ë¥¼ 3í„´ ë™ì•ˆ ì ìš©í•©ë‹ˆë‹¤.,Applies atk_up to ally all for 3 turns.
-STR_SKILL_500048_NAME,ìˆ²ì˜ ì¶•ë³µ,Forest Blessing
-STR_SKILL_500048_DESC,ì „íˆ¬ ë‚´ë‚´ ìì‹ ì˜ ê³µê²©ë ¥ ì¦ê°€ ìˆ˜ì¹˜ë¥¼ 9% ì˜¬ë¦½ë‹ˆë‹¤.,Raises the user's atk_up by 9% for the whole battle.
-STR_SKILL_500049_NAME,íƒœì–‘ ê¸°ë„,Sun Prayer
-STR_SKILL_500049_DESC,ì•„êµ° ì „ì²´ì˜ ì²´ë ¥ì„ ìµœëŒ€ ì²´ë ¥ì˜ 22% íšŒë³µí•©ë‹ˆë‹¤.,Restores 22% of max HP to ally all.
-STR_SKILL_500050_NAME,íƒœì–‘ì˜ ê°€í˜¸,Blessing of the Sun
-STR_SKILL_500050_DESC,ì „íˆ¬ ë‚´ë‚´ ìì‹ ì˜ ê³µê²©ë ¥ ì¦ê°€ ìˆ˜ì¹˜ë¥¼ 19% ì˜¬ë¦½ë‹ˆë‹¤.,Raises the user's atk_up by 19% for the whole battle.
-STR_SKILL_500051_NAME,ì‹¬í•´ ê²©ë¥˜,Deepsea Torrent
-STR_SKILL_500051_DESC,ì  ì „ì²´ì—ê²Œ ê³µê²©ë ¥ì˜ 210% í”¼í•´ë¥¼ ì¤ë‹ˆë‹¤.,Deals 210% of ATK as damage to enemy all.
-STR_SKILL_500052_NAME,ê¹Šì€ ë¬¼ì˜ ì••ë ¥,Pressure of the Deep
-STR_SKILL_500052_DESC,ì „íˆ¬ ë‚´ë‚´ ìì‹ ì˜ ë°©ì–´ë ¥ ì¦ê°€ ìˆ˜ì¹˜ë¥¼ 20% ì˜¬ë¦½ë‹ˆë‹¤.,Raises the user's def_up by 20% for the whole battle.
-STR_SKILL_500053_NAME,ëŒ€ì§€ ê· ì—´,Earth Rift
-STR_SKILL_500053_DESC,ì  ì „ì²´ì—ê²Œ ê³µê²©ë ¥ì˜ 190% í”¼í•´ë¥¼ ì¤ë‹ˆë‹¤. ë§ì€ ëŒ€ìƒì€ 2í„´ ë™ì•ˆ ì›€ì§ì´ì§€ ëª»í•©ë‹ˆë‹¤.,Deals 190% of ATK as damage to enemy all. The target cannot move for 2 turns.
-STR_SKILL_500054_NAME,ëŒ€ì§€ì˜ ì§€í˜œ,Wisdom of the Earth
-STR_SKILL_500054_DESC,ì „íˆ¬ ë‚´ë‚´ ìì‹ ì˜ ê³µê²©ë ¥ ì¦ê°€ ìˆ˜ì¹˜ë¥¼ 15% ì˜¬ë¦½ë‹ˆë‹¤.,Raises the user's atk_up by 15% for the whole battle.
-STR_SKILL_500055_NAME,ê³ ìš”í•œ ì¼ê²©,Quiet Strike
-STR_SKILL_500055_DESC,ì  1ì²´ì—ê²Œ ê³µê²©ë ¥ì˜ 150% í”¼í•´ë¥¼ ì¤ë‹ˆë‹¤.,Deals 150% of ATK as damage to enemy one.
-STR_SKILL_500056_NAME,ê³ ìš”í•œ ì§‘ì¤‘,Quiet Focus
-STR_SKILL_500056_DESC,ì „íˆ¬ ë‚´ë‚´ ìì‹ ì˜ ê³µê²©ë ¥ ì¦ê°€ ìˆ˜ì¹˜ë¥¼ 8% ì˜¬ë¦½ë‹ˆë‹¤.,Raises the user's atk_up by 8% for the whole battle.
-STR_ITEM_201001_NAME,ì—¬ìš° ê¼¬ë¦¬í„¸,Fox Tail Fur
-STR_ITEM_201001_DESC,ë¶ˆê½ƒì—¬ìš° ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Flame Fox. Used for crafting.
-STR_ITEM_201002_NAME,ê²Œ ê»ì§ˆ,Crab Shell
-STR_ITEM_201002_DESC,ë¬¼ë°©ìš¸ê²Œ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Droplet Crab. Used for crafting.
-STR_ITEM_201003_NAME,í† ë¼ ë°œí†±,Rabbit Claw
-STR_ITEM_201003_DESC,ë©êµ´í† ë¼ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Vine Rabbit. Used for crafting.
-STR_ITEM_201004_NAME,ë‚˜ë°© ë¹„ëŠ˜,Moth Scale
-STR_ITEM_201004_DESC,ë°˜ì§ë‚˜ë°© ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Glimmer Moth. Used for crafting.
-STR_ITEM_201005_NAME,ì¥ ì´ë¹¨,Mouse Tooth
-STR_ITEM_201005_DESC,ê·¸ëŠ˜ì¥ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Shade Mouse. Used for crafting.
-STR_ITEM_201006_NAME,ë„ë§ˆë±€ ë¹„ëŠ˜,Lizard Scale
-STR_ITEM_201006_DESC,ëª¨ë˜ë„ë§ˆë±€ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Sand Lizard. Used for crafting.
-STR_ITEM_201007_NAME,ìƒˆ ê¹ƒí„¸,Bird Feather
-STR_ITEM_201007_DESC,ë¬¼ê±°í’ˆìƒˆ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Bubble Bird. Used for crafting.
-STR_ITEM_201008_NAME,ê±°ë¶ ë“±ë”±ì§€,Turtle Shell
-STR_ITEM_201008_DESC,ì´ë¼ê±°ë¶ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Moss Turtle. Used for crafting.
-STR_ITEM_201009_NAME,ë‹¤ëŒì¥ í„¸,Squirrel Fur
-STR_ITEM_201009_DESC,í–‡ì‚´ë‹¤ëŒì¥ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Sunray Squirrel. Used for crafting.
-STR_ITEM_201010_NAME,ë°•ì¥ ë‚ ê°œ,Bat Wing
-STR_ITEM_201010_DESC,ë°¤ì•ˆê°œë°•ì¥ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Nightmist Bat. Used for crafting.
-STR_ITEM_201011_NAME,ìˆ¯ ì¡°ê°,Charcoal Piece
-STR_ITEM_201011_DESC,ìˆ¯ë¶ˆê°•ì•„ì§€ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Charcoal Pup. Used for crafting.
-STR_ITEM_201012_NAME,êµ³ì€ ìš©ì•” ì¡°ê°,Hardened Lava Shard
-STR_ITEM_201012_DESC,ë¶ˆì”¨ë‘êº¼ë¹„ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Ember Toad. Used for crafting.
-STR_ITEM_201013_NAME,ìš©ì•” ë¹„ëŠ˜,Lava Scale
-STR_ITEM_201013_DESC,ì”ë¶ˆë„ë¡±ë‡½ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Cinder Salamander. Used for crafting.
-STR_ITEM_201014_NAME,ìš©ì•” í•µ,Lava Core
-STR_ITEM_201014_DESC,"ìš©ì•”ê³¨ë ˜ì˜ ì¤‘ì‹¬ì—ì„œ êº¼ë‚¸ ì¬ë£Œì…ë‹ˆë‹¤. ì‹ì§€ ì•Šê³ , ì†ìœ¼ë¡œ ì¡ìœ¼ë©´ í™”ìƒì„ ì…ìŠµë‹ˆë‹¤.","A material taken from the core of a Lava Golem. It never cools, and it burns bare hands."
-STR_ITEM_201015_NAME,ë‹¬ë¹› ê¹ƒí„¸,Moonlight Feather
-STR_ITEM_201015_DESC,ë‹¬ë¹›ì˜¬ë¹¼ë¯¸ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Moonlight Owl. Used for crafting.
-STR_ITEM_201016_NAME,ëŠ‘ëŒ€ ì†¡ê³³ë‹ˆ,Wolf Fang
-STR_ITEM_201016_DESC,ì¿ë¹›ëŠ‘ëŒ€ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Ashen Wolf. Used for crafting.
-STR_ITEM_201017_NAME,ì „ê°ˆ ì§‘ê²Œ,Scorpion Pincer
-STR_ITEM_201017_DESC,í™”ì‚°ì „ê°ˆ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Volcano Scorpion. Used for crafting.
-STR_ITEM_201018_NAME,ë±€ ë¹„ëŠ˜,Serpent Scale
-STR_ITEM_201018_DESC,ë¬¼ê²°ë±€ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Ripple Serpent. Used for crafting.
-STR_ITEM_201019_NAME,ê³° ë°œí†±,Bear Claw
-STR_ITEM_201019_DESC,ë„ì¿¨ê³° ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,
-STR_ITEM_201020_NAME,ì‚¬ìŠ´ ë¿”,Deer Antler
-STR_ITEM_201020_DESC,ë¹›ë¬´ë¦¬ì‚¬ìŠ´ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Halo Deer. Used for crafting.
-STR_ITEM_201021_NAME,ë§¤ ë°œí†±,Hawk Talon
-STR_ITEM_201021_DESC,ê²€ì€ê¹ƒë§¤ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Blackfeather Hawk. Used for crafting.
-STR_ITEM_201022_NAME,ì—¬ì¹˜ ë‚ ê°œ,Katydid Wing
-STR_ITEM_201022_DESC,ë¶ˆí‹°ì—¬ì¹˜ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Spark Katydid. Used for crafting.
-STR_ITEM_201023_NAME,ì†Œê¸ˆ ê²°ì •,Salt Crystal
-STR_ITEM_201023_DESC,ì†Œê¸ˆê²Œ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Salt Crab. Used for crafting.
-STR_ITEM_201024_NAME,ë©§ë¼ì§€ ê°€ì‹œ,Boar Thorn
-STR_ITEM_201024_DESC,ê°€ì‹œë©§ë¼ì§€ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Thorn Boar. Used for crafting.
-STR_ITEM_201025_NAME,ë‚˜ë¹„ ê°€ë£¨,Butterfly Dust
-STR_ITEM_201025_DESC,ìƒˆë²½ë‚˜ë¹„ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,
-STR_ITEM_201026_NAME,í‘œë²” ê°€ì£½,Leopard Hide
-STR_ITEM_201026_DESC,ê·¸ëŠ˜í‘œë²” ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Shade Leopard. Used for crafting.
-STR_ITEM_201027_NAME,ìˆ˜ë¦¬ ê¹ƒí„¸,Eagle Feather
-STR_ITEM_201027_DESC,ë¶ˆê½ƒìˆ˜ë¦¬ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Flame Eagle. Used for crafting.
-STR_ITEM_201028_NAME,í•´ë§ˆ ì§€ëŠëŸ¬ë¯¸,Seahorse Fin
-STR_ITEM_201028_DESC,ì‹¬í•´í•´ë§ˆ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Deepsea Seahorse. Used for crafting.
-STR_ITEM_201029_NAME,ëŒ€ë‚˜ë¬´ ì‹¬,Bamboo Core
-STR_ITEM_201029_DESC,ëŒ€ë‚˜ë¬´íŒŒìˆ˜ê¾¼ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Bamboo Sentinel. Used for crafting.
-STR_ITEM_201030_NAME,ì„±ì±„ ì¡°ê°,Citadel Fragment
-STR_ITEM_201030_DESC,ì„±ì±„ê¸°ì‚¬ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Citadel Knight. Used for crafting.
-STR_ITEM_201031_NAME,ìƒˆë²½ ê´‘ì„,Dawn Ore
-STR_ITEM_201031_DESC,ìƒˆë²½ì˜ ê¸°ì‚¬ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Knight of Dawn. Used for crafting.
-STR_ITEM_201032_NAME,ì‹¬ì—° ë¹„ëŠ˜,Abyss Scale
-STR_ITEM_201032_DESC,ì‹¬ì—°ê°€ì˜¤ë¦¬ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Abyss Ray. Used for crafting.
-STR_ITEM_201033_NAME,í™”ì—¼ ê°‘ê°,Flame Carapace
-STR_ITEM_201033_DESC,í™”ì—¼ìˆ˜í˜¸ë³‘ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Flame Guardian. Used for crafting.
-STR_ITEM_201034_NAME,ë¹™ê²° ê²°ì •,Frost Crystal
-STR_ITEM_201034_DESC,ë¹™ê²°ëŠ‘ëŒ€ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Frostbound Wolf. Used for crafting.
-STR_ITEM_201035_NAME,ìˆ²ì˜ ìˆ˜ì•¡,Forest Sap
-STR_ITEM_201035_DESC,ìˆ²ì˜ ê°ì‹œì ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Warden of the Forest. Used for crafting.
-STR_ITEM_201036_NAME,íƒœì–‘ ë³´ì„,Sun Gem
-STR_ITEM_201036_DESC,íƒœì–‘ì˜ ì‚¬ì œ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Priest of the Sun. Used for crafting.
-STR_ITEM_201037_NAME,ì‹¬í•´ ì§„ì£¼,Deepsea Pearl
-STR_ITEM_201037_DESC,ì‹¬í•´ì˜ êµ°ì£¼ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Lord of the Deep. Used for crafting.
-STR_ITEM_201038_NAME,ì–´ë‘  ê²°ì •,Dark Crystal
-STR_ITEM_201038_DESC,ê·¸ë¦¼ì êµ°ì£¼ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Shadow Sovereign. Used for crafting.
-STR_ITEM_201039_NAME,ëŒ€ì§€ ê²°ì •,Earth Crystal
-STR_ITEM_201039_DESC,ëŒ€ì§€ì˜ í˜„ì ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Sage of the Earth. Used for crafting.
-STR_ITEM_201040_NAME,ë³„ ì¡°ê°,Star Fragment
-STR_ITEM_201040_DESC,ë³„ì„ ì‚¼í‚¨ ê³ ë˜ ì‚¬ëƒ¥ìœ¼ë¡œ ì–»ëŠ” ì¬ë£Œì…ë‹ˆë‹¤. ì¥ë¹„ ì œì‘ì— ì‚¬ìš©í•©ë‹ˆë‹¤.,A material dropped by Star-Swallowing Whale. Used for crafting.
-STR_ITEM_202001_NAME,ì†Œí˜• íšŒë³µ ë¬¼ì•½,Small Potion
-STR_ITEM_202001_DESC,"ì²´ë ¥ì„ 20% íšŒë³µí•©ë‹ˆë‹¤. ì „íˆ¬ ì¤‘, ì´ë™ ì¤‘ ëª¨ë‘ ì‚¬ìš©í•  ìˆ˜ ìˆìŠµë‹ˆë‹¤.","Restores 20% HP. Usable in battle, or while moving."
-STR_ITEM_202002_NAME,ì¤‘í˜• íšŒë³µ ë¬¼ì•½,Medium Potion
-STR_ITEM_202002_DESC,ì²´ë ¥ì„ 40% íšŒë³µí•©ë‹ˆë‹¤.,Restores 40% HP.
-STR_ITEM_202003_NAME,ê²½í—˜ì˜ ë‘ë£¨ë§ˆë¦¬,Scroll of Experience
-STR_ITEM_202003_DESC,ê²½í—˜ì¹˜ë¥¼ 5% ë” ë°›ìŠµë‹ˆë‹¤.,Grants 5% extra experience.
-STR_ITEM_202004_NAME,ëŒ€í˜• íšŒë³µ ë¬¼ì•½,Large Potion
-STR_ITEM_202004_DESC,ì²´ë ¥ì„ 70% íšŒë³µí•©ë‹ˆë‹¤.,Restores 70% HP.
-STR_ITEM_202005_NAME,í–‰ë™ë ¥ ìŒë£Œ,Stamina Drink
-STR_ITEM_202005_DESC,í–‰ë™ë ¥ì„ 20 íšŒë³µí•©ë‹ˆë‹¤.,Restores 20 stamina.
-STR_ITEM_202006_NAME,í–‰ë™ë ¥ ì˜ì•½,Stamina Elixir
-STR_ITEM_202006_DESC,í–‰ë™ë ¥ì„ 50 íšŒë³µí•©ë‹ˆë‹¤.,Restores 50 stamina.
-STR_ITEM_202007_NAME,ê²½í—˜ì˜ ì„œì±…,Book of Experience
-STR_ITEM_202007_DESC,ê²½í—˜ì¹˜ë¥¼ 12% ë” ë°›ìŠµë‹ˆë‹¤.,Grants 12% extra experience.
-STR_ITEM_202008_NAME,ì™„ì „ íšŒë³µ ë¬¼ì•½,Full Potion
-STR_ITEM_202008_DESC,ì²´ë ¥ì„ 100% íšŒë³µí•©ë‹ˆë‹¤.,Restores 100% HP.
-STR_ITEM_202009_NAME,ì†Œí˜• í–‰ë™ë ¥ ì‚¬íƒ•,Small Stamina Candy
-STR_ITEM_202009_DESC,í–‰ë™ë ¥ì„ 10 íšŒë³µí•©ë‹ˆë‹¤.,Restores 10 stamina.
-STR_ITEM_202010_NAME,ìˆ™ë ¨ì˜ ë‘ë£¨ë§ˆë¦¬,Scroll of Mastery
-STR_ITEM_202010_DESC,ê²½í—˜ì¹˜ë¥¼ 15% ë” ë°›ìŠµë‹ˆë‹¤.,Grants 15% extra experience.
-STR_ITEM_202011_NAME,ì•¼ì˜ ì‹ì‚¬,Camp Meal
-STR_ITEM_202011_DESC,í–‰ë™ë ¥ì„ 35 íšŒë³µí•©ë‹ˆë‹¤.,
-STR_ITEM_202012_NAME,ì „íˆ¬ ê°ì„±ì œ,Battle Stimulant
-STR_ITEM_202012_DESC,ì²´ë ¥ì„ 60% íšŒë³µí•©ë‹ˆë‹¤.,Restores 60% HP.
-STR_ITEM_202013_NAME,ê³ ëŒ€ì˜ ê²½í—˜ì„œ,Ancient Codex
-STR_ITEM_202013_DESC,ê²½í—˜ì¹˜ë¥¼ 25% ë” ë°›ìŠµë‹ˆë‹¤.,Grants 25% extra experience.
-STR_ITEM_202014_NAME,ë³„ë¹› í–‰ë™ë ¥ ì˜ì•½,Starlight Stamina Elixir
-STR_ITEM_202014_DESC,í–‰ë™ë ¥ì„ 80 íšŒë³µí•©ë‹ˆë‹¤.,Restores 80 stamina.
-STR_ITEM_202015_NAME,ì™„ì „ ê°ì„±ì„œ,Full Awakening Tome
-STR_ITEM_202015_DESC,ê²½í—˜ì¹˜ë¥¼ 40% ë” ë°›ìŠµë‹ˆë‹¤.,Grants 40% extra experience.
-STR_ITEM_203001_NAME,ê³¨ë“œ,Gold
-STR_ITEM_203001_DESC,ì‚¬ëƒ¥ê³¼ ìŠ¤í…Œì´ì§€ ë°˜ë³µ ë³´ìƒìœ¼ë¡œ ëª¨ìœ¼ëŠ” ê¸°ë³¸ ì¬í™”ì…ë‹ˆë‹¤.,Gold is used across the game.
-STR_ITEM_203002_NAME,ë£¨ë¹„,Ruby
-STR_ITEM_203002_DESC,ìŠ¤í…Œì´ì§€ë¥¼ ì²˜ìŒ í´ë¦¬ì–´í•  ë•Œ ë°›ëŠ” ì¬í™”ì…ë‹ˆë‹¤.,Ruby is used across the game.
-STR_ITEM_203003_NAME,ë„ê° í¬ì¸íŠ¸,Dex Point
-STR_ITEM_203003_DESC,ë„ê°ì„ ì±„ìš¸ ë•Œ ì˜¬ë¼ê°€ëŠ” ì¬í™”ì…ë‹ˆë‹¤.,Dex Point is used across the game.
-STR_ITEM_203004_NAME,ì‚¬ëƒ¥ í›ˆì¥,Hunt Medal
-STR_ITEM_203004_DESC,ê°™ì€ ëª¬ìŠ¤í„°ë¥¼ ì—¬ëŸ¬ ë²ˆ ì‚¬ëƒ¥í•˜ë©´ ëª¨ì´ëŠ” ì¬í™”ì…ë‹ˆë‹¤.,Hunt Medal is used across the game.
-STR_ITEM_203005_NAME,ë³„ë¹› ì¡°ê°,Starlight Shard
-STR_ITEM_203005_DESC,ì¶œì‹œ ì˜ˆì • ì½˜í…ì¸ ì—ì„œ ì‚¬ìš©í•  ì¬í™”ì…ë‹ˆë‹¤.,
-STR_STAGE_401001_NAME,ì´ˆì› ì…êµ¬,Meadow Entrance
-STR_STAGE_401002_NAME,ë°”ëŒ ì–¸ë•,Windy Hill
-STR_STAGE_401003_NAME,ì´ë¼ ìˆ²ê¸¸,Mossy Trail
-STR_STAGE_401004_NAME,ë¬¼ë°©ìš¸ ìƒ˜,Droplet Spring
-STR_STAGE_401005_NAME,í–‡ì‚´ ë“¤íŒ,Sunlit Field
-STR_STAGE_401006_NAME,ëŒë¬´ì§€ ê¸¸,Stony Path
-STR_STAGE_401007_NAME,ì¬ì˜ ì–¸ë•,Hill of Ash
-STR_STAGE_401008_NAME,ëœ¨ê±°ìš´ ë°”ìœ„ë°­,Scorching Rockfield
-STR_STAGE_401009_NAME,ìš©ì•” ë™êµ´ ì…êµ¬,Lava Cave Entrance
-STR_STAGE_401010_NAME,ìš©ì•” ë™êµ´ ê¹Šì€ ê³³,Depths of the Lava Cave
-STR_STAGE_402001_NAME,ì„œëŠ˜í•œ í•´ì•ˆ,Chilly Shore
-STR_STAGE_402002_NAME,ì†Œê¸ˆ ë²ŒíŒ,Salt Flats
-STR_STAGE_402003_NAME,ë°€ë¬¼ ë™êµ´,
-STR_STAGE_402004_NAME,ì‚°í˜¸ ê¸¸,Coral Path
-STR_STAGE_402005_NAME,ê¹Šì€ ë¬¼ê°€,Deep Waterside
-STR_STAGE_402006_NAME,ì•ˆê°œ í•­êµ¬,Misty Harbor
-STR_STAGE_402007_NAME,íì„  ê°‘íŒ,Wrecked Deck
-STR_STAGE_402008_NAME,í•´ì € ê· ì—´,Seafloor Rift
-STR_STAGE_402009_NAME,ì‹¬í•´ ê´€ë¬¸,Deepsea Gate
-STR_STAGE_402010_NAME,íƒœì–‘ ì‹ ì „,Temple of the Sun
-STR_STAGE_403001_NAME,ìƒˆë²½ ì„±ë¬¸,Dawn Gate
-STR_STAGE_403002_NAME,í° ëŒ ê³„ë‹¨,White Stone Stairs
-STR_STAGE_403003_NAME,ê¸°ì‚¬ë‹¨ ì—°ë³‘ì¥,Knights' Drill Ground
-STR_STAGE_403004_NAME,ì„±ì±„ íšŒë‘,Citadel Corridor
-STR_STAGE_403005_NAME,ì–´ë‘ ì˜ ì„œê³ ,Library of Darkness
-STR_STAGE_403006_NAME,ê·¸ë¦¼ì ë³µë„,Shadow Hallway
-STR_STAGE_403007_NAME,ë³„ë¹› ì „ë§ëŒ€,
-STR_STAGE_403008_NAME,ì‹¬ì—° í†µë¡œ,Abyss Passage
-STR_STAGE_403009_NAME,ì™•ì¢Œ ì•ë§ˆë‹¹,Courtyard of the Throne
-STR_STAGE_403010_NAME,ìƒˆë²½ì˜ ì™•ì¢Œ,Throne of Dawn
-STR_MON_100099_NAME,ì•ˆê°œì—¬ìš°,Mist Fox
-STR_SKILL_500099_NAME,ì•ˆê°œ ê°€ë¥´ê¸°,Mist Cut
-STR_ITEM_201099_DESC,ì‚¬ë¼ì§„ ì¬ë£Œì˜ ì„¤ëª…ì…ë‹ˆë‹¤.,Description of a removed material.
-STR_ITEM_202016_NAME,í•´ë…ì œ,Antidote
-STR_ITEM_202016_DESC,ë…ì„ ì—†ì• ê³  ì²´ë ¥ì„ 10% íšŒë³µí•©ë‹ˆë‹¤.,Cures poison and restores 10% HP.
+STR_MON_100001_NAME,ºÒ²É¿©¿ì,Flame Fox
+STR_MON_100001_DESC,²¿¸® ³¡¿¡¼­ ºÒ¾¾°¡ ¶³¾îÁö´Â ¿©¿ìÀÔ´Ï´Ù. È­°¡ ³ª¸é ²¿¸®°¡ 3¹è·Î Ä¿Áı´Ï´Ù.,
+STR_MON_100002_NAME,¹°¹æ¿ï°Ô,Droplet Crab
+STR_MON_100002_DESC,µî²®Áú¿¡ ¹°À» ´ã¾Æ µÎ´Â °ÔÀÔ´Ï´Ù. À§ÇèÇÏ¸é ¹°À» »Õ°í ¸ğ·¡ ¼ÓÀ¸·Î µé¾î°©´Ï´Ù.,A Water-element monster of grade N. It fights in the tank role.
+STR_MON_100003_NAME,µ¢±¼Åä³¢,Vine Rabbit
+STR_MON_100003_DESC,±Í¿¡ µ¢±¼ÀÌ ÀÚ¶ó´Â Åä³¢ÀÔ´Ï´Ù. µ¢±¼¿¡¼­ ³ª¿À´Â ÁóÀ¸·Î µ¿·áÀÇ »óÃ³¸¦ µ¤½À´Ï´Ù.,A Grass-element monster of grade N. It fights in the support role.
+STR_MON_100004_NAME,¹İÂ¦³ª¹æ,Glimmer Moth
+STR_MON_100004_DESC,³¯°³¿¡ ºû°¡·ç°¡ ºÙ¾î ÀÖ´Â ³ª¹æÀÔ´Ï´Ù. °¡·ç¸¦ ¸ÂÀ¸¸é ¸öÀÌ °¡º­¿öÁı´Ï´Ù.,A Light-element monster of grade N. It fights in the healer role.
+STR_MON_100005_NAME,±×´ÃÁã,Shade Mouse
+STR_MON_100005_DESC,±×´Ã¿¡¼­¸¸ ¿òÁ÷ÀÌ´Â ÁãÀÔ´Ï´Ù. ºûÀÌ ´êÀ¸¸é ´«À» °¨°í ¸ØÃä´Ï´Ù.,
+STR_MON_100006_NAME,¸ğ·¡µµ¸¶¹ì,Sand Lizard
+STR_MON_100006_DESC,¸ğ·¡¿¡ ¸öÀ» ¹¯°í ¿­À» ¸ğÀ¸´Â µµ¸¶¹ìÀÔ´Ï´Ù. µî ºñ´ÃÀÌ ¶ß°Ì°Ô ´Ş¾Æ¿À¸¨´Ï´Ù.,A Fire-element monster of grade N. It fights in the tank role.
+STR_MON_100007_NAME,¹°°ÅÇ°»õ,Bubble Bird
+STR_MON_100007_DESC,ºÎ¸®·Î ¹°°ÅÇ°À» ¸¸µå´Â »õÀÔ´Ï´Ù. °ÅÇ°ÀÌ ÅÍÁö¸é µ¿·áÀÇ ÇÇ·Î°¡ ÁÙ¾îµì´Ï´Ù.,A Water-element monster of grade N. It fights in the support role.
+STR_MON_100008_NAME,ÀÌ³¢°ÅºÏ,Moss Turtle
+STR_MON_100008_DESC,µî¿¡ ÀÌ³¢¸¦ ±â¸£´Â °ÅºÏÀÔ´Ï´Ù. ÀÌ³¢°¡ µÎ²¨¿öÁú¼ö·Ï ²®ÁúÀÌ ´Ü´ÜÇØÁı´Ï´Ù.,A Grass-element monster of grade N. It fights in the tank role.
+STR_MON_100009_NAME,ÇŞ»ì´Ù¶÷Áã,Sunray Squirrel
+STR_MON_100009_DESC,ÇŞºûÀ» ¸ğ¾Æ µÎ´Â ´Ù¶÷ÁãÀÔ´Ï´Ù. ¸ğÀº ºûÀ» µ¿·á¿¡°Ô ³ª´² Áİ´Ï´Ù.,A Light-element monster of grade N. It fights in the healer role.
+STR_MON_100010_NAME,¹ã¾È°³¹ÚÁã,Nightmist Bat
+STR_MON_100010_DESC,¾È°³°¡ ³¤ ¹ã¿¡¸¸ »ç³ÉÇÏ´Â ¹ÚÁãÀÔ´Ï´Ù. ³¯°³ ¼Ò¸®°¡ °ÅÀÇ ³ªÁö ¾Ê½À´Ï´Ù.,
+STR_MON_100011_NAME,½¡ºÒ°­¾ÆÁö,Charcoal Pup
+STR_MON_100011_DESC,½¡Ã³·³ °ËÀº ÅĞ ¾Æ·¡¿¡ ºÒ¾¾¸¦ Ç°Àº °­¾ÆÁöÀÔ´Ï´Ù. ¶Ù¸é ¹ßÀÚ±¹ÀÌ ±×À»¸³´Ï´Ù.,A Fire-element monster of grade N. It fights in the dealer role.
+STR_MON_100012_NAME,ºÒ¾¾µÎ²¨ºñ,Ember Toad
+STR_MON_100012_DESC,ÀÔ¼Ó¿¡ ºÒ¾¾¸¦ ´ã°í ÀÖ´Â µÎ²¨ºñÀÔ´Ï´Ù. ¿ïÀ½¼Ò¸®¿Í ÇÔ²² ¿¬±â¸¦ ³»»Õ½À´Ï´Ù.,A Fire-element monster of grade R. It fights in the tank role.
+STR_MON_100013_NAME,ÀÜºÒµµ·Õ´¨,Cinder Salamander
+STR_MON_100013_DESC,²¨ÁöÁö ¾Ê´Â ÀÜºÒÀ» µû¶ó »ç´Â µµ·Õ´¨ÀÔ´Ï´Ù. ¹ÙÀ§ Æ´ÀÇ ¿­±â¸¦ Ã£¾Æ ÀÌµ¿ÇÕ´Ï´Ù.,A Fire-element monster of grade N. It fights in the support role.
+STR_MON_100014_NAME,¿ë¾Ï°ñ·½,Lava Golem
+STR_MON_100014_DESC,"¿ë¾ÏÀÌ ±»¾î¼­ »ı±ä ¸öÀÔ´Ï´Ù. °ÉÀ» ¶§¸¶´Ù ¹Ù´Ú¿¡ ¿­±â°¡ ³²°í, ºñ°¡ ¿À¸é Áõ±â°¡ ¿Ã¶ó¿É´Ï´Ù.",A Fire-element monster of grade SR. It fights in the tank role.
+STR_MON_100015_NAME,´Şºû¿Ã»©¹Ì,Moonlight Owl
+STR_MON_100015_DESC,´ŞºûÀ» ¹Ş¾Æ ±êÅĞÀÌ ÇÏ¾é°Ô º¸ÀÌ´Â ¿Ã»©¹ÌÀÔ´Ï´Ù. ¿ïÀ½¼Ò¸®·Î µ¿·á¸¦ ±ú¿ó´Ï´Ù.,A Light-element monster of grade N. It fights in the healer role.
+STR_MON_100016_NAME,Àíºû´Á´ë,Ashen Wolf
+STR_MON_100016_DESC,Àíºû ÅĞ·Î ¹ÙÀ§¿Í ±¸ºĞµÇÁö ¾Ê´Â ´Á´ëÀÔ´Ï´Ù. ¹«¸®·Î »ç³É°¨À» µÑ·¯½Ô´Ï´Ù.,A Dark-element monster of grade R. It fights in the dealer role.
+STR_MON_100017_NAME,È­»êÀü°¥,Volcano Scorpion
+STR_MON_100017_DESC,È­»ê Áö´ë¿¡¼­¸¸ È®ÀÎµÇ´Â Àü°¥ÀÔ´Ï´Ù. Áı°Ô°¡ ´Ş¾Æ¿À¸£¸é ¹ÙÀ§µµ ²÷½À´Ï´Ù.,A Fire-element monster of grade SR. It fights in the dealer role.
+STR_MON_100018_NAME,¹°°á¹ì,Ripple Serpent
+STR_MON_100018_DESC,¹°»ìÀ» µû¶ó ¿òÁ÷ÀÌ´Â ¹ìÀÔ´Ï´Ù. ºñ´ÃÀÌ ¹°°á ¸ğ¾çÀ¸·Î ºû³³´Ï´Ù.,A Water-element monster of grade R. It fights in the dealer role.
+STR_MON_100019_NAME,³ÕÄğ°õ,Vine Bear
+STR_MON_100019_DESC,³ÕÄğÀ» ¸ö¿¡ µÎ¸£°í ´Ù´Ï´Â °õÀÔ´Ï´Ù. ³ÕÄğ·Î »óÃ³¸¦ ½º½º·Î °¨½À´Ï´Ù.,A Grass-element monster of grade R. It fights in the tank role.
+STR_MON_100020_NAME,ºû¹«¸®»ç½¿,Halo Deer
+STR_MON_100020_DESC,»Ô ÁÖº¯¿¡ ºû¹«¸®°¡ »ı±â´Â »ç½¿ÀÔ´Ï´Ù. ºû¹«¸® ¾È¿¡¼­´Â »óÃ³°¡ ÃµÃµÈ÷ ¾Æ¹´´Ï´Ù.,A Light-element monster of grade R. It fights in the healer role.
+STR_MON_100021_NAME,°ËÀº±ê¸Å,Blackfeather Hawk
+STR_MON_100021_DESC,°ËÀº ±êÀ¸·Î ¹ãÇÏ´Ã¿¡ ¼¯ÀÌ´Â ¸ÅÀÔ´Ï´Ù. ±Ş°­ÇÏ ¼Óµµ°¡ ¸Å¿ì ºü¸¨´Ï´Ù.,A Dark-element monster of grade R. It fights in the dealer role.
+STR_MON_100022_NAME,ºÒÆ¼¿©Ä¡,Spark Katydid
+STR_MON_100022_DESC,³¯°³¸¦ ºñº­ ºÒÆ¼¸¦ ¸¸µå´Â ¿©Ä¡ÀÔ´Ï´Ù. ºÒÆ¼ ¼Ò¸®·Î µ¿·áÀÇ ¿òÁ÷ÀÓÀ» ¸ÂÃä´Ï´Ù.,A Fire-element monster of grade R. It fights in the support role.
+STR_MON_100023_NAME,¼Ò±İ°Ô,Salt Crab
+STR_MON_100023_DESC,¼Ò±İ ¹úÆÇ¿¡ »ç´Â °ÔÀÔ´Ï´Ù. ²®Áú¿¡ ¼Ò±İ °áÁ¤ÀÌ ÃşÃşÀÌ ºÙ¾î ÀÖ½À´Ï´Ù.,A Water-element monster of grade R. It fights in the tank role.
+STR_MON_100024_NAME,°¡½Ã¸äµÅÁö,Thorn Boar
+STR_MON_100024_DESC,µî¿¡ ³ª¹« °¡½Ã°¡ ÀÚ¶ó´Â ¸äµÅÁöÀÔ´Ï´Ù. ´Ş¸®¸é¼­ °¡½Ã·Î ±æÀ» ³À´Ï´Ù.,A Grass-element monster of grade R. It fights in the dealer role.
+STR_MON_100025_NAME,»õº®³ªºñ,Dawn Butterfly
+STR_MON_100025_DESC,»õº®¿¡¸¸ ³¯°³¸¦ Æì´Â ³ªºñÀÔ´Ï´Ù. ³¯°³ °¡·ç°¡ µ¿·áÀÇ ¹æ¾î¸¦ µ½½À´Ï´Ù.,A Light-element monster of grade R. It fights in the support role.
+STR_MON_100026_NAME,±×´ÃÇ¥¹ü,Shade Leopard
+STR_MON_100026_DESC,¼Ò¸® ¾øÀÌ Á¢±ÙÇÏ´Â Ç¥¹üÀÔ´Ï´Ù. ±×´Ã¿¡¼­ ³ª¿Ã ¶§±îÁö ¸ğ½ÀÀ» È®ÀÎÇÏ±â ¾î·Æ½À´Ï´Ù.,A Dark-element monster of grade R. It fights in the dealer role.
+STR_MON_100027_NAME,ºÒ²É¼ö¸®,Flame Eagle
+STR_MON_100027_DESC,³¯°³ ³¡ÀÌ ºÒºûÃ³·³ º¸ÀÌ´Â ¼ö¸®ÀÔ´Ï´Ù. ±Ş°­ÇÏÇÒ ¶§ ¿­±â°¡ ÇÔ²² ³»·Á¿É´Ï´Ù.,A Fire-element monster of grade R. It fights in the dealer role.
+STR_MON_100028_NAME,½ÉÇØÇØ¸¶,Deepsea Seahorse
+STR_MON_100028_DESC,±íÀº ¹°¿¡¼­ ¿Ã¶ó¿À´Â ÇØ¸¶ÀÔ´Ï´Ù. ¹°»ìÀ» ¸ğ¾Æ µ¿·áÀÇ »óÃ³¸¦ ¾Ä¾î ³À´Ï´Ù.,A Water-element monster of grade N. It fights in the healer role.
+STR_MON_100029_NAME,´ë³ª¹«ÆÄ¼ö²Û,Bamboo Sentinel
+STR_MON_100029_DESC,´ë³ª¹«¸¦ ¹­¾î ¸¸µç ¸öÀ¸·Î ¿òÁ÷ÀÌ´Â ÆÄ¼ö²ÛÀÔ´Ï´Ù. Àß·Áµµ »õ ´ë³ª¹«°¡ ÀÚ¶ó³³´Ï´Ù.,A Grass-element monster of grade SR. It fights in the tank role.
+STR_MON_100030_NAME,¼ºÃ¤±â»ç,Citadel Knight
+STR_MON_100030_DESC,¼ºÃ¤¸¦ ÁöÅ°´ø ±â»çÀÔ´Ï´Ù. ¹æÆĞ¸¦ ³»·Á³õÁö ¾Ê°í ±æ¸ñÀ» ¸·½À´Ï´Ù.,A Light-element monster of grade SR. It fights in the tank role.
+STR_MON_100031_NAME,»õº®ÀÇ ±â»ç,Knight of Dawn
+STR_MON_100031_DESC,»õº® Ã¹ ºû°ú ÇÔ²² ³ªÅ¸³ª´Â ±â»çÀÔ´Ï´Ù. °ËÀ» µé¸é ÁÖº¯ÀÌ È¯ÇØÁı´Ï´Ù.,A Light-element monster of grade SSR. It fights in the dealer role.
+STR_MON_100032_NAME,½É¿¬°¡¿À¸®,Abyss Ray
+STR_MON_100032_DESC,ºûÀÌ ´êÁö ¾Ê´Â ¹°¿¡¼­ »ç´Â °¡¿À¸®ÀÔ´Ï´Ù. Áö³ª°£ ÀÚ±¹¸¸ ³²±â°í »ç¶óÁı´Ï´Ù.,A Dark-element monster of grade SR. It fights in the dealer role.
+STR_MON_100033_NAME,È­¿°¼öÈ£º´,Flame Guardian
+STR_MON_100033_DESC,ºÒÀ» ´Ù·çµµ·Ï ÈÆ·Ã¹ŞÀº ¼öÈ£º´ÀÔ´Ï´Ù. ¹æÆĞ¿¡ ºÒÀÌ ºÙÀº »óÅÂ·Î ÀüÁøÇÕ´Ï´Ù.,A Fire-element monster of grade SR. It fights in the tank role.
+STR_MON_100034_NAME,ºù°á´Á´ë,Frostbound Wolf
+STR_MON_100034_DESC,¼ûÀ» ³»½¬¸é °ø±â°¡ ¾ó¾îºÙ´Â ´Á´ëÀÔ´Ï´Ù. ¹ßÀÚ±¹ ÁÖº¯¿¡ ¾óÀ½ÀÌ ³²½À´Ï´Ù.,A Water-element monster of grade SR. It fights in the dealer role.
+STR_MON_100035_NAME,½£ÀÇ °¨½ÃÀÚ,Warden of the Forest
+STR_MON_100035_DESC,½£ÀÇ ±æÀ» ¿Ü¿ì°í ÀÖ´Â °¨½ÃÀÚÀÔ´Ï´Ù. Ä§ÀÔÀÚ°¡ µé¾î¿À¸é ³ª¹«¸¦ ¿ï·Á ¾Ë¸³´Ï´Ù.,A Grass-element monster of grade SR. It fights in the support role.
+STR_MON_100036_NAME,ÅÂ¾çÀÇ »çÁ¦,Priest of the Sun
+STR_MON_100036_DESC,ÅÂ¾ç ½ÅÀü¿¡¼­ ±âµµ¸¦ ¿Ã¸®´Â »çÁ¦ÀÔ´Ï´Ù. ±âµµ°¡ ³¡³ª¸é µ¿·áÀÇ »óÃ³°¡ ¾Æ¹´´Ï´Ù.,A Light-element monster of grade SSR. It fights in the healer role.
+STR_MON_100037_NAME,½ÉÇØÀÇ ±ºÁÖ,Lord of the Deep
+STR_MON_100037_DESC,±íÀº ¹°À» ´Ù½º¸®´Â ±ºÁÖÀÔ´Ï´Ù. ¹°»ìÀ» ²ø¾î¸ğ¾Æ º®Ã³·³ ¼¼¿ó´Ï´Ù.,A Water-element monster of grade SSR. It fights in the tank role.
+STR_MON_100038_NAME,±×¸²ÀÚ ±ºÁÖ,Shadow Sovereign
+STR_MON_100038_DESC,"±×¸²ÀÚ ¾È¿¡¼­¸¸ ¿òÁ÷ÀÌ°í, ºûÀ» ¹ŞÀ¸¸é ¸ğ½ÀÀÌ Èå·ÁÁı´Ï´Ù.",A Dark-element monster of grade UR. It fights in the dealer role.
+STR_MON_100039_NAME,´ëÁöÀÇ ÇöÀÚ,Sage of the Earth
+STR_MON_100039_DESC,¶¥ÀÇ Èå¸§À» ÀĞ´Â ÇöÀÚÀÔ´Ï´Ù. ÁöÆÎÀÌ·Î ¹Ù´ÚÀ» µÎµå·Á ±æÀ» ¹Ù²ß´Ï´Ù.,A Grass-element monster of grade SSR. It fights in the support role.
+STR_MON_100040_NAME,º°À» »ïÅ² °í·¡,Star-Swallowing Whale
+STR_MON_100040_DESC,"¾î¹ÎµéÀº ÀÌ °í·¡¸¦ ""º°À» ¸Ô´Â ÀÚ""¶ó°í ºÎ¸¨´Ï´Ù. ¹ã¹Ù´Ù¿¡¼­¸¸ ¸ğ½ÀÀ» È®ÀÎÇÒ ¼ö ÀÖ½À´Ï´Ù.",A Water-element monster of grade UR. It fights in the tank role.
+STR_SKILL_500001_NAME,È­¿° ÇÒÄû±â,Flame Claw
+STR_SKILL_500001_DESC,Àû 1Ã¼¿¡°Ô °ø°İ·ÂÀÇ 150% ÇÇÇØ¸¦ Áİ´Ï´Ù. ¸ÂÀº ´ë»óÀº 2ÅÏ µ¿¾È È­»óÀ» ÀÔ½À´Ï´Ù.,Deals 150% of ATK as damage to enemy one. The target burns for 2 turns.
+STR_SKILL_500002_NAME,¹İÂ¦ °¡·ç,Glimmer Dust
+STR_SKILL_500002_DESC,¾Æ±º ÀüÃ¼ÀÇ Ã¼·ÂÀ» ÃÖ´ë Ã¼·ÂÀÇ 10% È¸º¹ÇÕ´Ï´Ù.,Restores 10% of max HP to ally all.
+STR_SKILL_500003_NAME,°ÅÇ° ¹æÆĞ,Bubble Shield
+STR_SKILL_500003_DESC,¾Æ±º 1Ã¼ÀÇ ¹æ¾î·Â Áõ°¡ È¿°ú¸¦ 2ÅÏ µ¿¾È Àû¿ëÇÕ´Ï´Ù.,Applies def_up to ally one for 2 turns.
+STR_SKILL_500004_NAME,±×´Ã ¼Û°÷´Ï,Shade Fang
+STR_SKILL_500004_DESC,Àû 1Ã¼¿¡°Ô °ø°İ·ÂÀÇ 140% ÇÇÇØ¸¦ Áİ´Ï´Ù.,Deals 140% of ATK as damage to enemy one.
+STR_SKILL_500005_NAME,»õ½Ï Ä¡À¯,Sprout Heal
+STR_SKILL_500005_DESC,¾Æ±º ÀüÃ¼ÀÇ Ã¼·ÂÀ» ÃÖ´ë Ã¼·ÂÀÇ 12% È¸º¹ÇÕ´Ï´Ù.,Restores 12% of max HP to ally all.
+STR_SKILL_500006_NAME,¸ğ·¡ ¹æº®,Sand Barrier
+STR_SKILL_500006_DESC,¾Æ±º 1Ã¼ÀÇ ¹æ¾î·Â Áõ°¡ È¿°ú¸¦ 2ÅÏ µ¿¾È Àû¿ëÇÕ´Ï´Ù.,Applies def_up to ally one for 2 turns.
+STR_SKILL_500007_NAME,¹°°ÅÇ° ÀÀ¿ø,Bubble Cheer
+STR_SKILL_500007_DESC,¾Æ±º ÀüÃ¼ÀÇ °ø°İ·Â Áõ°¡ È¿°ú¸¦ 2ÅÏ µ¿¾È Àû¿ëÇÕ´Ï´Ù.,Applies atk_up to ally all for 2 turns.
+STR_SKILL_500008_NAME,ÀÌ³¢ ²®Áú,Moss Shell
+STR_SKILL_500008_DESC,¾Æ±º 1Ã¼ÀÇ ¹æ¾î·Â Áõ°¡ È¿°ú¸¦ 2ÅÏ µ¿¾È Àû¿ëÇÕ´Ï´Ù.,Applies def_up to ally one for 2 turns.
+STR_SKILL_500009_NAME,ÇŞ»ì Ä¡À¯,Sunray Heal
+STR_SKILL_500009_DESC,¾Æ±º 1Ã¼ÀÇ Ã¼·ÂÀ» ÃÖ´ë Ã¼·ÂÀÇ 15% È¸º¹ÇÕ´Ï´Ù.,Restores 15% of max HP to ally one.
+STR_SKILL_500010_NAME,¹ã¾È°³ º£±â,Nightmist Slash
+STR_SKILL_500010_DESC,Àû 1Ã¼¿¡°Ô °ø°İ·ÂÀÇ 150% ÇÇÇØ¸¦ Áİ´Ï´Ù.,Deals 150% of ATK as damage to enemy one.
+STR_SKILL_500011_NAME,¿ë¾Ï ºĞÃâ,Lava Burst
+STR_SKILL_500011_DESC,Àû ÀüÃ¼¿¡°Ô °ø°İ·ÂÀÇ 180% ÇÇÇØ¸¦ Áİ´Ï´Ù. ¸ÂÀº ´ë»óÀº 3ÅÏ µ¿¾È È­»óÀ» ÀÔ½À´Ï´Ù.,Deals 180% of ATK as damage to enemy all. The target burns for 3 turns.
+STR_SKILL_500012_NAME,³ì¾Æ³»¸° °©¿Ê,Molten Armor
+STR_SKILL_500012_DESC,ÀüÅõ ³»³» ÀÚ½ÅÀÇ ¹æ¾î·Â Áõ°¡ ¼öÄ¡¸¦ 15% ¿Ã¸³´Ï´Ù.,Raises the user's def_up by 15% for the whole battle.
+STR_SKILL_500013_NAME,½¡ºÒ ¹°±â,Charcoal Bite
+STR_SKILL_500013_DESC,Àû 1Ã¼¿¡°Ô °ø°İ·ÂÀÇ 130% ÇÇÇØ¸¦ Áİ´Ï´Ù. ¸ÂÀº ´ë»óÀº 2ÅÏ µ¿¾È È­»óÀ» ÀÔ½À´Ï´Ù.,Deals 130% of ATK as damage to enemy one. The target burns for 2 turns.
+STR_SKILL_500014_NAME,ºÒ¾¾ ¹æÆĞ,Ember Shield
+STR_SKILL_500014_DESC,¾Æ±º 1Ã¼ÀÇ ¹æ¾î·Â Áõ°¡ È¿°ú¸¦ 2ÅÏ µ¿¾È Àû¿ëÇÕ´Ï´Ù.,Applies def_up to ally one for 2 turns.
+STR_SKILL_500015_NAME,ÀÜºÒ Èğ»Ñ¸®±â,Cinder Scatter
+STR_SKILL_500015_DESC,¾Æ±º ÀüÃ¼ÀÇ °ø°İ·Â Áõ°¡ È¿°ú¸¦ 2ÅÏ µ¿¾È Àû¿ëÇÕ´Ï´Ù.,
+STR_SKILL_500016_NAME,´Şºû Ä¡À¯,Moonlight Heal
+STR_SKILL_500016_DESC,¾Æ±º ÀüÃ¼ÀÇ Ã¼·ÂÀ» ÃÖ´ë Ã¼·ÂÀÇ 13% È¸º¹ÇÕ´Ï´Ù.,Restores 13% of max HP to ally all.
+STR_SKILL_500017_NAME,Àíºû ¼Û°÷´Ï,Ashen Fang
+STR_SKILL_500017_DESC,Àû 1Ã¼¿¡°Ô °ø°İ·ÂÀÇ 170% ÇÇÇØ¸¦ Áİ´Ï´Ù.,Deals 170% of ATK as damage to enemy one.
+STR_SKILL_500018_NAME,¹°°á Ã¤Âï,Ripple Whip
+STR_SKILL_500018_DESC,Àû 1Ã¼¿¡°Ô °ø°İ·ÂÀÇ 155% ÇÇÇØ¸¦ Áİ´Ï´Ù.,Deals 155% of ATK as damage to enemy one.
+STR_SKILL_500019_NAME,³ÕÄğ Æ÷¹Ú,Vine Bind
+STR_SKILL_500019_DESC,Àû 1Ã¼¿¡°Ô °ø°İ·ÂÀÇ 110% ÇÇÇØ¸¦ Áİ´Ï´Ù. ¸ÂÀº ´ë»óÀº 1ÅÏ µ¿¾È ¿òÁ÷ÀÌÁö ¸øÇÕ´Ï´Ù.,Deals 110% of ATK as damage to enemy one. The target cannot move for 1 turns.
+STR_SKILL_500020_NAME,ºû¹«¸® Ä¡À¯,Halo Heal
+STR_SKILL_500020_DESC,¾Æ±º ÀüÃ¼ÀÇ Ã¼·ÂÀ» ÃÖ´ë Ã¼·ÂÀÇ 14% È¸º¹ÇÕ´Ï´Ù.,Restores 14% of max HP to ally all.
+STR_SKILL_500021_NAME,¼º±¤ ÀÏ°İ,Holy Strike
+STR_SKILL_500021_DESC,"ºûÀ» ¸ğ¾Æ ÇÑ ¹ø¿¡ ³»¸®Ä¡°í, ¸ÂÀº ´ë»óÀº 1ÅÏ µ¿¾È ¿òÁ÷ÀÌÁö ¸øÇÕ´Ï´Ù.","Gathers light into one strike, and the target cannot move for 1 turn."
+STR_SKILL_500022_NAME,±â»çÀÇ ¸Í¼¼,Knight's Oath
+STR_SKILL_500022_DESC,ÀüÅõ ³»³» ÀÚ½ÅÀÇ °ø°İ·Â Áõ°¡ ¼öÄ¡¸¦ 10% ¿Ã¸³´Ï´Ù.,Raises the user's atk_up by 10% for the whole battle.
+STR_SKILL_500023_NAME,°ËÀº ±ê µ¹Áø,Blackfeather Dive
+STR_SKILL_500023_DESC,Àû 1Ã¼¿¡°Ô °ø°İ·ÂÀÇ 180% ÇÇÇØ¸¦ Áİ´Ï´Ù.,Deals 180% of ATK as damage to enemy one.
+STR_SKILL_500024_NAME,ºÒÆ¼ ÀÀ¿ø,Spark Cheer
+STR_SKILL_500024_DESC,¾Æ±º ÀüÃ¼ÀÇ °ø°İ·Â Áõ°¡ È¿°ú¸¦ 2ÅÏ µ¿¾È Àû¿ëÇÕ´Ï´Ù.,Applies atk_up to ally all for 2 turns.
+STR_SKILL_500025_NAME,¼Ò±İ ¹æº®,Salt Barrier
+STR_SKILL_500025_DESC,¾Æ±º 1Ã¼ÀÇ ¹æ¾î·Â Áõ°¡ È¿°ú¸¦ 2ÅÏ µ¿¾È Àû¿ëÇÕ´Ï´Ù.,Applies def_up to ally one for 2 turns.
+STR_SKILL_500026_NAME,°¡½Ã µ¹Áø,Thorn Charge
+STR_SKILL_500026_DESC,Àû 1Ã¼¿¡°Ô °ø°İ·ÂÀÇ 190% ÇÇÇØ¸¦ Áİ´Ï´Ù.,
+STR_SKILL_500027_NAME,½É¿¬ÀÇ ¼Õ±æ,Touch of the Abyss
+STR_SKILL_500027_DESC,Àû ÀüÃ¼¿¡°Ô °ø°İ·ÂÀÇ 220% ÇÇÇØ¸¦ Áİ´Ï´Ù. ¸ÂÀº ´ë»óÀº 3ÅÏ µ¿¾È È­»óÀ» ÀÔ½À´Ï´Ù.,Deals 220% of ATK as damage to enemy all. The target burns for 3 turns.
+STR_SKILL_500028_NAME,¾îµÒÀÇ ¿Õ°ü,Crown of Darkness
+STR_SKILL_500028_DESC,ÀüÅõ ³»³» ÀÚ½ÅÀÇ °ø°İ·Â Áõ°¡ ¼öÄ¡¸¦ 18% ¿Ã¸³´Ï´Ù.,Raises the user's atk_up by 18% for the whole battle.
+STR_SKILL_500029_NAME,»õº® ºñ´Ã°¡·ç,Dawn Scale Dust
+STR_SKILL_500029_DESC,¾Æ±º ÀüÃ¼ÀÇ ¹æ¾î·Â Áõ°¡ È¿°ú¸¦ 2ÅÏ µ¿¾È Àû¿ëÇÕ´Ï´Ù.,Applies def_up to ally all for 2 turns.
+STR_SKILL_500030_NAME,½ÉÇØ Ä¡À¯,Deepsea Heal
+STR_SKILL_500030_DESC,¾Æ±º ÀüÃ¼ÀÇ Ã¼·ÂÀ» ÃÖ´ë Ã¼·ÂÀÇ 18% È¸º¹ÇÕ´Ï´Ù.,Restores 18% of max HP to ally all.
+STR_SKILL_500031_NAME,º°ºû »ïÅ°±â,Star Swallow
+STR_SKILL_500031_DESC,Àû ÀüÃ¼¿¡°Ô °ø°İ·ÂÀÇ 200% ÇÇÇØ¸¦ Áİ´Ï´Ù. ¸ÂÀº ´ë»óÀº 2ÅÏ µ¿¾È ¿òÁ÷ÀÌÁö ¸øÇÕ´Ï´Ù.,Deals 200% of ATK as damage to enemy all. The target cannot move for 2 turns.
+STR_SKILL_500032_NAME,º°ºû ºñ´Ã,Starlight Scale
+STR_SKILL_500032_DESC,ÀüÅõ ³»³» ÀÚ½ÅÀÇ ¹æ¾î·Â Áõ°¡ ¼öÄ¡¸¦ 22% ¿Ã¸³´Ï´Ù.,Raises the user's def_up by 22% for the whole battle.
+STR_SKILL_500033_NAME,ºÒ²É ±Ş°­ÇÏ,Flame Dive
+STR_SKILL_500033_DESC,Àû 1Ã¼¿¡°Ô °ø°İ·ÂÀÇ 210% ÇÇÇØ¸¦ Áİ´Ï´Ù. ¸ÂÀº ´ë»óÀº 2ÅÏ µ¿¾È È­»óÀ» ÀÔ½À´Ï´Ù.,Deals 210% of ATK as damage to enemy one. The target burns for 2 turns.
+STR_SKILL_500034_NAME,ÇØ¸¶ ¹°»ì,Seahorse Current
+STR_SKILL_500034_DESC,¾Æ±º ÀüÃ¼ÀÇ Ã¼·ÂÀ» ÃÖ´ë Ã¼·ÂÀÇ 17% È¸º¹ÇÕ´Ï´Ù.,Restores 17% of max HP to ally all.
+STR_SKILL_500035_NAME,È­»ê Áı°Ô,Volcano Pincer
+STR_SKILL_500035_DESC,Àû 1Ã¼¿¡°Ô °ø°İ·ÂÀÇ 185% ÇÇÇØ¸¦ Áİ´Ï´Ù. ¸ÂÀº ´ë»óÀº 2ÅÏ µ¿¾È È­»óÀ» ÀÔ½À´Ï´Ù.,Deals 185% of ATK as damage to enemy one. The target burns for 2 turns.
+STR_SKILL_500036_NAME,È­»ê ÇÇºÎ,Volcanic Skin
+STR_SKILL_500036_DESC,ÀüÅõ ³»³» ÀÚ½ÅÀÇ ¹æ¾î·Â Áõ°¡ ¼öÄ¡¸¦ 12% ¿Ã¸³´Ï´Ù.,Raises the user's def_up by 12% for the whole battle.
+STR_SKILL_500037_NAME,´ë³ª¹« °á°è,Bamboo Ward
+STR_SKILL_500037_DESC,¾Æ±º ÀüÃ¼ÀÇ ¹æ¾î·Â Áõ°¡ È¿°ú¸¦ 3ÅÏ µ¿¾È Àû¿ëÇÕ´Ï´Ù.,Applies def_up to ally all for 3 turns.
+STR_SKILL_500038_NAME,´ë³ª¹« ²®Áú,Bamboo Bark
+STR_SKILL_500038_DESC,ÀüÅõ ³»³» ÀÚ½ÅÀÇ ¹æ¾î·Â Áõ°¡ ¼öÄ¡¸¦ 13% ¿Ã¸³´Ï´Ù.,Raises the user's def_up by 13% for the whole battle.
+STR_SKILL_500039_NAME,¼ºÃ¤ ¹æ¾î¼±,Citadel Line
+STR_SKILL_500039_DESC,¾Æ±º ÀüÃ¼ÀÇ ¹æ¾î·Â Áõ°¡ È¿°ú¸¦ 3ÅÏ µ¿¾È Àû¿ëÇÕ´Ï´Ù.,Applies def_up to ally all for 3 turns.
+STR_SKILL_500040_NAME,¼ºÃ¤ÀÇ ±àÁö,Citadel Pride
+STR_SKILL_500040_DESC,ÀüÅõ ³»³» ÀÚ½ÅÀÇ ¹æ¾î·Â Áõ°¡ ¼öÄ¡¸¦ 16% ¿Ã¸³´Ï´Ù.,Raises the user's def_up by 16% for the whole battle.
+STR_SKILL_500041_NAME,½É¿¬ °¡¸£±â,Abyss Cut
+STR_SKILL_500041_DESC,Àû 1Ã¼¿¡°Ô °ø°İ·ÂÀÇ 230% ÇÇÇØ¸¦ Áİ´Ï´Ù.,
+STR_SKILL_500042_NAME,½É¿¬ÀÇ ±â¿î,Aura of the Abyss
+STR_SKILL_500042_DESC,ÀüÅõ ³»³» ÀÚ½ÅÀÇ °ø°İ·Â Áõ°¡ ¼öÄ¡¸¦ 14% ¿Ã¸³´Ï´Ù.,Raises the user's atk_up by 14% for the whole battle.
+STR_SKILL_500043_NAME,È­¿° ¼öÈ£ Å¸°İ,Flame Guard Strike
+STR_SKILL_500043_DESC,Àû 1Ã¼¿¡°Ô °ø°İ·ÂÀÇ 195% ÇÇÇØ¸¦ Áİ´Ï´Ù. ¸ÂÀº ´ë»óÀº 2ÅÏ µ¿¾È È­»óÀ» ÀÔ½À´Ï´Ù.,Deals 195% of ATK as damage to enemy one. The target burns for 2 turns.
+STR_SKILL_500044_NAME,ºÒÀÇ °¡È£,Blessing of Fire
+STR_SKILL_500044_DESC,ÀüÅõ ³»³» ÀÚ½ÅÀÇ °ø°İ·Â Áõ°¡ ¼öÄ¡¸¦ 11% ¿Ã¸³´Ï´Ù.,Raises the user's atk_up by 11% for the whole battle.
+STR_SKILL_500045_NAME,ºù°á ¼Û°÷´Ï,Frost Fang
+STR_SKILL_500045_DESC,Àû 1Ã¼¿¡°Ô °ø°İ·ÂÀÇ 225% ÇÇÇØ¸¦ Áİ´Ï´Ù. ¸ÂÀº ´ë»óÀº 1ÅÏ µ¿¾È ¿òÁ÷ÀÌÁö ¸øÇÕ´Ï´Ù.,Deals 225% of ATK as damage to enemy one. The target cannot move for 1 turns.
+STR_SKILL_500046_NAME,¾óÀ½ °áÁ¤,Ice Crystal
+STR_SKILL_500046_DESC,ÀüÅõ ³»³» ÀÚ½ÅÀÇ ¹æ¾î·Â Áõ°¡ ¼öÄ¡¸¦ 17% ¿Ã¸³´Ï´Ù.,Raises the user's def_up by 17% for the whole battle.
+STR_SKILL_500047_NAME,½£ÀÇ °¨½Ã,Forest Watch
+STR_SKILL_500047_DESC,¾Æ±º ÀüÃ¼ÀÇ °ø°İ·Â Áõ°¡ È¿°ú¸¦ 3ÅÏ µ¿¾È Àû¿ëÇÕ´Ï´Ù.,Applies atk_up to ally all for 3 turns.
+STR_SKILL_500048_NAME,½£ÀÇ Ãàº¹,Forest Blessing
+STR_SKILL_500048_DESC,ÀüÅõ ³»³» ÀÚ½ÅÀÇ °ø°İ·Â Áõ°¡ ¼öÄ¡¸¦ 9% ¿Ã¸³´Ï´Ù.,Raises the user's atk_up by 9% for the whole battle.
+STR_SKILL_500049_NAME,ÅÂ¾ç ±âµµ,Sun Prayer
+STR_SKILL_500049_DESC,¾Æ±º ÀüÃ¼ÀÇ Ã¼·ÂÀ» ÃÖ´ë Ã¼·ÂÀÇ 22% È¸º¹ÇÕ´Ï´Ù.,Restores 22% of max HP to ally all.
+STR_SKILL_500050_NAME,ÅÂ¾çÀÇ °¡È£,Blessing of the Sun
+STR_SKILL_500050_DESC,ÀüÅõ ³»³» ÀÚ½ÅÀÇ °ø°İ·Â Áõ°¡ ¼öÄ¡¸¦ 19% ¿Ã¸³´Ï´Ù.,Raises the user's atk_up by 19% for the whole battle.
+STR_SKILL_500051_NAME,½ÉÇØ °İ·ù,Deepsea Torrent
+STR_SKILL_500051_DESC,Àû ÀüÃ¼¿¡°Ô °ø°İ·ÂÀÇ 210% ÇÇÇØ¸¦ Áİ´Ï´Ù.,Deals 210% of ATK as damage to enemy all.
+STR_SKILL_500052_NAME,±íÀº ¹°ÀÇ ¾Ğ·Â,Pressure of the Deep
+STR_SKILL_500052_DESC,ÀüÅõ ³»³» ÀÚ½ÅÀÇ ¹æ¾î·Â Áõ°¡ ¼öÄ¡¸¦ 20% ¿Ã¸³´Ï´Ù.,Raises the user's def_up by 20% for the whole battle.
+STR_SKILL_500053_NAME,´ëÁö ±Õ¿­,Earth Rift
+STR_SKILL_500053_DESC,Àû ÀüÃ¼¿¡°Ô °ø°İ·ÂÀÇ 190% ÇÇÇØ¸¦ Áİ´Ï´Ù. ¸ÂÀº ´ë»óÀº 2ÅÏ µ¿¾È ¿òÁ÷ÀÌÁö ¸øÇÕ´Ï´Ù.,Deals 190% of ATK as damage to enemy all. The target cannot move for 2 turns.
+STR_SKILL_500054_NAME,´ëÁöÀÇ ÁöÇı,Wisdom of the Earth
+STR_SKILL_500054_DESC,ÀüÅõ ³»³» ÀÚ½ÅÀÇ °ø°İ·Â Áõ°¡ ¼öÄ¡¸¦ 15% ¿Ã¸³´Ï´Ù.,Raises the user's atk_up by 15% for the whole battle.
+STR_SKILL_500055_NAME,°í¿äÇÑ ÀÏ°İ,Quiet Strike
+STR_SKILL_500055_DESC,Àû 1Ã¼¿¡°Ô °ø°İ·ÂÀÇ 150% ÇÇÇØ¸¦ Áİ´Ï´Ù.,Deals 150% of ATK as damage to enemy one.
+STR_SKILL_500056_NAME,°í¿äÇÑ ÁıÁß,Quiet Focus
+STR_SKILL_500056_DESC,ÀüÅõ ³»³» ÀÚ½ÅÀÇ °ø°İ·Â Áõ°¡ ¼öÄ¡¸¦ 8% ¿Ã¸³´Ï´Ù.,Raises the user's atk_up by 8% for the whole battle.
+STR_ITEM_201001_NAME,¿©¿ì ²¿¸®ÅĞ,Fox Tail Fur
+STR_ITEM_201001_DESC,ºÒ²É¿©¿ì »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Flame Fox. Used for crafting.
+STR_ITEM_201002_NAME,°Ô ²®Áú,Crab Shell
+STR_ITEM_201002_DESC,¹°¹æ¿ï°Ô »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Droplet Crab. Used for crafting.
+STR_ITEM_201003_NAME,Åä³¢ ¹ßÅé,Rabbit Claw
+STR_ITEM_201003_DESC,µ¢±¼Åä³¢ »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Vine Rabbit. Used for crafting.
+STR_ITEM_201004_NAME,³ª¹æ ºñ´Ã,Moth Scale
+STR_ITEM_201004_DESC,¹İÂ¦³ª¹æ »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Glimmer Moth. Used for crafting.
+STR_ITEM_201005_NAME,Áã ÀÌ»¡,Mouse Tooth
+STR_ITEM_201005_DESC,±×´ÃÁã »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Shade Mouse. Used for crafting.
+STR_ITEM_201006_NAME,µµ¸¶¹ì ºñ´Ã,Lizard Scale
+STR_ITEM_201006_DESC,¸ğ·¡µµ¸¶¹ì »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Sand Lizard. Used for crafting.
+STR_ITEM_201007_NAME,»õ ±êÅĞ,Bird Feather
+STR_ITEM_201007_DESC,¹°°ÅÇ°»õ »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Bubble Bird. Used for crafting.
+STR_ITEM_201008_NAME,°ÅºÏ µîµüÁö,Turtle Shell
+STR_ITEM_201008_DESC,ÀÌ³¢°ÅºÏ »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Moss Turtle. Used for crafting.
+STR_ITEM_201009_NAME,´Ù¶÷Áã ÅĞ,Squirrel Fur
+STR_ITEM_201009_DESC,ÇŞ»ì´Ù¶÷Áã »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Sunray Squirrel. Used for crafting.
+STR_ITEM_201010_NAME,¹ÚÁã ³¯°³,Bat Wing
+STR_ITEM_201010_DESC,¹ã¾È°³¹ÚÁã »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Nightmist Bat. Used for crafting.
+STR_ITEM_201011_NAME,½¡ Á¶°¢,Charcoal Piece
+STR_ITEM_201011_DESC,½¡ºÒ°­¾ÆÁö »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Charcoal Pup. Used for crafting.
+STR_ITEM_201012_NAME,±»Àº ¿ë¾Ï Á¶°¢,Hardened Lava Shard
+STR_ITEM_201012_DESC,ºÒ¾¾µÎ²¨ºñ »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Ember Toad. Used for crafting.
+STR_ITEM_201013_NAME,¿ë¾Ï ºñ´Ã,Lava Scale
+STR_ITEM_201013_DESC,ÀÜºÒµµ·Õ´¨ »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Cinder Salamander. Used for crafting.
+STR_ITEM_201014_NAME,¿ë¾Ï ÇÙ,Lava Core
+STR_ITEM_201014_DESC,"¿ë¾Ï°ñ·½ÀÇ Áß½É¿¡¼­ ²¨³½ Àç·áÀÔ´Ï´Ù. ½ÄÁö ¾Ê°í, ¼ÕÀ¸·Î ÀâÀ¸¸é È­»óÀ» ÀÔ½À´Ï´Ù.","A material taken from the core of a Lava Golem. It never cools, and it burns bare hands."
+STR_ITEM_201015_NAME,´Şºû ±êÅĞ,Moonlight Feather
+STR_ITEM_201015_DESC,´Şºû¿Ã»©¹Ì »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Moonlight Owl. Used for crafting.
+STR_ITEM_201016_NAME,´Á´ë ¼Û°÷´Ï,Wolf Fang
+STR_ITEM_201016_DESC,Àíºû´Á´ë »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Ashen Wolf. Used for crafting.
+STR_ITEM_201017_NAME,Àü°¥ Áı°Ô,Scorpion Pincer
+STR_ITEM_201017_DESC,È­»êÀü°¥ »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Volcano Scorpion. Used for crafting.
+STR_ITEM_201018_NAME,¹ì ºñ´Ã,Serpent Scale
+STR_ITEM_201018_DESC,¹°°á¹ì »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Ripple Serpent. Used for crafting.
+STR_ITEM_201019_NAME,°õ ¹ßÅé,Bear Claw
+STR_ITEM_201019_DESC,³ÕÄğ°õ »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,
+STR_ITEM_201020_NAME,»ç½¿ »Ô,Deer Antler
+STR_ITEM_201020_DESC,ºû¹«¸®»ç½¿ »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Halo Deer. Used for crafting.
+STR_ITEM_201021_NAME,¸Å ¹ßÅé,Hawk Talon
+STR_ITEM_201021_DESC,°ËÀº±ê¸Å »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Blackfeather Hawk. Used for crafting.
+STR_ITEM_201022_NAME,¿©Ä¡ ³¯°³,Katydid Wing
+STR_ITEM_201022_DESC,ºÒÆ¼¿©Ä¡ »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Spark Katydid. Used for crafting.
+STR_ITEM_201023_NAME,¼Ò±İ °áÁ¤,Salt Crystal
+STR_ITEM_201023_DESC,¼Ò±İ°Ô »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Salt Crab. Used for crafting.
+STR_ITEM_201024_NAME,¸äµÅÁö °¡½Ã,Boar Thorn
+STR_ITEM_201024_DESC,°¡½Ã¸äµÅÁö »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Thorn Boar. Used for crafting.
+STR_ITEM_201025_NAME,³ªºñ °¡·ç,Butterfly Dust
+STR_ITEM_201025_DESC,»õº®³ªºñ »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,
+STR_ITEM_201026_NAME,Ç¥¹ü °¡Á×,Leopard Hide
+STR_ITEM_201026_DESC,±×´ÃÇ¥¹ü »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Shade Leopard. Used for crafting.
+STR_ITEM_201027_NAME,¼ö¸® ±êÅĞ,Eagle Feather
+STR_ITEM_201027_DESC,ºÒ²É¼ö¸® »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Flame Eagle. Used for crafting.
+STR_ITEM_201028_NAME,ÇØ¸¶ Áö´À·¯¹Ì,Seahorse Fin
+STR_ITEM_201028_DESC,½ÉÇØÇØ¸¶ »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Deepsea Seahorse. Used for crafting.
+STR_ITEM_201029_NAME,´ë³ª¹« ½É,Bamboo Core
+STR_ITEM_201029_DESC,´ë³ª¹«ÆÄ¼ö²Û »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Bamboo Sentinel. Used for crafting.
+STR_ITEM_201030_NAME,¼ºÃ¤ Á¶°¢,Citadel Fragment
+STR_ITEM_201030_DESC,¼ºÃ¤±â»ç »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Citadel Knight. Used for crafting.
+STR_ITEM_201031_NAME,»õº® ±¤¼®,Dawn Ore
+STR_ITEM_201031_DESC,»õº®ÀÇ ±â»ç »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Knight of Dawn. Used for crafting.
+STR_ITEM_201032_NAME,½É¿¬ ºñ´Ã,Abyss Scale
+STR_ITEM_201032_DESC,½É¿¬°¡¿À¸® »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Abyss Ray. Used for crafting.
+STR_ITEM_201033_NAME,È­¿° °©°¢,Flame Carapace
+STR_ITEM_201033_DESC,È­¿°¼öÈ£º´ »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Flame Guardian. Used for crafting.
+STR_ITEM_201034_NAME,ºù°á °áÁ¤,Frost Crystal
+STR_ITEM_201034_DESC,ºù°á´Á´ë »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Frostbound Wolf. Used for crafting.
+STR_ITEM_201035_NAME,½£ÀÇ ¼ö¾×,Forest Sap
+STR_ITEM_201035_DESC,½£ÀÇ °¨½ÃÀÚ »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Warden of the Forest. Used for crafting.
+STR_ITEM_201036_NAME,ÅÂ¾ç º¸¼®,Sun Gem
+STR_ITEM_201036_DESC,ÅÂ¾çÀÇ »çÁ¦ »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Priest of the Sun. Used for crafting.
+STR_ITEM_201037_NAME,½ÉÇØ ÁøÁÖ,Deepsea Pearl
+STR_ITEM_201037_DESC,½ÉÇØÀÇ ±ºÁÖ »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Lord of the Deep. Used for crafting.
+STR_ITEM_201038_NAME,¾îµÒ °áÁ¤,Dark Crystal
+STR_ITEM_201038_DESC,±×¸²ÀÚ ±ºÁÖ »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Shadow Sovereign. Used for crafting.
+STR_ITEM_201039_NAME,´ëÁö °áÁ¤,Earth Crystal
+STR_ITEM_201039_DESC,´ëÁöÀÇ ÇöÀÚ »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Sage of the Earth. Used for crafting.
+STR_ITEM_201040_NAME,º° Á¶°¢,Star Fragment
+STR_ITEM_201040_DESC,º°À» »ïÅ² °í·¡ »ç³ÉÀ¸·Î ¾ò´Â Àç·áÀÔ´Ï´Ù. Àåºñ Á¦ÀÛ¿¡ »ç¿ëÇÕ´Ï´Ù.,A material dropped by Star-Swallowing Whale. Used for crafting.
+STR_ITEM_202001_NAME,¼ÒÇü È¸º¹ ¹°¾à,Small Potion
+STR_ITEM_202001_DESC,"Ã¼·ÂÀ» 20% È¸º¹ÇÕ´Ï´Ù. ÀüÅõ Áß, ÀÌµ¿ Áß ¸ğµÎ »ç¿ëÇÒ ¼ö ÀÖ½À´Ï´Ù.","Restores 20% HP. Usable in battle, or while moving."
+STR_ITEM_202002_NAME,ÁßÇü È¸º¹ ¹°¾à,Medium Potion
+STR_ITEM_202002_DESC,Ã¼·ÂÀ» 40% È¸º¹ÇÕ´Ï´Ù.,Restores 40% HP.
+STR_ITEM_202003_NAME,°æÇèÀÇ µÎ·ç¸¶¸®,Scroll of Experience
+STR_ITEM_202003_DESC,°æÇèÄ¡¸¦ 5% ´õ ¹Ş½À´Ï´Ù.,Grants 5% extra experience.
+STR_ITEM_202004_NAME,´ëÇü È¸º¹ ¹°¾à,Large Potion
+STR_ITEM_202004_DESC,Ã¼·ÂÀ» 70% È¸º¹ÇÕ´Ï´Ù.,Restores 70% HP.
+STR_ITEM_202005_NAME,Çàµ¿·Â À½·á,Stamina Drink
+STR_ITEM_202005_DESC,Çàµ¿·ÂÀ» 20 È¸º¹ÇÕ´Ï´Ù.,Restores 20 stamina.
+STR_ITEM_202006_NAME,Çàµ¿·Â ¿µ¾à,Stamina Elixir
+STR_ITEM_202006_DESC,Çàµ¿·ÂÀ» 50 È¸º¹ÇÕ´Ï´Ù.,Restores 50 stamina.
+STR_ITEM_202007_NAME,°æÇèÀÇ ¼­Ã¥,Book of Experience
+STR_ITEM_202007_DESC,°æÇèÄ¡¸¦ 12% ´õ ¹Ş½À´Ï´Ù.,Grants 12% extra experience.
+STR_ITEM_202008_NAME,¿ÏÀü È¸º¹ ¹°¾à,Full Potion
+STR_ITEM_202008_DESC,Ã¼·ÂÀ» 100% È¸º¹ÇÕ´Ï´Ù.,Restores 100% HP.
+STR_ITEM_202009_NAME,¼ÒÇü Çàµ¿·Â »çÅÁ,Small Stamina Candy
+STR_ITEM_202009_DESC,Çàµ¿·ÂÀ» 10 È¸º¹ÇÕ´Ï´Ù.,Restores 10 stamina.
+STR_ITEM_202010_NAME,¼÷·ÃÀÇ µÎ·ç¸¶¸®,Scroll of Mastery
+STR_ITEM_202010_DESC,°æÇèÄ¡¸¦ 15% ´õ ¹Ş½À´Ï´Ù.,Grants 15% extra experience.
+STR_ITEM_202011_NAME,¾ß¿µ ½Ä»ç,Camp Meal
+STR_ITEM_202011_DESC,Çàµ¿·ÂÀ» 35 È¸º¹ÇÕ´Ï´Ù.,
+STR_ITEM_202012_NAME,ÀüÅõ °¢¼ºÁ¦,Battle Stimulant
+STR_ITEM_202012_DESC,Ã¼·ÂÀ» 60% È¸º¹ÇÕ´Ï´Ù.,Restores 60% HP.
+STR_ITEM_202013_NAME,°í´ëÀÇ °æÇè¼­,Ancient Codex
+STR_ITEM_202013_DESC,°æÇèÄ¡¸¦ 25% ´õ ¹Ş½À´Ï´Ù.,Grants 25% extra experience.
+STR_ITEM_202014_NAME,º°ºû Çàµ¿·Â ¿µ¾à,Starlight Stamina Elixir
+STR_ITEM_202014_DESC,Çàµ¿·ÂÀ» 80 È¸º¹ÇÕ´Ï´Ù.,Restores 80 stamina.
+STR_ITEM_202015_NAME,¿ÏÀü °¢¼º¼­,Full Awakening Tome
+STR_ITEM_202015_DESC,°æÇèÄ¡¸¦ 40% ´õ ¹Ş½À´Ï´Ù.,Grants 40% extra experience.
+STR_ITEM_203001_NAME,°ñµå,Gold
+STR_ITEM_203001_DESC,»ç³É°ú ½ºÅ×ÀÌÁö ¹İº¹ º¸»óÀ¸·Î ¸ğÀ¸´Â ±âº» ÀçÈ­ÀÔ´Ï´Ù.,Gold is used across the game.
+STR_ITEM_203002_NAME,·çºñ,Ruby
+STR_ITEM_203002_DESC,½ºÅ×ÀÌÁö¸¦ Ã³À½ Å¬¸®¾îÇÒ ¶§ ¹Ş´Â ÀçÈ­ÀÔ´Ï´Ù.,Ruby is used across the game.
+STR_ITEM_203003_NAME,µµ°¨ Æ÷ÀÎÆ®,Dex Point
+STR_ITEM_203003_DESC,µµ°¨À» Ã¤¿ï ¶§ ¿Ã¶ó°¡´Â ÀçÈ­ÀÔ´Ï´Ù.,Dex Point is used across the game.
+STR_ITEM_203004_NAME,»ç³É ÈÆÀå,Hunt Medal
+STR_ITEM_203004_DESC,°°Àº ¸ó½ºÅÍ¸¦ ¿©·¯ ¹ø »ç³ÉÇÏ¸é ¸ğÀÌ´Â ÀçÈ­ÀÔ´Ï´Ù.,Hunt Medal is used across the game.
+STR_ITEM_203005_NAME,º°ºû Á¶°¢,Starlight Shard
+STR_ITEM_203005_DESC,Ãâ½Ã ¿¹Á¤ ÄÜÅÙÃ÷¿¡¼­ »ç¿ëÇÒ ÀçÈ­ÀÔ´Ï´Ù.,
+STR_STAGE_401001_NAME,ÃÊ¿ø ÀÔ±¸,Meadow Entrance
+STR_STAGE_401002_NAME,¹Ù¶÷ ¾ğ´ö,Windy Hill
+STR_STAGE_401003_NAME,ÀÌ³¢ ½£±æ,Mossy Trail
+STR_STAGE_401004_NAME,¹°¹æ¿ï »ù,Droplet Spring
+STR_STAGE_401005_NAME,ÇŞ»ì µéÆÇ,Sunlit Field
+STR_STAGE_401006_NAME,µ¹¹«Áö ±æ,Stony Path
+STR_STAGE_401007_NAME,ÀçÀÇ ¾ğ´ö,Hill of Ash
+STR_STAGE_401008_NAME,¶ß°Å¿î ¹ÙÀ§¹ç,Scorching Rockfield
+STR_STAGE_401009_NAME,¿ë¾Ï µ¿±¼ ÀÔ±¸,Lava Cave Entrance
+STR_STAGE_401010_NAME,¿ë¾Ï µ¿±¼ ±íÀº °÷,Depths of the Lava Cave
+STR_STAGE_402001_NAME,¼­´ÃÇÑ ÇØ¾È,Chilly Shore
+STR_STAGE_402002_NAME,¼Ò±İ ¹úÆÇ,Salt Flats
+STR_STAGE_402003_NAME,¹Ğ¹° µ¿±¼,
+STR_STAGE_402004_NAME,»êÈ£ ±æ,Coral Path
+STR_STAGE_402005_NAME,±íÀº ¹°°¡,Deep Waterside
+STR_STAGE_402006_NAME,¾È°³ Ç×±¸,Misty Harbor
+STR_STAGE_402007_NAME,Æó¼± °©ÆÇ,Wrecked Deck
+STR_STAGE_402008_NAME,ÇØÀú ±Õ¿­,Seafloor Rift
+STR_STAGE_402009_NAME,½ÉÇØ °ü¹®,Deepsea Gate
+STR_STAGE_402010_NAME,ÅÂ¾ç ½ÅÀü,Temple of the Sun
+STR_STAGE_403001_NAME,»õº® ¼º¹®,Dawn Gate
+STR_STAGE_403002_NAME,Èò µ¹ °è´Ü,White Stone Stairs
+STR_STAGE_403003_NAME,±â»ç´Ü ¿¬º´Àå,Knights' Drill Ground
+STR_STAGE_403004_NAME,¼ºÃ¤ È¸¶û,Citadel Corridor
+STR_STAGE_403005_NAME,¾îµÒÀÇ ¼­°í,Library of Darkness
+STR_STAGE_403006_NAME,±×¸²ÀÚ º¹µµ,Shadow Hallway
+STR_STAGE_403007_NAME,º°ºû Àü¸Á´ë,
+STR_STAGE_403008_NAME,½É¿¬ Åë·Î,Abyss Passage
+STR_STAGE_403009_NAME,¿ÕÁÂ ¾Õ¸¶´ç,Courtyard of the Throne
+STR_STAGE_403010_NAME,»õº®ÀÇ ¿ÕÁÂ,Throne of Dawn
+STR_MON_100099_NAME,¾È°³¿©¿ì,Mist Fox
+STR_SKILL_500099_NAME,¾È°³ °¡¸£±â,Mist Cut
+STR_ITEM_201099_DESC,»ç¶óÁø Àç·áÀÇ ¼³¸íÀÔ´Ï´Ù.,Description of a removed material.
+STR_ITEM_202016_NAME,ÇØµ¶Á¦,Antidote
+STR_ITEM_202016_DESC,µ¶À» ¾ø¾Ö°í Ã¼·ÂÀ» 10% È¸º¹ÇÕ´Ï´Ù.,Cures poison and restores 10% HP.
