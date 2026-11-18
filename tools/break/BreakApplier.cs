@@ -204,7 +204,7 @@ namespace ExpeditionCamp.EditorTools
 
         private static void MiswireShopSlotIcon()
         {
-            // 상점 칸 프리팹의 Icon 그림 칸에 자리 표시용 몬스터 그림이 남아 있고,
+            // 상점 칸 프리팹의 Icon 그림 칸에 작업 중 임시로 넣은 몬스터 그림이 남아 있고,
             // 스크립트의 Icon 칸은 구매 버튼의 Image 에 잘못 연결된 경우입니다.
             string path = "Assets/Prefabs/UI/UI_ShopSlot.prefab";
             GameObject contents = PrefabUtility.LoadPrefabContents(path);
