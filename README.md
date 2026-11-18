@@ -1,17 +1,26 @@
 # 원정대 캠프 (Expedition Camp)
 
+Unity 엔진 교육 2단계 「게임 프로젝트를 받아서 제작단 작업 연습」에서 쓰는 저장소입니다.
+기획 데이터 · 씬 · 프리팹을 바꿔 보고, GitHub Desktop 으로 바뀐 파일을 확인하고 되돌리는 연습을 합니다.
+
 ## 1. 저장소 구성
 
 | 경로 | 내용 |
 |---|---|
 | `UnityProject/` | Unity 프로젝트 (Unity 6000.3.20f1 · URP · Input System) |
 | `design_data/` | 기획 원본 엑셀 7개 (Monster · Item · Stage · Common · String · Shop · Field) |
-| `tools/export_tables.py` | 기획 원본 엑셀을 게임용 CSV 로 내보내는 변환 도구 |
 | `tools/export_tables_windows.bat` · `tools/export_tables_mac.sh` | 변환 도구 실행 파일 (가상환경 생성 · openpyxl 설치 · 변환) |
-| `docs/값의_출처표.md` | 게임 값의 출처 (테이블 · 프리팹 · 설정 파일) |
+| `tools/export_tables.py` | 기획 원본 엑셀을 게임용 CSV 로 내보내는 변환 도구 |
 | `.gitignore` | Library · Temp · Logs · obj · Builds · UserSettings 를 제외합니다. |
 
-## 2. 프로젝트 열기
+## 2. 준비물과 프로젝트 열기
+
+| 준비물 | 내용 |
+|---|---|
+| Unity Hub · Unity 6000.3.20f1 | 다른 버전으로 열면 프로젝트 파일이 바뀌어 Changes 목록에 나타납니다. |
+| GitHub Desktop | 저장소 받기 · 브랜치 전환 · 변경 확인 · Discard |
+| 파이썬 3.9 이상 | 변환 도구 실행 (STEP 7) |
+| 엑셀 | 기획 원본 열기 · 수정 |
 
 - Unity Hub 에서 Add > Add project from disk 를 선택하고 `UnityProject` 폴더를 고릅니다.
 - 버전 칸에 6000.3.20f1 이 표시되는지 확인하고 프로젝트를 엽니다.
@@ -22,7 +31,8 @@
 
 ## 3. 게임 진행
 
-- 로비에서 출정 게시판 NPC 를 클릭하고 스테이지를 고릅니다.
+- 로비 오른쪽 위의 「초원으로 떠나기」 카드나 출정 게시판 NPC 를 눌러 스테이지를 고릅니다.
+- 로비 왼쪽 아래 버튼과 NPC 로 가방 · 도감 · 상점을 엽니다.
 - 필드에서는 WASD 로 이동하고, 가장 가까운 몬스터를 자동으로 공격합니다.
 - 자동 전투를 켜면 플레이어가 가장 가까운 몬스터에게 이동합니다.
 - 웨이브를 모두 끝내면 결과 창이 나오고, 확인 버튼을 누르면 보상을 저장하고 로비로 돌아갑니다.
@@ -32,10 +42,14 @@
 
 | 브랜치 | 내용 |
 |---|---|
-| `main` | 결함 X<br>모든 검사와 테스트를 통과하는 상태입니다. |
-| `break/*` | 실수 재현 브랜치 (Phase B 에서 추가) |
+| `main` | 정상 상태 |
+| `break/01` ~ `break/08` | 실수 재현 브랜치 (STEP 9 수업 · 과제에서 안내에 따라 사용) |
 
-## 5. 기획 원본을 CSV 로 내보내기
+- 브랜치를 바꾸기 전에 Unity 를 닫습니다.
+Unity 가 열린 상태에서 바꾸면 씬을 다시 불러오라는 창이 나오고, 저장하지 않은 씬이 있으면 덮어쓸지 묻습니다.
+- 브랜치를 바꾼 뒤 Changes 목록에 파일이 생기면, 다른 브랜치로 바꾸기 전에 Discard 합니다.
+
+## 5. 기획 원본을 CSV 로 내보내기 (STEP 7)
 
 실행 파일 하나로 가상환경 생성 · openpyxl 설치 · 변환 · 결과 표시까지 진행합니다.
 처음 실행할 때만 `tools/.venv` 가상환경을 만들고 openpyxl 을 설치하므로 인터넷 연결이 필요합니다.
@@ -83,32 +97,25 @@ macOS
 python3 tools/export_tables.py
 ```
 
-## 6. QA 기능
+## 6. 테스트 기능 (STEP 4)
 
 | 기능 | 사용 방법 |
 |---|---|
-| 치트 패널 | F1 |
-| 디버그 표시 | F2 |
+| 치트 패널 | Play 중 F1 (노트북은 fn + F1) |
+| 디버그 표시 | Play 중 F2 (노트북은 fn + F2) |
 | 고정 난수 | `Assets/Settings/QAConfig.asset` 의 Random Seed, 실행 인자 `-qaSeed 1234` (실행 인자가 우선) |
-| QA 연결 컴포넌트 | `http://127.0.0.1:7700/` (실행 인자 `-qaPort` 로 변경) |
 
-세 기능은 스크립팅 정의 `QA_BRIDGE` 가 있을 때만 컴파일됩니다.
+- 이 기능들은 스크립팅 정의 `QA_BRIDGE` 가 있을 때만 들어갑니다.
 에디터의 Project Settings > Player > Scripting Define Symbols 에는 `QA_BRIDGE` 가 들어 있습니다.
+- 출시 빌드에는 `QA_BRIDGE` 가 빠지므로 테스트 기능이 들어가지 않습니다.
 
-| QA 연결 요청 | 하는 일 |
-|---|---|
-| `GET /health` | 연결 확인 · 현재 씬 |
-| `GET /hierarchy` · `GET /object?name=` · `GET /text?name=` | 화면 오브젝트 조회 (UI 와 Collider2D 가 있는 2D 오브젝트) |
-| `POST /click` | 이름으로 클릭 |
-| `POST /reset` | 세이브를 초기화하고 Lobby 를 불러옴 |
-| `POST /screenshot` | 화면 저장 |
-| `GET /scene` · `POST /scene` | 현재 씬 조회 · 스테이지 이동 (`{"stage_id": 401001}`, 잠긴 스테이지 409) |
-| `GET /count?tag=Monster` | 활성 오브젝트 개수 |
-| `POST /cheat` | 치트 실행 (`kill_all` · `add_gold` · `add_item` · `invincible` · `speed` · `reset_save`, 모르는 치트 404) |
-| `GET /inventory` | 골드 · 레벨 · 가방 내용 |
-| `GET /last_drop` | 마지막 드롭 판정 (group_id · roll · item_ids) |
+## 7. Console 메시지
 
-## 7. 로그 · 세이브 위치
+- 빨간 메시지(에러)가 나오면 보고 대상입니다.
+첫 줄 · 개수 · 재현 순서 · 화면을 함께 적습니다.
+- 노란 메시지(경고)는 내용을 읽고 보고할지 판단합니다.
+
+## 8. 로그 · 세이브 위치
 
 | 파일 | Windows | macOS |
 |---|---|---|
@@ -117,7 +124,7 @@ python3 tools/export_tables.py
 
 세이브가 손상되면 같은 폴더에 `save.bak.json` 을 만들고 새 세이브로 시작합니다.
 
-## 8. 리소스 출처
+## 9. 리소스 출처
 
 | 리소스 | 위치 | 출처 · 라이선스 |
 |---|---|---|
