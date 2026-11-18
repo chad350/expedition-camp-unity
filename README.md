@@ -8,7 +8,7 @@
 | `design_data/` | 기획 원본 엑셀 7개 (Monster · Item · Stage · Common · String · Shop · Field) |
 | `tools/export_tables.py` | 기획 원본 엑셀을 게임용 CSV 로 내보내는 변환 도구 |
 | `tools/export_tables_windows.bat` · `tools/export_tables_mac.sh` | 변환 도구 실행 파일 (가상환경 생성 · openpyxl 설치 · 변환) |
-| `docs/` | 값의 출처표 · 실수 재현 정답표 · 검증 기록 · 스크린샷 |
+| `docs/값의_출처표.md` | 게임 값의 출처 (qa 검사 기준 값의 근거) |
 | `.gitignore` | Library · Temp · Logs · obj · Builds · UserSettings 를 제외합니다. |
 
 ## 2. 프로젝트 열기
@@ -147,7 +147,7 @@ macOS
 
 | 리소스 | 위치 | 출처 · 라이선스 |
 |---|---|---|
-| 몬스터 일러스트 40장 · 아이템 아이콘 60장 · 속성 아이콘 5장 · 키아트 · 화면 배경 2장 | `Assets/Resources/Icons/` · `Assets/Resources/UI/` | 15챕터 몬스터 도감 저장소에서 제작한 리소스 (자체 제작) |
+| 몬스터 일러스트 40장 · 아이템 아이콘 60장 · 속성 아이콘 5장 | `Assets/Resources/Icons/` | 15챕터 몬스터 도감 저장소에서 제작한 리소스 (자체 제작) |
 | 해독제 아이콘 `item_202016.png` | `Assets/Resources/Icons/Item/` | `item_202001.png` 의 색을 바꾼 파일 |
 | NPC 이미지 3장 | `Assets/Sprites/NPC/` | 몬스터 일러스트 mon_100009 · mon_100015 · mon_100030 복사본 |
 | 플레이어 이미지 | `Assets/Resources/Icons/Monster/mon_100001.png` | 몬스터 일러스트 100001 (불꽃여우) |
@@ -167,5 +167,22 @@ macOS
 | `qa/rules/*.yaml` | 검사 기준 값 |
 | `Jenkinsfile` | 0 준비 · 1 데이터 검사 · 2 프로젝트 파일 검사 |
 
-실행 방법은 `docs/검증기록_3단계자동화.md` 6절에 있습니다.
+### 실행 방법
+
+가상환경 만들기 (저장소 최상위 폴더에서 1번만 실행)
+
+| 작업 | Windows | macOS |
+|---|---|---|
+| 가상환경 생성 | `py -m venv qa\.venv` | `python3 -m venv qa/.venv` |
+| 패키지 설치 | `qa\.venv\Scripts\python -m pip install -r qa\requirements.txt` | `qa/.venv/bin/python -m pip install -r qa/requirements.txt` |
+
+검사 실행 (`qa` 폴더에서 실행)
+
+| 작업 | Windows | macOS |
+|---|---|---|
+| 데이터 검사 | `.venv\Scripts\python -m pytest tests\test_tables.py` | `.venv/bin/python -m pytest tests/test_tables.py` |
+| 프로젝트 파일 검사 | `.venv\Scripts\python -m pytest tests\test_project_files.py` | `.venv/bin/python -m pytest tests/test_project_files.py` |
+| Unity 테스트 | `.venv\Scripts\python utils\unity_runner.py tests EditMode` | `.venv/bin/python utils/unity_runner.py tests EditMode` |
+| 테스트용 빌드 | `.venv\Scripts\python utils\unity_runner.py build test` | `.venv/bin/python utils/unity_runner.py build test` |
+| 스모크 테스트 | `.venv\Scripts\python -m pytest tests\test_smoke.py` | `.venv/bin/python -m pytest tests/test_smoke.py` |
 
