@@ -350,7 +350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 675b4c493bb1249268b5d735a91d5e08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: ExpeditionCamp.Runtime::ExpeditionCamp.ShopSlotView
-  icon: {fileID: 7787643950986568664}
+  icon: {fileID: 5579166007640322627}
   nameText: {fileID: 7498162067754347596}
   priceText: {fileID: 4632862039581552919}
   buyButton: {fileID: 3442570132298497343}
@@ -556,7 +556,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: db85226586a094cf5b82a1c6fbb25257, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
