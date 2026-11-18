@@ -15,20 +15,19 @@ namespace ExpeditionCamp.EditorTools
             Debug.Log("[Break] " + breakId + " 적용을 시작합니다");
             switch (breakId)
             {
-                case "03": ClearResultPopup(); break;
-                case "04": OverrideBridgeCrabSpeed(); break;
-                case "05": ApplyBaseAttackRange(); break;
-                case "06": UntagRabbit(); break;
-                case "07": MoveDropItemToHiddenLayer(); break;
-                case "08": TurnOffDropItemTrigger(); break;
-                case "09": RaiseLobbyBackgroundOrder(); break;
-                case "10": CenterBagButtonAnchor(); break;
-                case "11": DeleteLobbyEventSystem(); break;
-                case "12": RemoveField02FromBuildList(); break;
-                case "13": RenameSpawn03(); break;
-                case "15": SaveConfigTimeScale(); break;
-                case "16": ChangeRockShader(); break;
-                case "18": MiswireShopSlotIcon(); break;
+                case "01": RaiseLobbyBackgroundOrder(); break;
+                case "02": ClearResultPopup(); break;
+                case "03": CenterBagButtonAnchor(); break;
+                case "04": ChangeRockShader(); break;
+                case "08": MiswireShopSlotIcon(); break;
+                case "09": OverrideBridgeCrabSpeed(); break;
+                case "10": ApplyBaseAttackRange(); break;
+                case "11": UntagRabbit(); break;
+                case "12": MoveDropItemToHiddenLayer(); break;
+                case "13": TurnOffDropItemTrigger(); break;
+                case "14": DeleteLobbyEventSystem(); break;
+                case "15": RemoveField02FromBuildList(); break;
+                case "16": SaveConfigTimeScale(); break;
                 default:
                     Debug.LogError("[Break] 알 수 없는 번호입니다: " + breakId);
                     EditorApplication.Exit(1);
@@ -179,13 +178,6 @@ namespace ExpeditionCamp.EditorTools
                 scenes.Add(scene);
             }
             EditorBuildSettings.scenes = scenes.ToArray();
-        }
-
-        private static void RenameSpawn03()
-        {
-            Scene scene = Open("Field_01");
-            FindInScene(scene, "Spawn_03").name = "Spawn_3";
-            Save(scene);
         }
 
         private static void SaveConfigTimeScale()

@@ -7,8 +7,8 @@ main 을 고친 뒤 실행하면 break 브랜치를 main 의 최신 커밋에서
 사용 방법 (저장소 최상위 폴더에서 실행, Unity 에디터는 닫아 둡니다)
     Windows  py tools\\rebuild_break_branches.py
     macOS    python3 tools/rebuild_break_branches.py
-    일부만   python3 tools/rebuild_break_branches.py --only 01,03
-    17 · 19 는 엑셀을 고치므로 openpyxl 이 있는 파이썬으로 실행합니다 (예: tools/.venv/bin/python)
+    일부만   python3 tools/rebuild_break_branches.py --only 01,02
+    06 · 07 은 엑셀을 고치므로 openpyxl 이 있는 파이썬으로 실행합니다 (예: tools/.venv/bin/python)
     Unity 경로 지정  python3 tools/rebuild_break_branches.py --unity "C:\\Program Files\\Unity\\Hub\\Editor\\6000.3.20f1\\Editor\\Unity.exe"
 """
 
@@ -28,7 +28,6 @@ LOG_FOLDER = os.path.join(ROOT, "logs")
 MAC_UNITY = "/Applications/Unity/Hub/Editor/6000.3.20f1/Unity.app/Contents/MacOS/Unity"
 WINDOWS_UNITY = r"C:\Program Files\Unity\Hub\Editor\6000.3.20f1\Editor\Unity.exe"
 
-NPC_DIR = "UnityProject/Assets/Sprites/NPC"
 STRING_CSV = "UnityProject/Assets/StreamingAssets/data/string.csv"
 FIELD_01 = "UnityProject/Assets/Scenes/Field_01.unity"
 LOBBY = "UnityProject/Assets/Scenes/Lobby.unity"
@@ -36,26 +35,24 @@ MONSTER_CSV = "UnityProject/Assets/StreamingAssets/data/monster.csv"
 ITEM_CSV = "UnityProject/Assets/StreamingAssets/data/item.csv"
 
 # (번호, 브랜치 이름, 적용 방식, 커밋할 경로, 커밋 메시지)
+# 01 ~ 08 은 2단계, 09 ~ 16 은 3단계에서 씁니다 (2026-11-19 번호 정리, 이전 번호는 docs/실수재현_정답표.md 7절).
 BREAKS = [
-    ("01", "break/01-meta", "file", [NPC_DIR], "chore: rename npc image files"),
-    ("02", "break/02-script", "file", ["UnityProject/Assets/Scripts/Field"], "refactor: rename monster script file"),
-    ("03", "break/03-null", "unity", [FIELD_01], "chore: update Field_01 scene"),
-    ("04", "break/04-override", "unity", [FIELD_01], "chore: tune monster placement in Field_01"),
-    ("05", "break/05-apply", "unity", ["UnityProject/Assets/Prefabs/Monster_Base.prefab"], "chore: apply monster prefab overrides"),
-    ("06", "break/06-tag", "unity", ["UnityProject/Assets/Resources/Monsters/Monster_Rabbit.prefab"], "chore: update rabbit monster prefab"),
-    ("07", "break/07-layer", "unity", ["UnityProject/Assets/Prefabs/DropItem.prefab"], "chore: update drop item prefab layer"),
-    ("08", "break/08-trigger", "unity", ["UnityProject/Assets/Prefabs/DropItem.prefab"], "chore: update drop item collider"),
-    ("09", "break/09-sorting", "unity", [LOBBY], "chore: adjust lobby background"),
-    ("10", "break/10-anchor", "unity", [LOBBY], "chore: adjust lobby button layout"),
-    ("11", "break/11-eventsystem", "unity", [LOBBY], "chore: clean up lobby hierarchy"),
-    ("12", "break/12-buildlist", "unity", ["UnityProject/ProjectSettings/EditorBuildSettings.asset"], "chore: update build scene list"),
-    ("13", "break/13-spawnkey", "unity", [FIELD_01], "chore: rename spawn points in Field_01"),
-    ("14", "break/14-csv-excel", "file", [STRING_CSV], "chore: update string table"),
-    ("15", "break/15-config", "unity", ["UnityProject/Assets/Settings/GameConfig.asset"], "chore: update game config"),
-    ("16", "break/16-material", "unity", ["UnityProject/Assets/Materials/Rock.mat"], "chore: update rock material"),
-    ("17", "break/17-dropref", "file", ["design_data/Monster.xlsx", MONSTER_CSV], "chore: update monster table"),
-    ("18", "break/18-shopicon", "unity", ["UnityProject/Assets/Prefabs/UI/UI_ShopSlot.prefab"], "chore: update shop slot layout"),
-    ("19", "break/19-iconpath", "file", ["design_data/Item.xlsx", ITEM_CSV], "chore: update item table"),
+    ("01", "break/01-sorting", "unity", [LOBBY], "chore: adjust lobby background"),
+    ("02", "break/02-null", "unity", [FIELD_01], "chore: update Field_01 scene"),
+    ("03", "break/03-anchor", "unity", [LOBBY], "chore: adjust lobby button layout"),
+    ("04", "break/04-material", "unity", ["UnityProject/Assets/Materials/Rock.mat"], "chore: update rock material"),
+    ("05", "break/05-csv-excel", "file", [STRING_CSV], "chore: update string table"),
+    ("06", "break/06-dropref", "file", ["design_data/Monster.xlsx", MONSTER_CSV], "chore: update monster table"),
+    ("07", "break/07-iconpath", "file", ["design_data/Item.xlsx", ITEM_CSV], "chore: update item table"),
+    ("08", "break/08-shopicon", "unity", ["UnityProject/Assets/Prefabs/UI/UI_ShopSlot.prefab"], "chore: update shop slot layout"),
+    ("09", "break/09-override", "unity", [FIELD_01], "chore: tune monster placement in Field_01"),
+    ("10", "break/10-apply", "unity", ["UnityProject/Assets/Prefabs/Monster_Base.prefab"], "chore: apply monster prefab overrides"),
+    ("11", "break/11-tag", "unity", ["UnityProject/Assets/Resources/Monsters/Monster_Rabbit.prefab"], "chore: update rabbit monster prefab"),
+    ("12", "break/12-layer", "unity", ["UnityProject/Assets/Prefabs/DropItem.prefab"], "chore: update drop item prefab layer"),
+    ("13", "break/13-trigger", "unity", ["UnityProject/Assets/Prefabs/DropItem.prefab"], "chore: update drop item collider"),
+    ("14", "break/14-eventsystem", "unity", [LOBBY], "chore: clean up lobby hierarchy"),
+    ("15", "break/15-buildlist", "unity", ["UnityProject/ProjectSettings/EditorBuildSettings.asset"], "chore: update build scene list"),
+    ("16", "break/16-config", "unity", ["UnityProject/Assets/Settings/GameConfig.asset"], "chore: update game config"),
 ]
 
 
@@ -75,27 +72,18 @@ def default_unity():
 
 
 def apply_file_break(break_id):
-    if break_id == "01":
-        old_path = os.path.join(ROOT, NPC_DIR, "npc_shop.png")
-        new_path = os.path.join(ROOT, NPC_DIR, "npc_shopkeeper.png")
-        os.rename(old_path, new_path)
-        return
-    if break_id == "02":
-        folder = os.path.join(ROOT, "UnityProject", "Assets", "Scripts", "Field")
-        os.rename(os.path.join(folder, "Monster.cs"), os.path.join(folder, "MonsterUnit.cs"))
-        return
-    if break_id == "14":
+    if break_id == "05":
         path = os.path.join(ROOT, STRING_CSV)
         with open(path, encoding="utf-8") as csv_file:
             text = csv_file.read()
         with open(path, "w", encoding="cp949", errors="replace", newline="") as csv_file:
             csv_file.write(text.replace("\n", "\r\n"))
         return
-    if break_id == "17":
+    if break_id == "06":
         # 물방울게의 드롭 그룹 ID 에서 0 하나가 빠진 오타입니다 (엑셀과 CSV 를 함께 바꿉니다).
         edit_design_cell("Monster.xlsx", "monster", "monster_id", 100002, "drop_group_id", 30002)
         return
-    if break_id == "19":
+    if break_id == "07":
         # 소형 회복 물약 아이콘 경로에 몬스터 그림 경로를 잘못 붙여 넣은 경우입니다.
         edit_design_cell("Item.xlsx", "item", "item_id", 202001, "icon_path", "Icons/Monster/mon_100004")
         return
