@@ -408,7 +408,7 @@ namespace ExpeditionCamp.EditorTools
             ShopSlotView shopSlot = AssetDatabase.LoadAssetAtPath<ShopSlotView>(UiFolder + "/UI_ShopSlot.prefab");
             Button stageButton = AssetDatabase.LoadAssetAtPath<Button>(UiFolder + "/UI_StageButton.prefab");
 
-            PopupParts bag = PopupFrame("Bag", "가방", new Vector2(1400f, 860f), "Assets/Resources/UI/ui_bg_bag.png", true);
+            PopupParts bag = PopupFrame("Bag", "가방", new Vector2(1400f, 860f), null, true);
             RectTransform bagList = ScrollList("Bag", bag.Panel, new Vector2(40f, 40f), new Vector2(-40f, -120f), new Vector2(200f, 240f), 6, true);
             TMP_Text bagEmpty = EditorUtil.Text("Txt_BagEmpty", bag.Panel, "가방이 비어 있습니다", 36f, TextAlignmentOptions.Center);
             EditorUtil.Place(bagEmpty.rectTransform, new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), Vector2.zero, new Vector2(800f, 80f));
@@ -419,7 +419,7 @@ namespace ExpeditionCamp.EditorTools
             EditorUtil.SetField(bagPopup, "emptyText", bagEmpty);
             EditorUtil.SavePrefab(bag.Root.gameObject, UiFolder + "/UI_Popup_Bag.prefab");
 
-            PopupParts dex = PopupFrame("Dex", "도감", new Vector2(1500f, 900f), "Assets/Resources/UI/ui_bg_dex.png", true);
+            PopupParts dex = PopupFrame("Dex", "도감", new Vector2(1500f, 900f), null, true);
             RectTransform dexList = ScrollList("Dex", dex.Panel, new Vector2(40f, 40f), new Vector2(-40f, -150f), new Vector2(190f, 230f), 7, true);
             TMP_Text dexCount = EditorUtil.Text("Txt_DexCount", dex.Panel, "등록 0 / 0", 32f, TextAlignmentOptions.Left);
             EditorUtil.Place(dexCount.rectTransform, new Vector2(0f, 1f), new Vector2(0f, 1f), new Vector2(40f, -96f), new Vector2(500f, 50f));
@@ -430,7 +430,7 @@ namespace ExpeditionCamp.EditorTools
             EditorUtil.SetField(dexPopup, "countText", dexCount);
             EditorUtil.SavePrefab(dex.Root.gameObject, UiFolder + "/UI_Popup_Dex.prefab");
 
-            PopupParts shop = PopupFrame("Shop", "상점", new Vector2(1200f, 900f), "Assets/Resources/UI/ui_bg_bag.png", true);
+            PopupParts shop = PopupFrame("Shop", "상점", new Vector2(1200f, 900f), null, true);
             RectTransform shopList = ScrollList("Shop", shop.Panel, new Vector2(40f, 90f), new Vector2(-40f, -150f), new Vector2(1080f, 110f), 1, true);
             TMP_Text shopGold = EditorUtil.Text("Txt_ShopGold", shop.Panel, "보유 골드 0", 32f, TextAlignmentOptions.Left);
             EditorUtil.Place(shopGold.rectTransform, new Vector2(0f, 1f), new Vector2(0f, 1f), new Vector2(40f, -96f), new Vector2(600f, 50f));

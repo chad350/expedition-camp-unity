@@ -104,8 +104,8 @@ namespace ExpeditionCamp.EditorTools
             UiOnlyCamera();
             Canvas canvas = EditorUtil.ScreenCanvas("Canvas", null, 0, 1f);
 
-            Image background = EditorUtil.Panel("Img_Background", canvas.transform, new Color(0.45f, 0.45f, 0.5f, 1f), null);
-            background.sprite = EditorUtil.LoadSprite("Assets/Resources/UI/ui_title_keyart.png");
+            Image background = EditorUtil.Panel("Img_Background", canvas.transform, Color.white, null);
+            background.sprite = EditorUtil.LoadSprite(VisualRedesign.LobbyBackdropSprite);
             EditorUtil.Stretch(background.rectTransform, Vector2.zero, Vector2.zero);
             AspectRatioFitter fitter = background.gameObject.AddComponent<AspectRatioFitter>();
             fitter.aspectMode = AspectRatioFitter.AspectMode.EnvelopeParent;
@@ -148,8 +148,7 @@ namespace ExpeditionCamp.EditorTools
             camera.gameObject.AddComponent<Physics2DRaycaster>();
 
             SpriteRenderer background = EditorUtil.SpriteObject("Background", null,
-                EditorUtil.LoadSprite("Assets/Resources/UI/ui_title_keyart.png"), new Vector3(0f, 0f, 0f), 1.25f, 0, 0);
-            background.color = new Color(0.36f, 0.36f, 0.42f, 1f);
+                EditorUtil.LoadSprite(VisualRedesign.LobbyBackdropSprite), new Vector3(0f, 0f, 0f), 1f, 0, 0);
 
             Canvas canvas = EditorUtil.ScreenCanvas("Canvas", null, 0, 1f);
 
