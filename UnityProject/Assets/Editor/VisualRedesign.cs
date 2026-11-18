@@ -95,11 +95,12 @@ namespace ExpeditionCamp.EditorTools
             ApplyLobbyBackdrop(GameObject.Find("Background").GetComponent<SpriteRenderer>());
             Transform npcs=GameObject.Find("NPCs").transform;
             string[] npcNames={"NPC_Shop","NPC_Dex","NPC_Board"};
-            float[] npcX={-2.3f,0.7f,3.4f};
+            // 왼쪽 사이드바(620px)를 뺀 영역에 맞춰 놓습니다.
+            float[] npcX={0.3f,2.9f,5.5f};
             for(int i=0;i<npcNames.Length;i++)
             {
                 Transform npc=npcs.Find(npcNames[i]);
-                npc.position=new Vector3(npcX[i],i==1?-1.8f:-1.5f,0f);
+                npc.position=new Vector3(npcX[i],i==1?-2.3f:-2.0f,0f);
                 npc.localScale=Vector3.one;
             }
             Image left=Box("JournalSidebar",canvas,Vector2.zero,new Vector2(620,1080),Ink);
@@ -122,7 +123,8 @@ namespace ExpeditionCamp.EditorTools
             foreach(TMP_Text t in top.GetComponentsInChildren<TMP_Text>())t.fontSize=28;
 
             Button departure=EditorUtil.Button("Btn_Departure","Txt_Departure",canvas,"",new Vector2(510,270));
-            EditorUtil.Place((RectTransform)departure.transform,new Vector2(1,.5f),new Vector2(1,.5f),new Vector2(-48,70),new Vector2(510,270));
+            // Lv · 골드 막대 바로 아래에 같은 너비 · 같은 오른쪽 여백으로 붙입니다.
+            EditorUtil.Place((RectTransform)departure.transform,new Vector2(1,1),new Vector2(1,1),new Vector2(-48,-144),new Vector2(510,270));
             SkinButton(departure);
             Box("DepartureAccent",departure.transform,Vector2.zero,new Vector2(510,4),Gold);
             Label("DepartureEyebrow",departure.transform,"CHAPTER 01   /   EXPLORE",18,new Vector2(32,-30),new Vector2(450,40),Gold);
