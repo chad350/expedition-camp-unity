@@ -8,7 +8,7 @@
 | `design_data/` | 기획 원본 엑셀 7개 (Monster · Item · Stage · Common · String · Shop · Field) |
 | `tools/export_tables.py` | 기획 원본 엑셀을 게임용 CSV 로 내보내는 변환 도구 |
 | `tools/export_tables_windows.bat` · `tools/export_tables_mac.sh` | 변환 도구 실행 파일 (가상환경 생성 · openpyxl 설치 · 변환) |
-| `docs/값의_출처표.md` | 게임 값의 출처 (qa 검사 기준 값의 근거) |
+| `docs/값의_출처표.md` | 게임 값의 출처 (테이블 · 프리팹 · 설정 파일) |
 | `.gitignore` | Library · Temp · Logs · obj · Builds · UserSettings 를 제외합니다. |
 
 ## 2. 프로젝트 열기
@@ -108,33 +108,7 @@ python3 tools/export_tables.py
 | `GET /inventory` | 골드 · 레벨 · 가방 내용 |
 | `GET /last_drop` | 마지막 드롭 판정 (group_id · roll · item_ids) |
 
-## 7. 빌드 · 테스트 (명령줄)
-
-Unity 실행 파일 경로는 아래와 같습니다.
-
-Windows
-
-```
-"C:\Program Files\Unity\Hub\Editor\6000.3.20f1\Editor\Unity.exe"
-```
-
-macOS
-
-```
-/Applications/Unity/Hub/Editor/6000.3.20f1/Unity.app/Contents/MacOS/Unity
-```
-
-| 작업 | 추가 인자 |
-|---|---|
-| 테스트용 빌드 (QA_BRIDGE 포함, `Builds/Test/`) | `-batchmode -nographics -projectPath UnityProject -executeMethod ExpeditionCamp.EditorTools.BuildScript.BuildForTest -quit` |
-| 출시 빌드 (QA_BRIDGE 제외, `Builds/Release/`) | `-batchmode -nographics -projectPath UnityProject -executeMethod ExpeditionCamp.EditorTools.BuildScript.BuildForRelease -quit` |
-| EditMode 테스트 | `-batchmode -nographics -projectPath UnityProject -runTests -testPlatform EditMode -testResults reports/editmode.xml` |
-| PlayMode 테스트 | `-batchmode -projectPath UnityProject -runTests -testPlatform PlayMode -testResults reports/playmode.xml` |
-| 씬 · 프리팹 다시 생성 | `-batchmode -nographics -projectPath UnityProject -executeMethod ExpeditionCamp.EditorTools.ProjectBuilder.BuildAll -quit` |
-
-`-runTests` 와 `-quit` 을 함께 넣으면 테스트가 실행되지 않습니다.
-
-## 8. 로그 · 세이브 위치
+## 7. 로그 · 세이브 위치
 
 | 파일 | Windows | macOS |
 |---|---|---|
@@ -143,7 +117,7 @@ macOS
 
 세이브가 손상되면 같은 폴더에 `save.bak.json` 을 만들고 새 세이브로 시작합니다.
 
-## 9. 리소스 출처
+## 8. 리소스 출처
 
 | 리소스 | 위치 | 출처 · 라이선스 |
 |---|---|---|
@@ -156,33 +130,3 @@ macOS
 | Noto Sans KR | `Assets/Fonts/` | Google Fonts · SIL Open Font License 1.1 · `Assets/ThirdParty/NotoSansKR/OFL.txt` 포함 |
 | TextMesh Pro 기본 리소스 | `Assets/TextMesh Pro/` | Unity uGUI 패키지 |
 | 바닥 · 바위 · 나무 · 다리 | 씬 안 | Unity 기본 도형 + URP Lit 재질 |
-
-## 10. QA 자동화
-
-| 경로 | 내용 |
-|---|---|
-| `qa/tests/test_tables.py` | 데이터 검사 (CSV 읽기 · 타입 · 중복 · 범위 · 참조 · 원본 엑셀 비교) |
-| `qa/tests/test_project_files.py` | 프로젝트 파일 검사 (meta 짝 · GUID 참조 · 빌드 씬 목록 · SpawnPoint 이름 · 프리팹 · 씬 · 설정 · 재질 규칙) |
-| `qa/tests/test_artifact.py` · `qa/tests/test_smoke.py` | 빌드 산출물 검사 · 스모크 테스트 |
-| `qa/rules/*.yaml` | 검사 기준 값 |
-| `Jenkinsfile` | 0 준비 · 1 데이터 검사 · 2 프로젝트 파일 검사 |
-
-### 실행 방법
-
-가상환경 만들기 (저장소 최상위 폴더에서 1번만 실행)
-
-| 작업 | Windows | macOS |
-|---|---|---|
-| 가상환경 생성 | `py -m venv qa\.venv` | `python3 -m venv qa/.venv` |
-| 패키지 설치 | `qa\.venv\Scripts\python -m pip install -r qa\requirements.txt` | `qa/.venv/bin/python -m pip install -r qa/requirements.txt` |
-
-검사 실행 (`qa` 폴더에서 실행)
-
-| 작업 | Windows | macOS |
-|---|---|---|
-| 데이터 검사 | `.venv\Scripts\python -m pytest tests\test_tables.py` | `.venv/bin/python -m pytest tests/test_tables.py` |
-| 프로젝트 파일 검사 | `.venv\Scripts\python -m pytest tests\test_project_files.py` | `.venv/bin/python -m pytest tests/test_project_files.py` |
-| Unity 테스트 | `.venv\Scripts\python utils\unity_runner.py tests EditMode` | `.venv/bin/python utils/unity_runner.py tests EditMode` |
-| 테스트용 빌드 | `.venv\Scripts\python utils\unity_runner.py build test` | `.venv/bin/python utils/unity_runner.py build test` |
-| 스모크 테스트 | `.venv\Scripts\python -m pytest tests\test_smoke.py` | `.venv/bin/python -m pytest tests/test_smoke.py` |
-
